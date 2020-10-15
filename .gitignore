@@ -3,10 +3,6 @@
 ######################
 # Ignore Form.io API Keys
 *.env
-# Ignore output files in the main directory
-*.txt
-# Ignore json files in the main directory
-*.json
 
 ######################
 # Node
