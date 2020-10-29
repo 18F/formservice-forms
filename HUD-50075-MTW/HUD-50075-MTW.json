@@ -1,7 +1,7 @@
 {
-  "title": "HUD-50075-MTW",
+  "title": "DEV",
   "version": "2.0.0",
-  "name": "HUD-50075-MTW",
+  "name": "dev",
   "roles": {},
   "forms": {
     "movingToWorkSupplementForm": {
@@ -473,7 +473,7 @@
               "input": true
             },
             {
-              "label": "2.  Payment Standards and Rent Reasonableness (SMG - HCV & Combined)",
+              "label": "2.  Payment Standards and Rent Reasonableness",
               "tooltip": "The agency is authorized to adopt and implement any reasonable policy to establish payment\r\nstandards or rent reasonableness that differ from the currently mandated program requirements in\r\nthe 1937 Act and its implementing regulations. For voucher activities, the Department has\r\ndeveloped a standard rider to the HAP contract that reflects any MTW authorizations that amend\r\nthe current requirements of the HAP contract.",
               "tableView": false,
               "defaultValue": false,
@@ -496,7 +496,7 @@
               "input": true
             },
             {
-              "label": "4. Landlord Leasing Incentives  (SMG-HCV & Combined)",
+              "label": "4. Landlord Leasing Incentives",
               "tooltip": "The agency is authorized to determine a damage claim and/or vacancy loss policy and payment policy for units that differ from the policy requirements currently mandated in the 1937 Act and its implementing regulations. All policies are subject to state and local laws. The agency may combine activities 4a and 4b into one voucher leasing incentive. For voucher activities related to this waiver, the Department has developed a standard rider to the HAP contract that reflects MTW authorizations that amend the current provisions of the HAP contract.",
               "tableView": false,
               "defaultValue": false,
@@ -510,7 +510,7 @@
               "input": true
             },
             {
-              "label": "5. Housing Quality Standards (HQS) (SMG - HCV & Combined)",
+              "label": "5. Housing Quality Standards (HQS)",
               "tooltip": "Subject to state and local laws, the agency is authorized by the Secretary to develop flexibilities around an HQS inspection’s timing and frequency, the independent-entity requirement, and penalties for failing an HQS inspection, as detailed below. Implementation of any of the below discrete HQS activities meets the requirements of the 1996 MTW Statute, which requires housing to meet HQS established or approved by the Secretary.\r\n",
               "tableView": false,
               "defaultValue": false,
@@ -551,7 +551,7 @@
               "input": true
             },
             {
-              "label": "9. Project-Based Voucher Program Flexibilities (SMG - HCV & Combined)",
+              "label": "9. Project-Based Voucher Program Flexibilities",
               "tooltip": "The agency is authorized to adopt and implement the activities listed below in the project-based voucher program. For voucher activities, the Department has developed a standard rider to the HAP contract that reflects any MTW authorizations that amend the current requirements of the HAP contract.",
               "tableView": false,
               "defaultValue": false,
@@ -592,7 +592,7 @@
               "input": true
             },
             {
-              "label": "13. Use of Public Housing as an Incentive for Economic Progress (SMG - PH & Combined)",
+              "label": "13. Use of Public Housing as an Incentive for Economic Progress",
               "tooltip": "The agency is authorized to extend the period for which a household can be over-income while remaining in public housing, with its subsidy, as an incentive for the economic progress and the eventual self-sufficiency of the household.",
               "tableView": false,
               "defaultValue": false,
@@ -615,7 +615,7 @@
               "input": true
             },
             {
-              "label": "15. Acquisition without Prior HUD Approval (SMG - PH & Combined)",
+              "label": "15. Acquisition without Prior HUD Approval",
               "tooltip": "The agency is authorized to acquire public housing sites without prior HUD approval.",
               "tableView": false,
               "defaultValue": false,
@@ -629,7 +629,7 @@
               "input": true
             },
             {
-              "label": "16. Deconcentration of Poverty in Public Housing Policy (SMG - PH & Combined)",
+              "label": "16. Deconcentration of Poverty in Public Housing Policy",
               "tooltip": "The agency is authorized to create an alternative policy in how it addresses deconcentration of poverty.",
               "tableView": false,
               "defaultValue": false,
@@ -2292,7 +2292,7 @@
             "next": true
           },
           "collapsible": false,
-          "key": "c1aCustom",
+          "key": "c1aCustomQuestions",
           "customConditional": "if (data.c1SurveyCombined && (data.c1SurveyCombined.a == \"planningChangesToExistingPolicy\" || data.c1SurveyCombined.a == \"planToImplementThisSubmissionYear\")){\r\n  show = true;\r\n} else if (data.c1SurveyHcv && (data.c1SurveyHcv.a == \"planningChangesToExistingPolicy\" || data.c1SurveyHcv.a == \"planToImplementThisSubmissionYear\")){\r\n  show = true;\r\n} else if (data.c1SurveyPh && (data.c1SurveyPh.a == \"planningChangesToExistingPolicy\" || data.c1SurveyPh.a == \"planToImplementThisSubmissionYear\")){\r\n  show = true;\r\n} else {\r\n  show = false;\r\n}",
           "type": "panel",
           "label": "C.1.a Tiered Rent Custom Questions (PH)",
@@ -2307,20 +2307,20 @@
               "tableView": false
             },
             {
-              "label": "Text Area",
+              "label": "Please describe how the income bands are structured.",
               "autoExpand": false,
               "hideLabel": true,
               "tableView": true,
               "validate": {
+                "required": true,
                 "maxLength": 500
               },
-              "key": "textArea",
+              "key": "c1aPleaseDescribeHowTheIncomeBandsAreStructured",
               "type": "textarea",
               "input": true
             },
             {
               "label": "Please upload the tiered rent policy table that shows the income bands.",
-              "hideLabel": true,
               "tableView": false,
               "webcam": false,
               "fileTypes": [
@@ -2329,12 +2329,15 @@
                   "value": ""
                 }
               ],
-              "key": "file",
+              "validate": {
+                "required": true
+              },
+              "key": "c1aPleaseUploadTheTieredRentPolicyTableThatShowsTheIncomeBands",
               "type": "file",
               "input": true
             },
             {
-              "html": "<p>Please upload the tiered rent policy table that shows the income bands.</p>",
+              "html": "<p>What is the income basis for assigning households to income bands?</p>",
               "label": "Content",
               "refreshOnChange": false,
               "key": "content9",
@@ -2346,6 +2349,7 @@
               "label": "What is the income basis for assigning households to income?",
               "optionsLabelPosition": "right",
               "inline": false,
+              "hideLabel": true,
               "tableView": false,
               "values": [
                 {
@@ -2359,14 +2363,32 @@
                   "shortcut": ""
                 }
               ],
-              "key": "whatIsTheBasisForAssigningHouseholdsToIncome1",
+              "validate": {
+                "required": true
+              },
+              "key": "c1aWhatIsTheBasisForAssigningHouseholdsToIncome",
               "type": "radio",
               "input": true
+            },
+            {
+              "html": "<p>How is total annual income defined?</p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content13",
+              "conditional": {
+                "show": true,
+                "when": "c1aWhatIsTheBasisForAssigningHouseholdsToIncome",
+                "eq": "totalAnnualIncome"
+              },
+              "type": "content",
+              "input": false,
+              "tableView": false
             },
             {
               "label": "How is the total annual income defined?",
               "optionsLabelPosition": "right",
               "inline": false,
+              "hideLabel": true,
               "tableView": false,
               "values": [
                 {
@@ -2380,19 +2402,37 @@
                   "shortcut": ""
                 }
               ],
+              "validate": {
+                "required": true
+              },
               "key": "howIsTheTotalAnnualIncomeDefined2",
               "conditional": {
                 "show": true,
-                "when": "whatIsTheBasisForAssigningHouseholdsToIncome1",
+                "when": "c1aWhatIsTheBasisForAssigningHouseholdsToIncome",
                 "eq": "totalAnnualIncome"
               },
               "type": "radio",
               "input": true
             },
             {
+              "html": "<p>How is adjusted annual income defined?</p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content14",
+              "conditional": {
+                "show": true,
+                "when": "c1aWhatIsTheBasisForAssigningHouseholdsToIncome",
+                "eq": "adjustedAnnualIncome"
+              },
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
               "label": "How is adjusted annual income defined?",
               "optionsLabelPosition": "right",
               "inline": false,
+              "hideLabel": true,
               "tableView": false,
               "values": [
                 {
@@ -2411,14 +2451,31 @@
                   "shortcut": ""
                 }
               ],
-              "key": "howIsAdjustedAnnualIncomeDefined2",
+              "validate": {
+                "required": true
+              },
+              "key": "c1aHowIsAdjustedAnnualIncomeDefined",
               "conditional": {
                 "show": true,
-                "when": "whatIsTheBasisForAssigningHouseholdsToIncome1",
+                "when": "c1aWhatIsTheBasisForAssigningHouseholdsToIncome",
                 "eq": "adjustedAnnualIncome"
               },
               "type": "radio",
               "input": true
+            },
+            {
+              "html": "<p>How is total annual income defined?</p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content15",
+              "conditional": {
+                "show": true,
+                "when": "c1aWhatIsTheBasisForAssigningHouseholdsToIncome",
+                "eq": "adjustedAnnualIncome"
+              },
+              "type": "content",
+              "input": false,
+              "tableView": false
             },
             {
               "label": "How is the annual income defined?",
@@ -2437,10 +2494,13 @@
                   "shortcut": ""
                 }
               ],
-              "key": "howIsTheAnnualIncomeDefined",
+              "validate": {
+                "required": true
+              },
+              "key": "c1aHowIsTheAnnualIncomeDefined",
               "conditional": {
                 "show": true,
-                "when": "whatIsTheBasisForAssigningHouseholdsToIncome1",
+                "when": "c1aWhatIsTheBasisForAssigningHouseholdsToIncome",
                 "eq": "adjustedAnnualIncome"
               },
               "type": "radio",
