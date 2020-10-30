@@ -1265,7 +1265,7 @@
           "input": false,
           "components": [
             {
-              "title": "Example of housing discrimination",
+              "title": "Examples of housing discrimination",
               "breadcrumbClickable": true,
               "buttonSettings": {
                 "previous": false,
@@ -1273,10 +1273,10 @@
                 "next": false
               },
               "collapsible": true,
-              "tableView": false,
               "key": "panel",
               "type": "panel",
-              "label": "Panel",
+              "label": "Example of housing discrimination",
+              "tableView": false,
               "input": false,
               "collapsed": true,
               "components": [
@@ -1325,6 +1325,40 @@
           "input": false,
           "components": [
             {
+              "title": "Examples of Organizations or Roles",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": false,
+                "cancel": false,
+                "next": false
+              },
+              "collapsible": true,
+              "key": "panel1",
+              "type": "panel",
+              "label": "Example of Organization or Role",
+              "tableView": false,
+              "input": false,
+              "collapsed": true,
+              "components": [
+                {
+                  "html": "<ul><li>Landlord</li><li>Owner</li><li>Bank&nbsp;</li><li>Real estate agent</li><li>Broker</li><li>Company</li><li>Organization</li></ul>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content5",
+                  "type": "content",
+                  "tableView": false,
+                  "input": false
+                }
+              ]
+            },
+            {
+              "label": "Organization or role (optional)",
+              "tableView": true,
+              "key": "organizationOrRoleOptional",
+              "type": "textfield",
+              "input": true
+            },
+            {
               "label": "First name (optional)",
               "tableView": true,
               "key": "firstNameOptional",
@@ -1335,13 +1369,6 @@
               "label": "Last name (optional)",
               "tableView": true,
               "key": "lastNameOptional",
-              "type": "textfield",
-              "input": true
-            },
-            {
-              "label": "Organization or role (optional)",
-              "tableView": true,
-              "key": "organizationOrRoleOptional",
               "type": "textfield",
               "input": true
             },
@@ -1690,6 +1717,40 @@
           "tableView": false,
           "input": false,
           "components": [
+            {
+              "title": "Examples of Property Types",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": false,
+                "cancel": false,
+                "next": false
+              },
+              "collapsible": true,
+              "key": "panel2",
+              "type": "panel",
+              "label": "Example of Property Types",
+              "tableView": false,
+              "input": false,
+              "collapsed": true,
+              "components": [
+                {
+                  "html": "<ul><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Rental Unit</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Single Family Home</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Public or Assisted Housing</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Mobile Home</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Banking or other Lending Institution</span></li></ul>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content6",
+                  "type": "content",
+                  "tableView": false,
+                  "input": false
+                }
+              ]
+            },
+            {
+              "label": "Property Type (Optional)",
+              "tableView": true,
+              "key": "propertyTypeOptional",
+              "type": "textfield",
+              "input": true
+            },
             {
               "label": "Location name (optional)",
               "tableView": true,
