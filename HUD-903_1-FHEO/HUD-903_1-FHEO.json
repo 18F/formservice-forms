@@ -1203,7 +1203,10 @@
               "tooltip": "Racial discrimination means being treated unfairly because you are:\r\n•\tWhite;\r\n•\tBlack or African American;\r\n•\tAsian;\r\n•\tAmerican Indian or Alaska Native;\r\n•\tNative Hawaiian or Other Pacific Islander; or \r\n•\ta mixture of two or more of these groups. \r\nRacial discrimination also includes being treated unfairly because of personal characteristics associated with race or because you are married to (or associated with) a person of a specific race.\r\nExample: A seller refused to sell you their home because you are Black.",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4Race",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.race",
               "type": "checkbox",
               "input": true,
               "hideOnChildrenHidden": false
@@ -1213,7 +1216,10 @@
               "tooltip": "Color discrimination means being treated unfairly because of your skin color. While race and color overlap, they are not the same. People of various races and ethnicities may experience discrimination because of their skin color. This type of discrimination may occur within the same race.  \r\nExample: A realtor only showed you apartments in certain neighborhoods because you have dark skin.",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4Color",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.color",
               "type": "checkbox",
               "input": true
             },
@@ -1222,7 +1228,10 @@
               "tooltip": "Religious discrimination means being treated unfairly because of your religious beliefs. This can include both the practice and non-practice of a religion. \r\nExample: A landlord denied your rental application because you wear a hijab (religious headscarf).",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4Religion",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.religion",
               "type": "checkbox",
               "input": true
             },
@@ -1231,7 +1240,10 @@
               "tooltip": "National origin discrimination means being treated unfairly because you:\r\n•\tare from a specific country or part of the world; \r\n•\tspeak a certain language or have an accent when you speak; \r\n•\tare of a certain ethnic background; or\r\n•\tappear to be of a certain ethnic background (even if you are not).\r\nNational origin discrimination may also include being treated unfairly because you are married to (or associated with) a person of a specific national origin.\r\nExample: A mortgage loan officer denied you a loan or imposed different terms and conditions because you have an accent when you speak English.",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4NationalOrigin",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.nationalorigin",
               "type": "checkbox",
               "input": true
             },
@@ -1240,7 +1252,10 @@
               "tooltip": "Sex discrimination means being treated unfairly or differently because of your sex. This includes both harassment because of a person’s sex and sexual harassment. \r\nExample: An owner evicted you for rejecting their sexual advances.",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4Sex",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.sex",
               "type": "checkbox",
               "input": true
             },
@@ -1249,7 +1264,10 @@
               "tooltip": "Disability discrimination means being treated unfairly because you:\r\n•\thave a physical or mental disability which substantially limits any major life activity;\r\n•\thave a record of a physical or mental disability; or\r\n•\tare viewed as having a physical or mental disability.\r\nThe Fair Housing Act also requires certain new multifamily dwellings to be accessible for persons with disabilities. \r\nExample: A landlord won’t waive the pet fee for your assistance animal. \r\nNote: Disability discrimination does not include being treated unfairly because you currently use (or are addicted to) an illegal controlled substance. Controlled substances are defined in Section 102 of the Controlled Substances Act (21 U.S.C. 802).",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4Disability",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.disability",
               "type": "checkbox",
               "input": true
             },
@@ -1258,7 +1276,10 @@
               "tooltip": "Familial status discrimination means being treated unfairly because:\r\n•\tyour family includes at least one child under 18 years old;\r\n•\tyou are pregnant; or\r\n•\tyou are in the process of adopting a child.\r\nExample: An apartment property manager told you they don’t rent top floor units to families with children.",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4FamilialStatus",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.familialstatus",
               "type": "checkbox",
               "input": true
             },
@@ -1266,7 +1287,10 @@
               "label": "Other",
               "tableView": false,
               "defaultValue": false,
-              "key": "panel4Other",
+              "validate": {
+                "custom": "valid = _.reduce(data.reason, function(result, value) {\r\n  return result || value;\r\n}, false) || 'One checkbox must be checked.';"
+              },
+              "key": "reason.other",
               "type": "checkbox",
               "input": true
             },
@@ -1283,19 +1307,11 @@
               "key": "panel4OtherDescription",
               "conditional": {
                 "show": true,
-                "when": "panel4Other",
+                "when": "reason.other",
                 "eq": "true"
               },
               "type": "textarea",
               "input": true
-            },
-            {
-              "key": "fieldset",
-              "type": "fieldset",
-              "label": "",
-              "input": false,
-              "tableView": false,
-              "components": []
             }
           ]
         },
@@ -2273,6 +2289,7 @@
               "validate": {
                 "required": true
               },
+              "errorLabel": "A date within the last year",
               "key": "panel8DateOfTheAllegedDiscrimination",
               "type": "datetime",
               "input": true,
