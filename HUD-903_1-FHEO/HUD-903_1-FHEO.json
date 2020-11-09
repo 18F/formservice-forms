@@ -46,7 +46,7 @@
                   "value": ""
                 }
               ],
-              "content": "<a href=\"https://www.hud.gov/program_offices/fair_housing_equal_opp\" rel=\"noopener noreferrer\" target=\"_blank\">Learn more about housing discrimination</a>",
+              "content": "<head>\n<title>Font Awesome Icons</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n</head>\n<body>\n\n<a href=\"https://www.hud.gov/program_offices/fair_housing_equal_opp\" rel=\"noopener noreferrer\" target=\"_blank\">Learn more about housing discrimination <i class=\"fa fa-external-link\"></i></a>\n\n</body>\n</html> \n",
               "refreshOnChange": false,
               "key": "html3",
               "type": "htmlelement",
@@ -863,7 +863,7 @@
                   "shortcut": ""
                 },
                 {
-                  "label": "Fair housing organization (FHIP)",
+                  "label": "Fair Housing Organization (FHIP)",
                   "value": "fairHousingOrganizationFhip",
                   "shortcut": ""
                 }
@@ -1350,81 +1350,6 @@
           ]
         },
         {
-          "title": "What happened to you?",
-          "breadcrumbClickable": true,
-          "buttonSettings": {
-            "previous": true,
-            "cancel": false,
-            "next": true
-          },
-          "collapsible": false,
-          "key": "panel5WhatHappenedToYou",
-          "type": "panel",
-          "label": "What happened to you?",
-          "tableView": false,
-          "input": false,
-          "components": [
-            {
-              "title": "Examples of housing discrimination",
-              "breadcrumbClickable": true,
-              "buttonSettings": {
-                "previous": false,
-                "cancel": false,
-                "next": false
-              },
-              "collapsible": true,
-              "key": "panel",
-              "type": "panel",
-              "label": "Example of housing discrimination",
-              "tableView": false,
-              "input": false,
-              "collapsed": true,
-              "components": [
-                {
-                  "html": "<ul><li>I was denied a reasonable accommodation.</li><li>I was told an apartment wasn't available to rent when it was listed as available.</li><li>I was sexually harassed by my property manager.</li><li>I was retaliated against for filing a housing discrimination complaint.</li></ul>",
-                  "label": "Content",
-                  "refreshOnChange": false,
-                  "tableView": false,
-                  "key": "content2",
-                  "type": "content",
-                  "input": false
-                }
-              ]
-            },
-            {
-              "label": "HTML",
-              "attrs": [
-                {
-                  "attr": "",
-                  "value": ""
-                }
-              ],
-              "content": "<br>",
-              "refreshOnChange": false,
-              "key": "html5",
-              "type": "htmlelement",
-              "input": false,
-              "tableView": false
-            },
-            {
-              "label": "Describe how you were discriminated against.",
-              "autoExpand": false,
-              "showWordCount": true,
-              "showCharCount": true,
-              "tableView": true,
-              "validate": {
-                "required": true,
-                "maxLength": 2500,
-                "maxWords": 750
-              },
-              "errorLabel": "This field",
-              "key": "panel5DiscriminationDescription",
-              "type": "textarea",
-              "input": true
-            }
-          ]
-        },
-        {
           "title": "Who do you believe discriminated against you?",
           "breadcrumbClickable": true,
           "buttonSettings": {
@@ -1833,7 +1758,7 @@
           ]
         },
         {
-          "title": "Where did the alleged discrimination happen?",
+          "title": "Where did the discrimination happen?",
           "breadcrumbClickable": true,
           "buttonSettings": {
             "previous": true,
@@ -1841,9 +1766,9 @@
             "next": true
           },
           "collapsible": false,
-          "key": "panel7WhereDidTheAllegedDiscriminationHappen",
+          "key": "panel7WhereDidTheDiscriminationHappen",
           "type": "panel",
-          "label": "Where did the alleged discrimination happen?",
+          "label": "Where did the discrimination happen?",
           "tableView": false,
           "input": false,
           "components": [
@@ -2279,7 +2204,7 @@
           ]
         },
         {
-          "title": "When did the alleged discrimination happen?",
+          "title": "When did the discrimination happen?",
           "breadcrumbClickable": true,
           "buttonSettings": {
             "previous": true,
@@ -2287,9 +2212,9 @@
             "next": true
           },
           "collapsible": false,
-          "key": "page8WhenDidTheAllegedDiscriminationHappen",
+          "key": "page8WhenDidTheDiscriminationHappen",
           "type": "panel",
-          "label": "When did the alleged discrimination happen?",
+          "label": "When did the discrimination happen?",
           "tableView": false,
           "input": false,
           "components": [
@@ -2324,7 +2249,7 @@
                 "required": true
               },
               "errorLabel": "A date within the last year",
-              "key": "panel8DateOfTheAllegedDiscrimination",
+              "key": "panel8DateOfTheDiscrimination",
               "type": "datetime",
               "input": true,
               "widget": {
@@ -2357,6 +2282,81 @@
             }
           ],
           "hideOnChildrenHidden": false
+        },
+        {
+          "title": "What happened to you?",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "collapsible": false,
+          "key": "panel5WhatHappenedToYou",
+          "type": "panel",
+          "label": "What happened to you?",
+          "tableView": false,
+          "input": false,
+          "components": [
+            {
+              "title": "Examples of housing discrimination",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": false,
+                "cancel": false,
+                "next": false
+              },
+              "collapsible": true,
+              "key": "panel",
+              "type": "panel",
+              "label": "Example of housing discrimination",
+              "tableView": false,
+              "input": false,
+              "collapsed": true,
+              "components": [
+                {
+                  "html": "<ul><li>I was denied a reasonable accommodation.</li><li>I was told an apartment wasn't available to rent when it was listed as available.</li><li>I was sexually harassed by my property manager.</li><li>I was retaliated against for filing a housing discrimination complaint.</li></ul>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "tableView": false,
+                  "key": "content2",
+                  "type": "content",
+                  "input": false
+                }
+              ]
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html5",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Describe how you were discriminated against.",
+              "autoExpand": false,
+              "showWordCount": true,
+              "showCharCount": true,
+              "tableView": true,
+              "validate": {
+                "required": true,
+                "maxLength": 2500,
+                "maxWords": 750
+              },
+              "errorLabel": "This field",
+              "key": "panel5DiscriminationDescription",
+              "type": "textarea",
+              "input": true
+            }
+          ]
         },
         {
           "label": "Submit complaint",
