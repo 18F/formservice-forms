@@ -33,7 +33,7 @@
               "label": "Content",
               "refreshOnChange": false,
               "tableView": false,
-              "key": "startContent",
+              "key": "panel1Directions",
               "type": "content",
               "input": false
             },
@@ -48,7 +48,7 @@
               ],
               "content": "<head>\n<title>Font Awesome Icons</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n</head>\n<body>\n\n<a href=\"https://www.hud.gov/program_offices/fair_housing_equal_opp\" rel=\"noopener noreferrer\" target=\"_blank\">Learn more about housing discrimination <i class=\"fa fa-external-link\"></i></a>\n\n</body>\n</html> \n",
               "refreshOnChange": false,
-              "key": "html3",
+              "key": "panel1LearnLink",
               "type": "htmlelement",
               "tableView": false,
               "input": false
@@ -57,17 +57,9 @@
               "html": "<p><br><span class=\"text-big\"><strong>Before you get started.</strong></span></p><p>Have you been discriminated against in housing?</p><p>You have 1 year since the discrimination happened to submit a complaint to us.</p>",
               "label": "Content",
               "refreshOnChange": false,
-              "key": "content1",
+              "key": "panel1BeforeStarting",
               "type": "content",
               "tableView": false,
-              "input": false
-            },
-            {
-              "label": "Content",
-              "refreshOnChange": false,
-              "tableView": false,
-              "key": "content",
-              "type": "content",
               "input": false
             }
           ],
@@ -95,7 +87,7 @@
                 "required": true
               },
               "errorLabel": "This field",
-              "key": "panel2FirstName",
+              "key": "complainantFirstName",
               "type": "textfield",
               "input": true
             },
@@ -106,7 +98,7 @@
                 "required": true
               },
               "errorLabel": "This field",
-              "key": "panel2LastName",
+              "key": "complainantLastName",
               "type": "textfield",
               "input": true
             },
@@ -135,7 +127,7 @@
                 "required": true
               },
               "errorLabel": "This field",
-              "key": "panel2BestPhoneNumberToContactYou",
+              "key": "complainantBestPhoneNumberType",
               "type": "select",
               "indexeddb": {
                 "filter": {}
@@ -155,32 +147,7 @@
                         "required": true
                       },
                       "errorLabel": "This field",
-                      "key": "panel2PhoneNumber1",
-                      "logic": [
-                        {
-                          "name": "phoneLogic",
-                          "trigger": {
-                            "type": "simple",
-                            "simple": {
-                              "show": true,
-                              "when": "wayToContactYou1",
-                              "eq": "phone"
-                            }
-                          },
-                          "actions": [
-                            {
-                              "name": "phoneAction",
-                              "type": "property",
-                              "property": {
-                                "label": "Required",
-                                "value": "validate.required",
-                                "type": "boolean"
-                              },
-                              "state": true
-                            }
-                          ]
-                        }
-                      ],
+                      "key": "complainantBestPhoneNumber",
                       "type": "phoneNumber",
                       "input": true,
                       "hideOnChildrenHidden": false
@@ -201,10 +168,10 @@
                   "width": 2
                 }
               ],
-              "key": "columns4",
+              "key": "panel2BestPhoneNumberColumns",
               "conditional": {
                 "show": false,
-                "when": "panel2BestPhoneNumberToContactYou"
+                "when": "complainantBestPhoneNumberType"
               },
               "type": "columns",
               "input": false,
@@ -230,7 +197,7 @@
               "validate": {
                 "required": true
               },
-              "key": "panel2BestTimeToContactYou",
+              "key": "complainantBestTime",
               "type": "select",
               "indexeddb": {
                 "filter": {}
@@ -255,7 +222,7 @@
                 ]
               },
               "selectThreshold": 0.3,
-              "key": "panel2SecondContact",
+              "key": "complainantSecondaryType",
               "type": "select",
               "indexeddb": {
                 "filter": {}
@@ -289,10 +256,10 @@
                       },
                       "selectThreshold": 0.3,
                       "errorLabel": "This field",
-                      "key": "panel2SecondaryPhone",
+                      "key": "complainantSecondaryPhoneNumberType",
                       "conditional": {
                         "show": true,
-                        "when": "panel2SecondContact",
+                        "when": "complainantSecondaryType",
                         "eq": "phone"
                       },
                       "type": "select",
@@ -314,10 +281,10 @@
                     {
                       "label": "Phone number",
                       "tableView": true,
-                      "key": "panel2PhoneNumber2",
+                      "key": "complainantSecondaryPhoneNumber",
                       "conditional": {
                         "show": true,
-                        "when": "panel2SecondContact",
+                        "when": "complainantSecondContactType",
                         "eq": "phone"
                       },
                       "logic": [
@@ -357,10 +324,10 @@
                   "size": "md"
                 }
               ],
-              "key": "columns5",
+              "key": "panel2SecondaryPhoneNumberColumns",
               "conditional": {
                 "show": true,
-                "when": "panel2SecondContact",
+                "when": "complainantSecondaryType",
                 "eq": "phone"
               },
               "type": "columns",
@@ -370,10 +337,10 @@
             {
               "label": "Email",
               "tableView": true,
-              "key": "panel2Email2",
+              "key": "complainantSecondaryEmail",
               "conditional": {
                 "show": true,
-                "when": "panel2SecondContact",
+                "when": "complainantSecondaryType",
                 "eq": "email"
               },
               "logic": [
@@ -426,7 +393,7 @@
                   "tableView": false,
                   "protected": true,
                   "clearOnHide": false,
-                  "calculateValue": "value = data.streetAddress === \"\" ? \"\" : value;",
+                  "calculateValue": "value = data.complainantAddress === \"\" ? \"\" : value;",
                   "allowCalculateOverride": true,
                   "provider": "google",
                   "validate": {
@@ -436,7 +403,7 @@
                   "tags": [
                     "addressSearchTag"
                   ],
-                  "customConditional": "const formatted_address = data.addressSearch;\nshow = _.isEmpty(formatted_address) || data.streetAddress === \"\";",
+                  "customConditional": "const formatted_address = data.addressSearch;\nshow = _.isEmpty(formatted_address) || data.complainantAddress === \"\";",
                   "attributes": {
                     "style": "border-width: 1px;border-color: #565c65; border-style: solid;height: 2.5rem;"
                   },
@@ -512,8 +479,8 @@
                   "validate": {
                     "required": true
                   },
-                  "key": "streetAddress",
-                  "customConditional": "show = data.streetAddress !== \"\";",
+                  "key": "complainantAddress",
+                  "customConditional": "show = data.complainantAddress !== \"\";",
                   "type": "textfield",
                   "input": true
                 },
@@ -522,8 +489,8 @@
                   "spellcheck": false,
                   "tableView": true,
                   "clearOnHide": false,
-                  "calculateValue": "value = data.streetAddress === \"\" ? \"\" : value;",
-                  "key": "aptSuiteUnit",
+                  "calculateValue": "value = data.complainantAddress === \"\" ? \"\" : value;",
+                  "key": "complainantAptSuiteUnit",
                   "conditional": {
                     "show": true
                   },
@@ -544,7 +511,7 @@
                           "validate": {
                             "required": true
                           },
-                          "key": "city1",
+                          "key": "complainantCity",
                           "type": "textfield",
                           "input": true,
                           "hideOnChildrenHidden": false
@@ -815,7 +782,7 @@
                           "validate": {
                             "required": true
                           },
-                          "key": "state2",
+                          "key": "complainantState",
                           "type": "select",
                           "indexeddb": {
                             "filter": {}
@@ -851,7 +818,7 @@
                           "validate": {
                             "required": true
                           },
-                          "key": "zip1",
+                          "key": "complainantZip",
                           "type": "textfield",
                           "input": true,
                           "hideOnChildrenHidden": false
@@ -911,7 +878,7 @@
               "content": "If we can’t reach you, who should we contact?\n<BR /><BR />",
               "refreshOnChange": false,
               "tableView": false,
-              "key": "html",
+              "key": "panel3AlternateContactDirections",
               "type": "htmlelement",
               "input": false,
               "hideLabel": true
@@ -923,7 +890,7 @@
                 "required": true
               },
               "errorLabel": "This field",
-              "key": "panel3FirstName",
+              "key": "alternateContactFirstName",
               "type": "textfield",
               "input": true
             },
@@ -934,7 +901,7 @@
                 "required": true
               },
               "errorLabel": "This field",
-              "key": "panel3LastName",
+              "key": "alternateContactLastName",
               "type": "textfield",
               "input": true
             },
@@ -951,11 +918,11 @@
                 },
                 {
                   "label": "Fair Housing Organization (FHIP)",
-                  "value": "fairHousingOrganizationFhip",
+                  "value": "fhip",
                   "shortcut": ""
                 }
               ],
-              "key": "panel3RelationshipToYou",
+              "key": "alternateContactRelationship",
               "type": "radio",
               "input": true
             },
@@ -984,7 +951,7 @@
                 "required": true
               },
               "errorLabel": "This field",
-              "key": "panel3BestPhoneNumberToContactThem",
+              "key": "alternateContactBestPhoneNumberType",
               "type": "select",
               "indexeddb": {
                 "filter": {}
@@ -1004,10 +971,10 @@
                         "required": true
                       },
                       "errorLabel": "This field",
-                      "key": "panel3PhoneNumber1",
+                      "key": "alternateContactBestPhoneNumber",
                       "conditional": {
                         "show": false,
-                        "when": "panel3BestPhoneNumberToContactThem"
+                        "when": "alternateContactBestPhoneNumberType"
                       },
                       "logic": [
                         {
@@ -1054,10 +1021,10 @@
                   "width": 2
                 }
               ],
-              "key": "columns7",
+              "key": "panel3BestPhoneNumberColumns",
               "conditional": {
                 "show": false,
-                "when": "panel3BestPhoneNumberToContactThem"
+                "when": "alternateContactBestPhoneNumberType"
               },
               "type": "columns",
               "input": false,
@@ -1083,7 +1050,7 @@
               "validate": {
                 "required": true
               },
-              "key": "panel3BestTimeToContactThem",
+              "key": "alternateContactBestTime",
               "type": "select",
               "indexeddb": {
                 "filter": {}
@@ -1107,7 +1074,7 @@
                 ]
               },
               "selectThreshold": 0.3,
-              "key": "panel3SecondContact",
+              "key": "alternateContactSecondaryType",
               "type": "select",
               "indexeddb": {
                 "filter": {}
@@ -1140,10 +1107,10 @@
                         ]
                       },
                       "selectThreshold": 0.3,
-                      "key": "panel3SecondaryPhone",
+                      "key": "alternateContactSecondaryPhoneNumberType",
                       "conditional": {
                         "show": true,
-                        "when": "panel3SecondContact",
+                        "when": "alternateContactSecondaryType",
                         "eq": "phone"
                       },
                       "type": "select",
@@ -1165,10 +1132,10 @@
                     {
                       "label": "Phone number",
                       "tableView": true,
-                      "key": "panel3PhoneNumber2",
+                      "key": "alternateContactSecondaryPhoneNumber",
                       "conditional": {
                         "show": true,
-                        "when": "panel3SecondContact",
+                        "when": "alternateContactSecondaryType",
                         "eq": "phone"
                       },
                       "logic": [
@@ -1208,7 +1175,7 @@
                   "size": "md"
                 }
               ],
-              "key": "columns8",
+              "key": "panel2SecondaryPhoneNumberColumns",
               "type": "columns",
               "input": false,
               "tableView": false
@@ -1216,10 +1183,10 @@
             {
               "label": "Email",
               "tableView": true,
-              "key": "panel3Email2",
+              "key": "alternateContactSecondaryEmail",
               "conditional": {
                 "show": true,
-                "when": "panel3SecondContact",
+                "when": "alternateContactSecondaryType",
                 "eq": "email"
               },
               "logic": [
@@ -1273,7 +1240,7 @@
               "label": "Content",
               "refreshOnChange": false,
               "tableView": false,
-              "key": "content4",
+              "key": "panel4WhyDirections",
               "type": "content",
               "input": false
             },
@@ -1286,7 +1253,7 @@
                 "next": true
               },
               "collapsible": true,
-              "key": "panel3ProtectedClassDefinitions",
+              "key": "panel4ProtectedClassDefinitions",
               "type": "panel",
               "label": "Protected Class Definitions",
               "input": false,
@@ -1297,7 +1264,7 @@
                   "html": "<p style=\"margin-left:-3.6pt;\"><span class=\"text-big\" style=\"background-color:transparent;color:#000000;\"><strong>Race&nbsp;</strong></span><br><span style=\"background-color:transparent;color:#000000;\">Racial discrimination means being treated unfairly because you are:</span></p><ul><li><span style=\"background-color:transparent;color:#000000;\">White;</span></li><li><span style=\"background-color:transparent;color:#000000;\">Black or African American;</span></li><li><span style=\"background-color:transparent;color:#000000;\">Asian;</span></li><li><span style=\"background-color:transparent;color:#000000;\">American Indian or Alaska Native;</span></li><li><span style=\"background-color:transparent;color:#000000;\">Native Hawaiian or Other Pacific Islander; or&nbsp;</span></li><li><span style=\"background-color:transparent;color:#000000;\">a mixture of two or more of these groups.&nbsp;</span></li></ul><p><span style=\"background-color:transparent;color:#000000;\">Racial discrimination also includes being treated unfairly because of personal characteristics associated with race or because you are married to (or associated with) a person of a specific race.</span></p><p style=\"margin-left:-3.6pt;\"><span class=\"text-big\" style=\"background-color:transparent;color:#000000;\"><strong>Color</strong></span><br><span style=\"background-color:transparent;color:#000000;\">Color discrimination means being treated unfairly because of your skin color. While race and color overlap, they are not the same. People of various races and ethnicities may experience discrimination because of their skin color. This type of discrimination may occur within the same race.&nbsp;&nbsp;</span></p><p style=\"margin-left:-3.6pt;\"><span class=\"text-big\" style=\"background-color:transparent;color:#000000;\"><strong>Religion</strong></span><br><span style=\"background-color:transparent;color:#000000;\">Religious discrimination means being treated unfairly because of your religious beliefs. This can include both the practice and non-practice of a religion.&nbsp;</span></p><p style=\"margin-left:-3.6pt;\"><span class=\"text-big\" style=\"background-color:transparent;color:#000000;\"><strong>Sex</strong></span><span style=\"background-color:transparent;color:#000000;\"><strong>&nbsp;</strong></span><br><span style=\"background-color:transparent;color:#000000;\">Sex discrimination means being treated unfairly or differently because of your sex. This includes both harassment because of a person’s sex and sexual harassment.&nbsp;</span></p><p style=\"margin-left:-3.6pt;\"><span class=\"text-big\" style=\"background-color:transparent;color:#000000;\"><strong>National Origin&nbsp;</strong></span><br><span style=\"background-color:transparent;color:#000000;\">National origin discrimination means being treated unfairly because you:</span></p><ul><li><span style=\"background-color:transparent;color:#000000;\">are from a specific country or part of the world;&nbsp;</span></li><li><span style=\"background-color:transparent;color:#000000;\">speak a certain language or have an accent when you speak;&nbsp;</span></li><li><span style=\"background-color:transparent;color:#000000;\">are of a certain ethnic background; or</span></li><li><span style=\"background-color:transparent;color:#000000;\">appear to be of a certain ethnic background (even if you are not).</span></li></ul><p><span style=\"background-color:transparent;color:#000000;\">National origin discrimination may also include being treated unfairly because you are married to (or associated with) a person of a specific national origin.</span></p><p style=\"margin-left:-3.6pt;\"><span class=\"text-big\" style=\"background-color:transparent;color:#000000;\"><strong>Familial Status</strong></span><br><span style=\"background-color:transparent;color:#000000;\">Familial status discrimination means being treated unfairly because:</span></p><ul><li><span style=\"background-color:transparent;color:#000000;\">your family includes at least one child under 18 years old;</span></li><li><span style=\"background-color:transparent;color:#000000;\">you are pregnant; or</span></li><li><span style=\"background-color:transparent;color:#000000;\">you are in the process of adopting a child.</span></li></ul><p style=\"margin-left:-3.6pt;\"><span class=\"text-big\" style=\"background-color:transparent;color:#000000;\"><strong>Disability</strong></span><br><span style=\"background-color:transparent;color:#000000;\">Disability discrimination means being treated unfairly because you:</span></p><ul><li><span style=\"background-color:transparent;color:#000000;\">have a physical or mental disability which substantially limits any major life activity;</span></li><li><span style=\"background-color:transparent;color:#000000;\">have a record of a physical or mental disability; or</span></li><li><span style=\"background-color:transparent;color:#000000;\">are viewed as having a physical or mental disability.</span></li></ul><p><span style=\"background-color:transparent;color:#000000;\">The Fair Housing Act also requires certain new multifamily dwellings to be accessible for persons with disabilities.&nbsp;</span></p>",
                   "label": "Content",
                   "refreshOnChange": false,
-                  "key": "content8",
+                  "key": "panel4Definitions",
                   "type": "content",
                   "input": false,
                   "tableView": false
@@ -1312,7 +1279,7 @@
                   ],
                   "content": "<head>\n<title>Font Awesome Icons</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n</head>\n<body>\n<b>Note:</b> Disability discrimination does not include being treated unfairly because you currently use (or are addicted to) an illegal controlled substance. Controlled substances are defined in\n<a href=\"https://www.govinfo.gov/content/pkg/USCODE-2018-title21/pdf/USCODE-2018-title21-chap4-subchapII-sec102.pdf\" rel=\"noopener noreferrer\" target=\"_blank\"> Section 102 of the Controlled Substances Act (21 U.S.C. 802) <i class=\"fa fa-external-link\"></i></a>\n\n</body>\n</html> \n",
                   "refreshOnChange": false,
-                  "key": "html1",
+                  "key": "panel4DefinitionsLink",
                   "type": "htmlelement",
                   "input": false,
                   "tableView": false
@@ -1329,7 +1296,7 @@
               ],
               "content": "<br>",
               "refreshOnChange": false,
-              "key": "html6",
+              "key": "panel4Spacer",
               "type": "htmlelement",
               "input": false,
               "tableView": false
@@ -1440,7 +1407,7 @@
                 "required": true
               },
               "errorLabel": "This field",
-              "key": "panel4OtherDescription",
+              "key": "otherReasonDescription",
               "conditional": {
                 "show": true,
                 "when": "reason.other",
@@ -1460,7 +1427,7 @@
             "next": true
           },
           "collapsible": false,
-          "key": "panel6WhoDoYouBelieveDiscriminatedAgainstYou",
+          "key": "panel5WhoDoYouBelieveDiscriminatedAgainstYou",
           "type": "panel",
           "label": "Who do you believe discriminated against you?",
           "tableView": false,
@@ -1475,7 +1442,7 @@
                 "next": false
               },
               "collapsible": true,
-              "key": "panel1",
+              "key": "panel5OrganizationRoleExamples",
               "type": "panel",
               "label": "Example of Organization or Role",
               "tableView": false,
@@ -1486,7 +1453,7 @@
                   "html": "<ul><li>Landlord</li><li>Owner</li><li>Bank&nbsp;</li><li>Real estate agent</li><li>Broker</li><li>Company</li><li>Organization</li></ul>",
                   "label": "Content",
                   "refreshOnChange": false,
-                  "key": "content5",
+                  "key": "panel5Examples",
                   "type": "content",
                   "tableView": false,
                   "input": false
@@ -1503,7 +1470,7 @@
               ],
               "content": "<br>",
               "refreshOnChange": false,
-              "key": "html2",
+              "key": "panel5Spacer",
               "type": "htmlelement",
               "input": false,
               "tableView": false
@@ -1511,35 +1478,35 @@
             {
               "label": "Organization or role (optional)",
               "tableView": true,
-              "key": "panel6OrganizationOrRoleOptional",
+              "key": "respondentOrganization",
               "type": "textfield",
               "input": true
             },
             {
               "label": "First name (optional)",
               "tableView": true,
-              "key": "panel6FirstNameOptional",
+              "key": "respondentFirstName",
               "type": "textfield",
               "input": true
             },
             {
               "label": "Last name (optional)",
               "tableView": true,
-              "key": "panel6LastNameOptional",
+              "key": "respondentLastName",
               "type": "textfield",
               "input": true
             },
             {
               "label": "Phone number (optional)",
               "tableView": true,
-              "key": "panel6PhoneNumberOptional",
+              "key": "respondentPhoneNumber",
               "type": "phoneNumber",
               "input": true
             },
             {
               "label": "Email (optional)",
               "tableView": true,
-              "key": "panel6EmailOptional",
+              "key": "respondentEmail",
               "type": "textfield",
               "input": true
             },
@@ -1554,7 +1521,7 @@
                       "validate": {
                         "required": true
                       },
-                      "key": "panel6City",
+                      "key": "respondentCity",
                       "type": "textfield",
                       "input": true,
                       "hideOnChildrenHidden": false
@@ -1826,7 +1793,7 @@
                         "required": true
                       },
                       "errorLabel": "This field",
-                      "key": "panel6State",
+                      "key": "respondentState",
                       "overlay": {
                         "page": 1,
                         "left": 272.6476666666667,
@@ -1852,7 +1819,7 @@
                   "width": 2
                 }
               ],
-              "key": "columns6",
+              "key": "panel5RespondentCityStateColumns",
               "type": "columns",
               "input": false,
               "tableView": false
@@ -1868,7 +1835,7 @@
             "next": true
           },
           "collapsible": false,
-          "key": "panel7WhereDidTheDiscriminationHappen",
+          "key": "panel6WhereDidTheDiscriminationHappen",
           "type": "panel",
           "label": "Where did the discrimination happen?",
           "tableView": false,
@@ -1883,7 +1850,7 @@
                 "next": false
               },
               "collapsible": true,
-              "key": "panel2",
+              "key": "panel6PropertyTypeExamples",
               "type": "panel",
               "label": "Examples of Property Types",
               "tableView": false,
@@ -1894,7 +1861,7 @@
                   "html": "<ul><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Rental Unit</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Single Family Home</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Public or Assisted Housing</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Mobile Home</span></li><li><span style=\"background-color:rgb(255,255,255);color:rgb(23,43,77);\">Banking or other Lending Institution</span></li></ul>",
                   "label": "Content",
                   "refreshOnChange": false,
-                  "key": "content6",
+                  "key": "panel6Examples",
                   "type": "content",
                   "tableView": false,
                   "input": false
@@ -1911,7 +1878,7 @@
               ],
               "content": "<br>",
               "refreshOnChange": false,
-              "key": "html4",
+              "key": "panel6Spacer",
               "type": "htmlelement",
               "input": false,
               "tableView": false
@@ -1919,28 +1886,28 @@
             {
               "label": "Property Type (Optional)",
               "tableView": true,
-              "key": "panel7PropertyTypeOptional",
+              "key": "discriminationPropertyType",
               "type": "textfield",
               "input": true
             },
             {
               "label": "Location name (optional)",
               "tableView": true,
-              "key": "panel7LocationNameOptional",
+              "key": "discriminationLocationName",
               "type": "textfield",
               "input": true
             },
             {
               "label": "Address (optional)",
               "tableView": true,
-              "key": "panel7AddressOptional",
+              "key": "discriminationAddress",
               "type": "textfield",
               "input": true
             },
             {
               "label": "Apt, suite, unit (optional)",
               "tableView": true,
-              "key": "panel7AptSuiteUnit",
+              "key": "discriminationAptSuiteUnit",
               "type": "textfield",
               "input": true
             },
@@ -1956,7 +1923,7 @@
                         "required": true
                       },
                       "errorLabel": "This field",
-                      "key": "panel7City",
+                      "key": "discriminationCity",
                       "type": "textfield",
                       "input": true,
                       "hideOnChildrenHidden": false
@@ -2228,7 +2195,7 @@
                         "required": true
                       },
                       "errorLabel": "This field",
-                      "key": "panel7State",
+                      "key": "discriminationState",
                       "overlay": {
                         "page": 1,
                         "left": 272.6476666666667,
@@ -2254,7 +2221,7 @@
                   "width": 2
                 }
               ],
-              "key": "columns2",
+              "key": "panel6DiscriminationCityStateColumns",
               "type": "columns",
               "tableView": false,
               "input": false
@@ -2268,7 +2235,7 @@
                       "label": "ZIP (optional)",
                       "inputMask": "99999",
                       "tableView": true,
-                      "key": "panel7Zip",
+                      "key": "discriminationZip",
                       "overlay": {
                         "page": 1,
                         "left": 374.6284761904762,
@@ -2298,7 +2265,7 @@
                   "size": "md"
                 }
               ],
-              "key": "columns3",
+              "key": "panel6DiscriminationZipColumns",
               "type": "columns",
               "tableView": false,
               "input": false
@@ -2314,7 +2281,7 @@
             "next": true
           },
           "collapsible": false,
-          "key": "page8WhenDidTheDiscriminationHappen",
+          "key": "panel7WhenDidTheDiscriminationHappen",
           "type": "panel",
           "label": "When did the discrimination happen?",
           "tableView": false,
@@ -2324,7 +2291,7 @@
               "html": "<p>If you believe discrimination is still occurring, provide the last date you experienced discrimination.&nbsp;</p>",
               "label": "Content",
               "refreshOnChange": false,
-              "key": "content3",
+              "key": "panel7DateDirections",
               "type": "content",
               "tableView": false,
               "input": false
@@ -2351,7 +2318,7 @@
                 "required": true
               },
               "errorLabel": "A date within the last year",
-              "key": "panel8DateOfTheDiscrimination",
+              "key": "discriminationDate",
               "type": "datetime",
               "input": true,
               "widget": {
@@ -2377,7 +2344,7 @@
               "html": "<p><i>HUD can only investigate housing discrimination complaints that occurred in the last year.</i></p>",
               "label": "Content",
               "refreshOnChange": false,
-              "key": "content7",
+              "key": "panel7DateTimingNote",
               "type": "content",
               "input": false,
               "tableView": false
@@ -2394,7 +2361,7 @@
             "next": true
           },
           "collapsible": false,
-          "key": "panel5WhatHappenedToYou",
+          "key": "panel8WhatHappenedToYou",
           "type": "panel",
           "label": "What happened to you?",
           "tableView": false,
@@ -2409,7 +2376,7 @@
                 "next": false
               },
               "collapsible": true,
-              "key": "panel",
+              "key": "panel8DiscriminationExamples",
               "type": "panel",
               "label": "Example of housing discrimination",
               "tableView": false,
@@ -2421,7 +2388,7 @@
                   "label": "Content",
                   "refreshOnChange": false,
                   "tableView": false,
-                  "key": "content2",
+                  "key": "panel8Examples",
                   "type": "content",
                   "input": false
                 }
@@ -2437,7 +2404,7 @@
               ],
               "content": "<br>",
               "refreshOnChange": false,
-              "key": "html5",
+              "key": "panel8Spacer",
               "type": "htmlelement",
               "input": false,
               "tableView": false
@@ -2454,7 +2421,7 @@
                 "maxWords": 750
               },
               "errorLabel": "This field",
-              "key": "panel5DiscriminationDescription",
+              "key": "discriminationDescription",
               "type": "textarea",
               "input": true
             }
