@@ -389,7 +389,7 @@
               "tableView": false,
               "components": [
                 {
-                  "label": "Street address",
+                  "label": "Street Address",
                   "tableView": false,
                   "protected": true,
                   "clearOnHide": false,
@@ -410,7 +410,7 @@
                   "type": "address",
                   "providerOptions": {
                     "params": {
-                      "key": "AIzaSyB4Er_yZp6n4ERiKyRDqklDmhdZ7jVu2oc",
+                      "key": "AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE",
                       "region": ""
                     }
                   },
@@ -473,8 +473,7 @@
                   "spellcheck": false,
                   "tableView": true,
                   "clearOnHide": false,
-                  "customDefaultValue": "if (data.addressSearch.formatted_address !== undefined){\n  let selectedAddress = data.addressSearch.formatted_address;\n  if(selectedAddress){\n    let addressArray = selectedAddress.split(\",\");\n    value = addressArray[0];\n  }\n}\n",
-                  "calculateValue": "let selectedAddress = data.addressSearch.formatted_address;\nif(selectedAddress){\n  let addressArray = selectedAddress.split(\",\");\n  value = addressArray[0];\n}",
+                  "calculateValue": "let address_components = data.addressSearch.address_components;\nif(address_components){\n let street_number = address_components[0].types == \"street_number\" ?\n    address_components[0].long_name : \"\";\n let route = address_components[1].types == \"route\" ? \n    address_components[1].long_name : \"\";\n  value = street_number + \" \" + route;\n}",
                   "allowCalculateOverride": true,
                   "validate": {
                     "required": true
@@ -506,7 +505,7 @@
                           "label": "City",
                           "tableView": true,
                           "clearOnHide": false,
-                          "calculateValue": "let selectedAddress = data.addressSearch.formatted_address;\nif(selectedAddress){\nlet addressArray = selectedAddress.split(\",\");\nvalue = addressArray[1];\n}",
+                          "calculateValue": "let address_components = data.addressSearch.address_components;\nif(address_components){\n   const city = _.find(address_components, item => item.types.includes(\"locality\"));\n   value = city.long_name ? city.long_name : '';\n}",
                           "allowCalculateOverride": true,
                           "validate": {
                             "required": true
@@ -778,7 +777,7 @@
                           },
                           "template": "<span>{{ item.name }}</span>",
                           "selectThreshold": 0.3,
-                          "calculateValue": "let selectedAddress = data.addressSearch.formatted_address;\nif(selectedAddress){\nlet addressArray = selectedAddress.split(\",\");\nlet stateZip = addressArray[2];\nconst stateZipArray =  stateZip.trim().split(\" \");\nvalue = stateZipArray[0];\n}",
+                          "calculateValue": "let address_components = data.addressSearch.address_components;\nif(address_components){\n   const state = _.find(address_components, item => item.types.includes(\"administrative_area_level_1\"));\n   value = state.long_name ? state.long_name : '';\n}",
                           "validate": {
                             "required": true
                           },
@@ -813,7 +812,7 @@
                           "inputMask": "99999",
                           "spellcheck": false,
                           "tableView": true,
-                          "calculateValue": "let selectedAddress = data.addressSearch.formatted_address;\nif(selectedAddress){\nlet addressArray = selectedAddress.split(\",\");\nlet stateZip = addressArray[2];\nconst stateZipArray =  stateZip.trim().split(\" \");\nvalue = stateZipArray[1];\n}",
+                          "calculateValue": "let address_components = data.addressSearch.address_components;\nif(address_components){\n   const city = _.find(address_components, item => item.types.includes(\"postal_code\"));\n   value = city.long_name ? city.long_name : '';\n}",
                           "allowCalculateOverride": true,
                           "validate": {
                             "required": true
@@ -1398,7 +1397,7 @@
               "input": true
             },
             {
-              "label": "Text Area",
+              "label": "Please provide a description for other.",
               "autoExpand": false,
               "hidden": true,
               "hideLabel": true,
@@ -2288,19 +2287,9 @@
           "input": false,
           "components": [
             {
-              "html": "<p>If you believe discrimination is still occurring, provide the last date you experienced discrimination.&nbsp;</p>",
-              "label": "Content",
-              "refreshOnChange": false,
-              "key": "panel7DateDirections",
-              "type": "content",
-              "tableView": false,
-              "input": false
-            },
-            {
               "label": "If you believe discrimination is still occurring, provide the last date you experienced discrimination. ",
               "useLocaleSettings": true,
               "format": "MM-dd-yyyy",
-              "hideLabel": true,
               "tableView": false,
               "enableMinDateInput": true,
               "datePicker": {
