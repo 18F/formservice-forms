@@ -1397,10 +1397,9 @@
               "input": true
             },
             {
-              "label": "Please provide a description for other.",
+              "label": "Please provide a description for other",
               "autoExpand": false,
               "hidden": true,
-              "hideLabel": true,
               "tableView": true,
               "validate": {
                 "required": true
