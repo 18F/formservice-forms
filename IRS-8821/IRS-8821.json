@@ -1,0 +1,3023 @@
+{
+  "title": "DEV",
+  "version": "2.0.0",
+  "name": "dev",
+  "roles": {},
+  "forms": {
+    "IRS-8821": {
+      "title": "IRS 8821",
+      "type": "form",
+      "name": "IRS-8821",
+      "path": "irs8821",
+      "display": "wizard",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://dev-portal.fs.gsa.gov/pdf/pdf/5f888a67195c0a5bc233ec57/file/ebe04295-e7f7-5403-a848-532fee3343a9",
+          "id": "ebe04295-e7f7-5403-a848-532fee3343a9"
+        }
+      },
+      "components": [
+        {
+          "title": "Tax Information Authorization",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": false,
+            "cancel": false,
+            "next": true
+          },
+          "collapsible": false,
+          "key": "taxInformationAuthorization",
+          "type": "panel",
+          "label": "Tax Information Authorization",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "html": "<h4 style=\"margin-left:0px;\"><strong>Purpose of Form</strong></h4><p style=\"margin-left:0px;\">Form 8821 authorizes any individual, corporation, firm, organization, or partnership you designate to inspect and/or receive your confidential information verbally or in writing for the type of tax and the years or periods you list on Form 8821. Form 8821 is also used to delete or revoke prior tax information authorizations. See the instructions for line 6, later.</p><p style=\"margin-left:0px;\">You may file your own tax information authorization without using Form 8821, but it must include all the information that is requested on Form 8821.</p><p style=\"margin-left:0px;\">Form 8821 doesn’t authorize your appointee to speak on your behalf; to execute a request to allow disclosure of return or return information to another third party; to advocate your position with respect to federal tax laws; to execute waivers, consents, closing agreements; or represent you in any other manner before the IRS. Use Form 2848, Power of Attorney and Declaration of Representative, to authorize an individual to represent you before the IRS. The appointee may not substitute another party as your authorized designee.</p><p style=\"margin-left:0px;\">Authorizations listed on prior Forms 8821 are automatically revoked unless you attach copies of your prior Forms 8821 to your new submissions.<br>&nbsp;</p><h4><strong>General Information</strong></h4><ol><li>Go to <a href=\"https://www.irs.gov/instructions/i8821\">https://www.irs.gov/instructions/i8821</a> for instructions and the latest information.</li><li>Don’t sign this form unless all applicable lines have been completed.</li><li>Don’t use Form 8821 to request copies of your tax returns or to authorize someone to represent you.</li></ol>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content",
+              "type": "content",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "id": "elx4rrd"
+            }
+          ],
+          "placeholder": "",
+          "prefix": "",
+          "customClass": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": null,
+          "protected": false,
+          "unique": false,
+          "persistent": false,
+          "hidden": false,
+          "clearOnHide": false,
+          "refreshOn": "",
+          "redrawOn": "",
+          "modalEdit": false,
+          "labelPosition": "top",
+          "description": "",
+          "errorLabel": "",
+          "tooltip": "",
+          "hideLabel": false,
+          "tabindex": "",
+          "disabled": false,
+          "autofocus": false,
+          "dbIndex": false,
+          "customDefaultValue": "",
+          "calculateValue": "",
+          "calculateServer": false,
+          "widget": null,
+          "attributes": {},
+          "validateOn": "change",
+          "validate": {
+            "required": false,
+            "custom": "",
+            "customPrivate": false,
+            "strictDateValidation": false,
+            "multiple": false,
+            "unique": false
+          },
+          "conditional": {
+            "show": null,
+            "when": null,
+            "eq": ""
+          },
+          "overlay": {
+            "style": "",
+            "left": "",
+            "top": "",
+            "width": "",
+            "height": ""
+          },
+          "allowCalculateOverride": false,
+          "encrypted": false,
+          "showCharCount": false,
+          "showWordCount": false,
+          "properties": {},
+          "allowMultipleMasks": false,
+          "tree": false,
+          "theme": "default",
+          "breadcrumb": "default",
+          "id": "e3enldl"
+        },
+        {
+          "title": "Taxpayer Information",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "collapsible": false,
+          "key": "taxpayerInformation",
+          "type": "panel",
+          "label": "Taxpayer Information",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "title": "Specific Instructions",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": true,
+                "cancel": true,
+                "next": true
+              },
+              "collapsible": true,
+              "key": "panel",
+              "type": "panel",
+              "label": "Panel",
+              "input": false,
+              "tableView": false,
+              "collapsed": true,
+              "components": [
+                {
+                  "html": "<p style=\"margin-left:0px;\">Address information provided on Form 8821 will not change your last known address with the IRS. To change your last known address, use Form 8822 for your home address and Form 8822-B to change your business address.</p><p style=\"margin-left:0px;\"><strong>Individual.&nbsp;</strong><br>Enter your name, TIN, and your street address in the space provided. Don’t enter your appointee's name or address information in the Taxpayer information box. If a return is a joint return, the appointee(s) identified will only be authorized for you. Your spouse, or former spouse, must submit a separate Form 8821 to designate an appointee.</p><p style=\"margin-left:0px;\"><strong>Corporation, partnership, or association.</strong><br>Enter the name, EIN, and business address.</p><p style=\"margin-left:0px;\"><strong>Employee plan or exempt organization.</strong><br>Enter the name, address, and EIN or SSN of the plan sponsor/plan name, exempt organization or bond issuer. Enter the three-digit plan number when applicable. If you are the plan's trustee and you are authorizing the IRS to disclose the tax information of the plan's trust, see the instructions relating to the trust.</p><p style=\"margin-left:0px;\"><strong>Trust.</strong><br>Enter the name, title, and address of the trustee, and the name and EIN of the trust.</p><p style=\"margin-left:0px;\"><strong>Estate.</strong><br>Enter the name and address of the estate. If the estate doesn't have a separate taxpayer identification number, enter the decedent's SSN or ITIN.</p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content20",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                }
+              ]
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html16",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<h4><strong>Personal Information</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content2",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html3",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "First Name:",
+              "tableView": true,
+              "key": "taxpayerFirstName",
+              "overlay": {
+                "page": 1,
+                "left": 59,
+                "top": 211,
+                "height": "20",
+                "width": "200"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Last Name:",
+              "tableView": true,
+              "key": "taxpayerLastName",
+              "overlay": {
+                "page": 1,
+                "left": 265,
+                "top": 211,
+                "height": "20",
+                "width": "200"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Daytime Phone Number",
+              "tableView": true,
+              "key": "taxpayerDaytimePhoneNumber",
+              "overlay": {
+                "page": 1,
+                "left": 617,
+                "top": 255,
+                "height": "20",
+                "width": "195"
+              },
+              "type": "phoneNumber",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html4",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<h4><strong>Contact Address</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content3",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html2",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Home Address:",
+              "tableView": true,
+              "key": "taxpayerHomeAddress",
+              "overlay": {
+                "page": 1,
+                "left": "60",
+                "top": 234,
+                "width": "170",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "City:",
+              "tableView": true,
+              "key": "taxpayerCity",
+              "overlay": {
+                "page": 1,
+                "left": "60",
+                "top": 255,
+                "width": "170",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "State:",
+              "tableView": true,
+              "key": "taxpayerState",
+              "overlay": {
+                "page": 1,
+                "left": 234,
+                "top": 255,
+                "height": "20",
+                "width": "170"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "ZIP:",
+              "inputMask": "99999",
+              "tableView": true,
+              "key": "taxpayerZip",
+              "overlay": {
+                "page": 1,
+                "left": 406,
+                "top": 255,
+                "width": "90",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html5",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<h4><strong>Taxpayer Identification and Plan Number</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content4",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Taxpayer Identification Number(s)",
+              "tableView": true,
+              "key": "taxpayerIdentificationNumber",
+              "overlay": {
+                "page": 1,
+                "left": 617,
+                "top": 212,
+                "width": "410",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Plan Number (if applicable)",
+              "tableView": true,
+              "key": "taxpayerPlanNumber",
+              "type": "textfield",
+              "input": true,
+              "overlay": {
+                "page": 1,
+                "left": 823,
+                "top": 253,
+                "height": "20",
+                "width": "195"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Appointee",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "collapsible": false,
+          "key": "appointee",
+          "type": "panel",
+          "label": "Appointee",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "title": "Specific Instructions",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": true,
+                "cancel": true,
+                "next": true
+              },
+              "collapsible": true,
+              "key": "instructions",
+              "type": "panel",
+              "label": "Instructions",
+              "input": false,
+              "tableView": false,
+              "components": [
+                {
+                  "html": "<p style=\"margin-left:0px;\">Enter your appointee's full name and mailing address. Use the identical full name on all submissions and correspondence. Enter the nine-digit CAF number for each appointee. If an appointee has a CAF number for any previously filed Form 8821 or power of attorney (Form 2848), use that number. If a CAF number has not been assigned, enter \"NONE,\" and the IRS will issue one directly to your appointee. The IRS doesn't assign CAF numbers for employee plan status determination or exempt organization application requests.</p><p style=\"margin-left:0px;\">If you want to name more than one appointee, check the box on line 2, and attach a list of appointees to Form 8821. Provide the address, and requested numbers for each appointee named.</p><p style=\"margin-left:0px;\">Check the appropriate box to indicate if the appointee's address, telephone number, or fax number is new since the IRS issued the CAF number.</p><p style=\"margin-left:0px;\"><strong>Penalties for unauthorized disclosures. </strong>Appointees receiving tax information pursuant to a tax information authorization may be subject to penalties for unauthorized uses and disclosures of such information.</p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content18",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html15",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<h4><strong>Personal Information</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content5",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html6",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "First Name:",
+              "tableView": true,
+              "key": "appointeeFirstName",
+              "overlay": {
+                "page": 1,
+                "left": 62,
+                "top": 344,
+                "width": "200",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Last Name:",
+              "tableView": true,
+              "key": "appointeeLastName",
+              "overlay": {
+                "page": 1,
+                "left": 266,
+                "top": 344,
+                "height": "20",
+                "width": "200"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Phone Number:",
+              "tableView": true,
+              "key": "appointeePhoneNumber",
+              "overlay": {
+                "page": 1,
+                "left": 680,
+                "top": 361,
+                "width": "350",
+                "height": "20"
+              },
+              "type": "phoneNumber",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html8",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<h4><strong>Contact Address</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content6",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html7",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Mailing Address:",
+              "tableView": true,
+              "key": "appointeeMailingAddress",
+              "overlay": {
+                "page": 1,
+                "left": 61,
+                "top": 368,
+                "height": "20",
+                "width": "170"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "City:",
+              "tableView": true,
+              "key": "appointeeCity",
+              "overlay": {
+                "page": 1,
+                "left": 62,
+                "top": 392,
+                "width": "170",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "State:",
+              "tableView": true,
+              "key": "appointeeState",
+              "overlay": {
+                "page": 1,
+                "left": 236,
+                "top": "392",
+                "width": "170",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "ZIP:",
+              "inputMask": "99999",
+              "tableView": true,
+              "key": "appointeeZip",
+              "overlay": {
+                "page": 1,
+                "left": 410,
+                "top": "392",
+                "width": "90",
+                "height": "20"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html9",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<h4><strong>Additional Information</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content7",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html1",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "CAF Number:",
+              "tableView": true,
+              "key": "appointeeCafNumber",
+              "overlay": {
+                "page": 1,
+                "left": 632,
+                "top": 318,
+                "height": "20",
+                "width": "350"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "PTIN:",
+              "tableView": true,
+              "key": "appointeePtin",
+              "overlay": {
+                "page": 1,
+                "left": 611,
+                "top": 340,
+                "height": "20",
+                "width": "350"
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false
+            },
+            {
+              "label": "Fax Number:",
+              "tableView": true,
+              "key": "appointeeFaxNumber",
+              "overlay": {
+                "page": 1,
+                "left": 626,
+                "top": 384,
+                "height": "20",
+                "width": "350"
+              },
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "html": "<p>Check if new:</p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content11",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Address",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "appointeeNewAddress",
+              "overlay": {
+                "page": 1,
+                "left": 742,
+                "top": "406",
+                "width": "20",
+                "height": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Phone Number",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "phoneNumber",
+              "overlay": {
+                "page": 1,
+                "left": 894,
+                "top": 406,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Fax Number",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "faxNumber",
+              "overlay": {
+                "page": 1,
+                "left": 998,
+                "top": "406",
+                "width": "20",
+                "height": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "html": "<p>Additional Appointee:</p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content24",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Check here if you would like to add an additional appointee.",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "appointeeAddAdditionalAppointee",
+              "overlay": {
+                "page": 1,
+                "left": 307,
+                "top": 298,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            }
+          ]
+        },
+        {
+          "title": "Additional Appointee",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "collapsible": false,
+          "key": "additionalAppointee",
+          "conditional": {
+            "show": true,
+            "when": "appointeeAddAdditionalAppointee",
+            "eq": "true"
+          },
+          "type": "panel",
+          "label": "Additional Appointee",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "title": "Specific Instructions",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": true,
+                "cancel": true,
+                "next": true
+              },
+              "collapsible": true,
+              "key": "instructions1",
+              "type": "panel",
+              "label": "Instructions",
+              "input": false,
+              "tableView": false,
+              "components": [
+                {
+                  "html": "<p style=\"margin-left:0px;\">Enter your appointee's full name and mailing address. Use the identical full name on all submissions and correspondence. Enter the nine-digit CAF number for each appointee. If an appointee has a CAF number for any previously filed Form 8821 or power of attorney (Form 2848), use that number. If a CAF number has not been assigned, enter \"NONE,\" and the IRS will issue one directly to your appointee. The IRS doesn't assign CAF numbers for employee plan status determination or exempt organization application requests.</p><p style=\"margin-left:0px;\">If you want to name more than one appointee, check the box on line 2, and attach a list of appointees to Form 8821. Provide the address, and requested numbers for each appointee named.</p><p style=\"margin-left:0px;\">Check the appropriate box to indicate if the appointee's address, telephone number, or fax number is new since the IRS issued the CAF number.</p><p style=\"margin-left:0px;\"><strong>Penalties for unauthorized disclosures. </strong>Appointees receiving tax information pursuant to a tax information authorization may be subject to penalties for unauthorized uses and disclosures of such information.</p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content19",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false,
+                  "placeholder": "",
+                  "prefix": "",
+                  "customClass": "",
+                  "suffix": "",
+                  "multiple": false,
+                  "defaultValue": null,
+                  "protected": false,
+                  "unique": false,
+                  "persistent": true,
+                  "hidden": false,
+                  "clearOnHide": true,
+                  "refreshOn": "",
+                  "redrawOn": "",
+                  "modalEdit": false,
+                  "labelPosition": "top",
+                  "description": "",
+                  "errorLabel": "",
+                  "tooltip": "",
+                  "hideLabel": false,
+                  "tabindex": "",
+                  "disabled": false,
+                  "autofocus": false,
+                  "dbIndex": false,
+                  "customDefaultValue": "",
+                  "calculateValue": "",
+                  "calculateServer": false,
+                  "widget": null,
+                  "attributes": {},
+                  "validateOn": "change",
+                  "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                  },
+                  "conditional": {
+                    "show": null,
+                    "when": null,
+                    "eq": ""
+                  },
+                  "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                  },
+                  "allowCalculateOverride": false,
+                  "encrypted": false,
+                  "showCharCount": false,
+                  "showWordCount": false,
+                  "properties": {},
+                  "allowMultipleMasks": false,
+                  "id": "ex7rq5r"
+                }
+              ],
+              "collapsed": true,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": false,
+              "hidden": false,
+              "clearOnHide": false,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "tree": false,
+              "theme": "default",
+              "breadcrumb": "default",
+              "id": "esb19sw"
+            },
+            {
+              "html": "<h4><strong>Personal Information</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content8",
+              "type": "content",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "id": "eh5466x"
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html10",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": false,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "tag": "p",
+              "id": "ep5acbg"
+            },
+            {
+              "label": "First Name:",
+              "tableView": true,
+              "key": "additionalAppointeeFirstName",
+              "type": "textfield",
+              "input": true,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "text",
+              "inputFormat": "plain",
+              "inputMask": "",
+              "spellcheck": true,
+              "id": "exc0inc"
+            },
+            {
+              "label": "Last Name:",
+              "tableView": true,
+              "key": "additionalAppointeeLastName",
+              "type": "textfield",
+              "input": true,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "text",
+              "inputFormat": "plain",
+              "inputMask": "",
+              "spellcheck": true,
+              "id": "e434bgc"
+            },
+            {
+              "label": "Phone Number:",
+              "tableView": true,
+              "key": "additionalAppointeePhoneNumber",
+              "type": "phoneNumber",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "tel",
+              "inputFormat": "plain",
+              "inputMask": "(999) 999-9999",
+              "spellcheck": true,
+              "id": "ews2osj"
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html11",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": false,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "tag": "p",
+              "id": "ep6o0lj"
+            },
+            {
+              "html": "<h4><strong>Contact Address</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content9",
+              "type": "content",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "id": "epovndg"
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html12",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": false,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "tag": "p",
+              "id": "ekewpx"
+            },
+            {
+              "label": "Mailing Address:",
+              "tableView": true,
+              "key": "additionalAppointeeMailingAddress",
+              "type": "textfield",
+              "input": true,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "text",
+              "inputFormat": "plain",
+              "inputMask": "",
+              "spellcheck": true,
+              "id": "e5v1rn"
+            },
+            {
+              "label": "City:",
+              "labelPosition": "top",
+              "placeholder": "",
+              "description": "",
+              "tooltip": "",
+              "prefix": "",
+              "suffix": "",
+              "widget": {
+                "type": "input"
+              },
+              "inputMask": "",
+              "allowMultipleMasks": false,
+              "customClass": "",
+              "tabindex": "",
+              "autocomplete": "",
+              "hidden": false,
+              "hideLabel": false,
+              "showWordCount": false,
+              "showCharCount": false,
+              "mask": false,
+              "autofocus": false,
+              "spellcheck": true,
+              "disabled": false,
+              "tableView": true,
+              "modalEdit": false,
+              "multiple": false,
+              "persistent": true,
+              "inputFormat": "plain",
+              "protected": false,
+              "dbIndex": false,
+              "case": "",
+              "encrypted": false,
+              "redrawOn": "",
+              "clearOnHide": true,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "allowCalculateOverride": false,
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "pattern": "",
+                "customMessage": "",
+                "custom": "",
+                "customPrivate": false,
+                "json": "",
+                "minLength": "",
+                "maxLength": "",
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "unique": false,
+              "errorLabel": "",
+              "key": "additionalAppointeeCity",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "refreshOn": "",
+              "inputType": "text",
+              "id": "e8okan6",
+              "defaultValue": ""
+            },
+            {
+              "label": "State:",
+              "tableView": true,
+              "key": "additionalAppointeeState",
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "text",
+              "inputFormat": "plain",
+              "inputMask": "",
+              "spellcheck": true,
+              "id": "ew4csb9"
+            },
+            {
+              "label": "ZIP:",
+              "inputMask": "99999",
+              "tableView": true,
+              "key": "additionalAppointeeZip",
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "text",
+              "inputFormat": "plain",
+              "spellcheck": true,
+              "id": "en4xrh"
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html13",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": false,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "tag": "p",
+              "id": "ewheygd"
+            },
+            {
+              "html": "<h4><strong>Additional Information</strong></h4>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content10",
+              "type": "content",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "id": "e83j7o"
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<hr>",
+              "refreshOnChange": false,
+              "key": "html14",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": false,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "tag": "p",
+              "id": "enivmf"
+            },
+            {
+              "label": "CAF Number:",
+              "tableView": true,
+              "key": "additionalAppointeeCafNumber",
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "text",
+              "inputFormat": "plain",
+              "inputMask": "",
+              "spellcheck": true,
+              "id": "eiluwju"
+            },
+            {
+              "label": "PTIN:",
+              "tableView": true,
+              "key": "additionalAppointeePtin",
+              "type": "textfield",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "text",
+              "inputFormat": "plain",
+              "inputMask": "",
+              "spellcheck": true,
+              "id": "ej8a3aj"
+            },
+            {
+              "label": "Fax Number:",
+              "tableView": true,
+              "key": "additionalAppointeeFaxNumber",
+              "type": "phoneNumber",
+              "input": true,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "tel",
+              "inputFormat": "plain",
+              "inputMask": "(999) 999-9999",
+              "spellcheck": true,
+              "id": "esg6mlo"
+            },
+            {
+              "label": "Check if new:",
+              "optionsLabelPosition": "right",
+              "tableView": false,
+              "defaultValue": {
+                "": false,
+                "address": false,
+                "phoneNumber": false,
+                "faxNumber": false
+              },
+              "values": [
+                {
+                  "label": "Address",
+                  "value": "address",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Phone Number",
+                  "value": "phoneNumber",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Fax Number",
+                  "value": "faxNumber",
+                  "shortcut": ""
+                }
+              ],
+              "key": "additionalAppointeeCheckIfNew",
+              "type": "selectboxes",
+              "input": true,
+              "inputType": "checkbox",
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "fieldSet": false,
+              "inline": false,
+              "id": "ecv1gnf"
+            }
+          ],
+          "placeholder": "",
+          "prefix": "",
+          "customClass": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": null,
+          "protected": false,
+          "unique": false,
+          "persistent": false,
+          "hidden": false,
+          "clearOnHide": false,
+          "refreshOn": "",
+          "redrawOn": "",
+          "modalEdit": false,
+          "labelPosition": "top",
+          "description": "",
+          "errorLabel": "",
+          "tooltip": "",
+          "hideLabel": false,
+          "tabindex": "",
+          "disabled": false,
+          "autofocus": false,
+          "dbIndex": false,
+          "customDefaultValue": "",
+          "calculateValue": "",
+          "calculateServer": false,
+          "widget": null,
+          "attributes": {},
+          "validateOn": "change",
+          "validate": {
+            "required": false,
+            "custom": "",
+            "customPrivate": false,
+            "strictDateValidation": false,
+            "multiple": false,
+            "unique": false
+          },
+          "overlay": {
+            "style": "",
+            "left": "",
+            "top": "",
+            "width": "",
+            "height": ""
+          },
+          "allowCalculateOverride": false,
+          "encrypted": false,
+          "showCharCount": false,
+          "showWordCount": false,
+          "properties": {},
+          "allowMultipleMasks": false,
+          "tree": false,
+          "theme": "default",
+          "breadcrumb": "default",
+          "id": "edl2vcj"
+        },
+        {
+          "title": "Disclosure",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "collapsible": false,
+          "key": "disclosure",
+          "type": "panel",
+          "label": "Disclosure",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "title": "Specific Instructions",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": true,
+                "cancel": true,
+                "next": true
+              },
+              "collapsible": true,
+              "key": "specificInstructions1",
+              "type": "panel",
+              "label": "Specific Instructions",
+              "input": false,
+              "tableView": false,
+              "components": [
+                {
+                  "html": "<p style=\"margin-left:0px;\"><strong>Use Not Recorded on CAF</strong></p><p style=\"margin-left:0px;\">Generally, the IRS records all tax information authorizations on the CAF system. However, authorizations relating to certain issues or matters aren’t recorded. Check the box on line 4 if Form 8821 is being submitted for a specific use that the IRS will not record on the CAF. Examples of specific uses not recorded include but are not limited to the following:</p><p style=\"margin-left:auto;\">Requests to disclose information to loan companies or educational institutions.</p><p style=\"margin-left:auto;\">Requests to disclose information to federal or state agency investigators for background checks.</p><p style=\"margin-left:auto;\">Requests for information regarding the following forms:</p><p style=\"margin-left:auto;\">Form SS-4, Application for Employer Identification Number;</p><p style=\"margin-left:auto;\">Form W-2 Series;</p><p style=\"margin-left:auto;\">Form W-4, Employee’s Withholding Certificate;</p><p style=\"margin-left:auto;\">Form W-7, Application for IRS Individual Taxpayer Identification Number;</p><p style=\"margin-left:auto;\">Form 843, Claim for Refund and Request for Abatement;</p><p style=\"margin-left:auto;\">Form 966, Corporate Dissolution or Liquidation;</p><p style=\"margin-left:auto;\">Form 1096, Annual Summary and Transmittal of U.S. Information Returns;</p><p style=\"margin-left:auto;\">Form 1098, Mortgage Interest Statement;</p><p style=\"margin-left:auto;\">Form 1099 Series;</p><p style=\"margin-left:auto;\">Form 1128, Application To Adopt, Change, or Retain a Tax Year;</p><p style=\"margin-left:auto;\">Form 2553, Election by a Small Business Corporation; or</p><p style=\"margin-left:auto;\">Form 4361, Application for Exemption From Self-Employment Tax for Use by Ministers, Members of Religious Orders and Christian Science Practitioners.</p><p style=\"margin-left:0px;\">&nbsp;</p><p style=\"margin-left:0px;\">If you check the box on line 4, your appointee should mail or fax Form 8821 to the IRS office handling the matter. Otherwise, your appointee should bring a copy of Form 8821 to each appointment to inspect or receive information. A specific-use tax information authorization will not revoke any prior tax information authorizations.</p><p style=\"margin-left:0px;\"><strong>Disclosure of Tax Information</strong></p><p style=\"margin-left:0px;\">The IRS will send copies of notices and communications to no more than two appointees. If you check the box for line 5a and the IRS has a prior Form 2848 or Form 8821 from you that authorized other appointees to receive copies of notices and communications for the same tax and tax years, the IRS will stop sending notices and communications to the appointees designated on the prior Form 2848 or Form 8821.</p><p style=\"margin-left:0px;\"><strong>Retention/Revocation of Prior Tax Information Authorizations</strong></p><p style=\"margin-left:0px;\">If the line 4 box is checked, skip line 6. If line 4 isn’t checked, the IRS will automatically revoke all prior tax information authorizations on file unless you instruct otherwise. If you don’t want a prior tax information authorization submission to be revoked, you must attach a copy of the tax information authorization that you want to retain and check the line 6 box.</p><p style=\"margin-left:0px;\"><strong>Revocation request.</strong></p><p style=\"margin-left:0px;\">If you want to revoke a prior tax information authorization without submitting a new authorization, write \"REVOKE\" across the top of the particular authorization that you want to revoke. Provide a current taxpayer signature and date under the original signature that was provided on line 7.</p><p style=\"margin-left:0px;\">If you don’t have a copy of the tax information authorization you want to revoke, and it isn’t a specific-use authorization, send a notification to the IRS using the corresponding address in the <i>Where To File Chart</i>. In the notification:</p><p style=\"margin-left:auto;\">State that the authority of the appointee is revoked,</p><p style=\"margin-left:auto;\">List the name and address of each appointee whose authority is being revoked,</p><p style=\"margin-left:auto;\">List the tax matters and tax periods, and</p><p style=\"margin-left:auto;\">Sign and date the notification.</p><p style=\"margin-left:0px;\">&nbsp;</p><p style=\"margin-left:0px;\">If you are completely revoking the authority of the appointee, state “revoke all years/periods” instead of listing the specific tax matters, years, or periods.</p><p style=\"margin-left:0px;\">To revoke a specific-use tax information authorization, send the tax information authorization or notification of revocation to the IRS office handling your case, using the instructions above.</p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content22",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html18",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<p><strong>Specific use not recorded on Centralized Authorization File (CAF)</strong></p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content23",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Is the tax information authorization for a specific use not recorded on CAF?",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "disclosureIsTheTaxInformationAuthorizationIsForASpecificUseNotRecordedOnCaf",
+              "type": "checkbox",
+              "input": true,
+              "overlay": {
+                "page": 1,
+                "left": 998,
+                "top": 726,
+                "height": "20",
+                "width": "20"
+              }
+            },
+            {
+              "key": "fieldset",
+              "conditional": {
+                "show": true,
+                "when": "disclosureIsTheTaxInformationAuthorizationIsForASpecificUseNotRecordedOnCaf",
+                "eq": "false"
+              },
+              "type": "fieldset",
+              "label": "",
+              "input": false,
+              "tableView": false,
+              "components": [
+                {
+                  "html": "<p><strong>Disclosure of tax information</strong></p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content13",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                },
+                {
+                  "label": "Select this option, If you want copies of tax information, notices, and other written communications sent to the appointee on an ongoing basis. <b>Note:</b> Appointees will no longer receive forms, publications, and other related materials with the notices.",
+                  "tableView": false,
+                  "defaultValue": false,
+                  "key": "disclosureAppointeeCommunicationsSent",
+                  "overlay": {
+                    "page": 1,
+                    "left": 998,
+                    "top": 813,
+                    "width": "20",
+                    "height": "20"
+                  },
+                  "type": "checkbox",
+                  "input": true
+                },
+                {
+                  "label": "Select this option, If you don’t want any copies of notices or communications sent to your appointee.",
+                  "tableView": false,
+                  "defaultValue": false,
+                  "key": "disclosureAppointeeCommunicationsNotSent",
+                  "overlay": {
+                    "page": 1,
+                    "left": "998",
+                    "top": 852,
+                    "width": "20",
+                    "height": "20"
+                  },
+                  "type": "checkbox",
+                  "input": true
+                },
+                {
+                  "html": "<p><strong>Retention/revocation of prior tax information authorizations</strong></p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content12",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                },
+                {
+                  "label": "The IRS will automatically revoke all prior Tax Information Authorizations on file unless you select this option and attach a copy of the Tax Information Authorization(s) that you want to retain. <b>Note:</b> To revoke a prior tax information authorization(s) without submitting a new authorization, see the instructions.",
+                  "tableView": false,
+                  "defaultValue": false,
+                  "key": "theIrsWillAutomaticallyRevokeAllPriorTaxInformationAuthorizationsOnFileUnlessYouSelectThisOptionAndAttachACopyOfTheTaxInformationAuthorizationSThatYouWantToRetainBNoteBToRevokeAPriorTaxInformationAuthorizationSWithoutSubmittingANewAuthorizationSeeTheInstructions",
+                  "overlay": {
+                    "page": 1,
+                    "left": 998,
+                    "top": 940,
+                    "width": "20",
+                    "height": "20"
+                  },
+                  "type": "checkbox",
+                  "input": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Tax Information",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "collapsible": false,
+          "key": "page4",
+          "type": "panel",
+          "label": "Tax Information",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "title": "Specific Instructions",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": true,
+                "cancel": true,
+                "next": true
+              },
+              "collapsible": true,
+              "key": "specificInstructions",
+              "type": "panel",
+              "label": "Panel",
+              "input": false,
+              "tableView": false,
+              "components": [
+                {
+                  "html": "<p style=\"margin-left:0px;\"><strong>Authority to access electronic IRS records via Intermediate Service Providers.</strong></p><p style=\"margin-left:0px;\">Your appointee is not authorized to use an Intermediate Service Provider to retrieve your confidential tax information indirectly from the IRS <i><strong>unless you check the box on line 3</strong></i>. If you don’t authorize the use of an Intermediate Service Provider, your appointee can obtain your tax information directly from the IRS by using the IRS e-Services Transcript Delivery System.</p><p style=\"margin-left:0px;\">Intermediate Service Providers are privately owned companies that offer subscriptions to their software and/or services that your authorized appointee can use to retrieve, store, and display your tax return data (personal or business) instead of obtaining your tax information directly from the IRS through the IRS e-Services Transcript Delivery System. Intermediate Service Providers are independent of, and not affiliated in any way with, the IRS, and the IRS has no involvement in your appointee’s <strong>choice</strong> to obtain your tax information directly from the IRS or use an Intermediate Service Provider to indirectly obtain your tax information from the IRS.</p><p style=\"margin-left:0px;\"><strong>Columns (a)–(c).</strong></p><p style=\"margin-left:0px;\">Enter the type of tax information, the tax form number, the years or periods, and the specific matter. For example, you may list \"Income, 1040\" for calendar year \"2018\" and \"Excise, 720\" for \"2018\" (this covers all quarters in 2018).</p><p style=\"margin-left:0px;\">For multiple years or a series of inclusive periods, including quarterly periods, you may enter, for example, \"2017 thru 2019\" or \"2nd 2017-3rd 2018.\" For fiscal years, enter the ending year and month, using the YYYYMM format.</p><p style=\"margin-left:0px;\">Don’t use a general reference such as \"All years,\" \"All periods,\" or \"All taxes.\" Any tax information authorization with a general reference will be returned.</p><p style=\"margin-left:0px;\">You may list the current year/period and any tax years or periods that have already ended as of the date you sign the tax information authorization. You may also list future tax years or periods. <strong>However, the IRS will not record on the CAF system future tax years or periods listed that exceed 3 years from December 31 of the year that the IRS receives the tax information authorization.</strong></p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content21",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<br>",
+              "refreshOnChange": false,
+              "key": "html17",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<p>Appointee is authorized to inspect and/or receive confidential tax information for the type of tax, forms, periods, and specific matters you list below. See the line 3 instructions.&nbsp;</p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content1",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "By checking here, I authorize access to my IRS records via an Intermediate Service Provider.",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "taxInformationAuthorizeAccess",
+              "overlay": {
+                "page": 1,
+                "left": 101,
+                "top": 481,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Table",
+              "cellAlignment": "left",
+              "bordered": true,
+              "condensed": true,
+              "hideLabel": true,
+              "key": "table",
+              "type": "table",
+              "numRows": 4,
+              "numCols": 4,
+              "input": false,
+              "tableView": false,
+              "rows": [
+                [
+                  {
+                    "components": [
+                      {
+                        "html": "<p style=\"text-align:center;\"><strong>(a) Type of Tax Information (Income, Employment, Payroll, Excise, Estate, Gift, Civil Penalty, Sec. 4980H Payments, etc.)</strong></p>",
+                        "label": "Content",
+                        "refreshOnChange": false,
+                        "key": "content14",
+                        "type": "content",
+                        "input": false,
+                        "tableView": false
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "html": "<p style=\"text-align:center;\"><strong>(b) Tax Form Number (1040, 941, 720, etc.)</strong></p>",
+                        "label": "Content",
+                        "refreshOnChange": false,
+                        "key": "content15",
+                        "type": "content",
+                        "input": false,
+                        "tableView": false
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "html": "<p style=\"text-align:center;\"><strong>(c) Year(s) or Period(s)</strong></p>",
+                        "label": "Content",
+                        "refreshOnChange": false,
+                        "key": "content16",
+                        "type": "content",
+                        "input": false,
+                        "tableView": false
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "html": "<p style=\"text-align:center;\"><strong>(d) Specific Tax Matters</strong></p>",
+                        "label": "Content",
+                        "refreshOnChange": false,
+                        "key": "content17",
+                        "type": "content",
+                        "input": false,
+                        "tableView": false
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxInformationType1",
+                        "overlay": {
+                          "page": "1",
+                          "left": "62",
+                          "top": "596",
+                          "width": "190",
+                          "height": "20"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxFormNumber1",
+                        "overlay": {
+                          "page": "1",
+                          "left": "334",
+                          "top": "596",
+                          "width": "190",
+                          "height": "20"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxYearOrPeriod1",
+                        "overlay": {
+                          "page": "1",
+                          "left": "565",
+                          "top": "596",
+                          "width": "190",
+                          "height": "20"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxInformationSpecificTaxMatter1",
+                        "overlay": {
+                          "page": 1,
+                          "left": 797,
+                          "top": 596,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxInformationType2",
+                        "overlay": {
+                          "page": 1,
+                          "left": 60,
+                          "top": 632,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxFormNumber2",
+                        "overlay": {
+                          "page": 1,
+                          "left": 332,
+                          "top": 634,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxYearOrPeriod2",
+                        "overlay": {
+                          "page": 1,
+                          "left": 563,
+                          "top": 634,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxInformationSpecificTaxMatter2",
+                        "overlay": {
+                          "page": 1,
+                          "left": 797,
+                          "top": 636,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxInformationType3",
+                        "overlay": {
+                          "page": 1,
+                          "left": 61,
+                          "top": 670,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxFormNumber3",
+                        "overlay": {
+                          "page": 1,
+                          "left": 334,
+                          "top": 676,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxYearOrPeriod3",
+                        "overlay": {
+                          "page": 1,
+                          "left": 565,
+                          "top": 678,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "label": "Text Field",
+                        "hideLabel": true,
+                        "tableView": true,
+                        "key": "taxInformationSpecificTaxMatter3",
+                        "overlay": {
+                          "page": 1,
+                          "left": 795,
+                          "top": 680,
+                          "height": "20",
+                          "width": "190"
+                        },
+                        "type": "textfield",
+                        "input": true
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "IRS-8821:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "IRS-8821",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}
