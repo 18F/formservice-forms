@@ -16,11 +16,6 @@
         {
           "title": "WHY (REASON FOR DISCRIMINATION)",
           "breadcrumbClickable": true,
-          "buttonSettings": {
-            "previous": true,
-            "cancel": false,
-            "next": true
-          },
           "collapsible": false,
           "key": "panel4WhyWereYouDiscriminatedAgainst",
           "type": "panel",
@@ -31,32 +26,52 @@
             {
               "label": "HTML",
               "tag": "h1",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h1 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Why do you believe someone discriminated against you?</h1>",
+              "content": "<h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Why do you believe someone discriminated against you?</h2>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html14",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -70,7 +85,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -80,25 +94,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "ex7suzj9"
+              "id": "er4wrbn"
             },
             {
               "label": "HTML",
@@ -180,11 +181,6 @@
                     {
                       "title": "Learn more about these options",
                       "breadcrumbClickable": true,
-                      "buttonSettings": {
-                        "previous": true,
-                        "cancel": true,
-                        "next": true
-                      },
                       "collapsible": true,
                       "key": "panel4ProtectedClassDefinitions",
                       "type": "panel",
@@ -1191,35 +1187,60 @@
               "label": "Back to submit page",
               "action": "custom",
               "showValidations": false,
+              "theme": "primary",
+              "size": "md",
+              "block": false,
+              "leftIcon": "",
+              "rightIcon": "",
+              "shortcut": "",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "disableOnInvalid": false,
+              "hidden": false,
+              "autofocus": false,
+              "disabled": false,
               "tableView": false,
+              "modalEdit": false,
               "key": "reviewPage6",
-              "customConditional": "show = !! data.discriminationDescription;",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "show = !! data.hiddenEditButtonClicked;",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "button",
-              "custom": "instance.root.setPage(6);",
+              "custom": "instance.root.options.buttonSettings = {\n  showPrevious: true,\n  showNext: true,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(6);\ndata.hiddenEditButtonClicked = \"\";",
               "input": true,
               "hideOnChildrenHidden": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
-              "description": "",
               "errorLabel": "",
-              "tooltip": "",
               "hideLabel": false,
-              "tabindex": "",
-              "disabled": false,
-              "autofocus": false,
               "dbIndex": false,
               "customDefaultValue": "",
               "calculateValue": "",
@@ -1227,7 +1248,6 @@
               "widget": {
                 "type": "input"
               },
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -1237,32 +1257,13 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "size": "md",
-              "leftIcon": "",
-              "rightIcon": "",
-              "block": false,
-              "disableOnInvalid": false,
-              "theme": "primary",
               "dataGridLabel": true,
-              "id": "ebvln9c"
+              "id": "en88guph"
             }
           ],
           "placeholder": "",
@@ -1328,11 +1329,6 @@
         {
           "title": "WHO",
           "breadcrumbClickable": true,
-          "buttonSettings": {
-            "previous": true,
-            "cancel": false,
-            "next": true
-          },
           "collapsible": false,
           "key": "panel5WhoDiscriminatedAgainstYou",
           "type": "panel",
@@ -1343,32 +1339,52 @@
             {
               "label": "HTML",
               "tag": "h1",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h1 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Who discriminated against you?</h1>",
+              "content": "<h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Who discriminated against you?</h2>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html19",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -1382,7 +1398,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -1392,25 +1407,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "ecpfwi"
+              "id": "ef9bftq"
             },
             {
               "label": "HTML",
@@ -2303,35 +2305,60 @@
               "label": "Back to submit page",
               "action": "custom",
               "showValidations": false,
+              "theme": "primary",
+              "size": "md",
+              "block": false,
+              "leftIcon": "",
+              "rightIcon": "",
+              "shortcut": "",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "disableOnInvalid": false,
+              "hidden": false,
+              "autofocus": false,
+              "disabled": false,
               "tableView": false,
+              "modalEdit": false,
               "key": "reviewPage7",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
               "customConditional": "show = !! data.hiddenEditButtonClicked;",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "button",
-              "custom": "instance.root.setPage(6);",
+              "custom": "instance.root.options.buttonSettings = {\n  showPrevious: true,\n  showNext: true,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(6);\ndata.hiddenEditButtonClicked = \"\";",
               "input": true,
               "hideOnChildrenHidden": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
-              "description": "",
               "errorLabel": "",
-              "tooltip": "",
               "hideLabel": false,
-              "tabindex": "",
-              "disabled": false,
-              "autofocus": false,
               "dbIndex": false,
               "customDefaultValue": "",
               "calculateValue": "",
@@ -2339,7 +2366,6 @@
               "widget": {
                 "type": "input"
               },
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -2349,32 +2375,13 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "size": "md",
-              "leftIcon": "",
-              "rightIcon": "",
-              "block": false,
-              "disableOnInvalid": false,
-              "theme": "primary",
               "dataGridLabel": true,
-              "id": "e4ke3ry"
+              "id": "ehhawqx"
             }
           ],
           "placeholder": "",
@@ -2440,11 +2447,6 @@
         {
           "title": "WHERE",
           "breadcrumbClickable": true,
-          "buttonSettings": {
-            "previous": true,
-            "cancel": false,
-            "next": true
-          },
           "collapsible": false,
           "key": "panel6WhereDidTheDiscriminationHappen",
           "type": "panel",
@@ -2455,32 +2457,52 @@
             {
               "label": "HTML",
               "tag": "h1",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h1 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Where did the discrimination happen?</h1>",
+              "content": "<h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Where did the discrimination happen?</h2>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html20",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -2494,7 +2516,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -2504,25 +2525,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "ezajbo6"
+              "id": "ey845c4"
             },
             {
               "label": "HTML",
@@ -3832,35 +3840,60 @@
               "label": "Back to submit page",
               "action": "custom",
               "showValidations": false,
+              "theme": "primary",
+              "size": "md",
+              "block": false,
+              "leftIcon": "",
+              "rightIcon": "",
+              "shortcut": "",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "disableOnInvalid": false,
+              "hidden": false,
+              "autofocus": false,
+              "disabled": false,
               "tableView": false,
+              "modalEdit": false,
               "key": "reviewPage8",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
               "customConditional": "show = !! data.hiddenEditButtonClicked;",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "button",
-              "custom": "instance.root.setPage(6);",
+              "custom": "instance.root.options.buttonSettings = {\n  showPrevious: true,\n  showNext: true,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(6);\ndata.hiddenEditButtonClicked = \"\";",
               "input": true,
               "hideOnChildrenHidden": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
-              "description": "",
               "errorLabel": "",
-              "tooltip": "",
               "hideLabel": false,
-              "tabindex": "",
-              "disabled": false,
-              "autofocus": false,
               "dbIndex": false,
               "customDefaultValue": "",
               "calculateValue": "",
@@ -3868,7 +3901,6 @@
               "widget": {
                 "type": "input"
               },
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -3878,32 +3910,13 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "size": "md",
-              "leftIcon": "",
-              "rightIcon": "",
-              "block": false,
-              "disableOnInvalid": false,
-              "theme": "primary",
               "dataGridLabel": true,
-              "id": "e1cjw0r"
+              "id": "eq4ncit"
             }
           ],
           "placeholder": "",
@@ -3969,11 +3982,6 @@
         {
           "title": "WHEN",
           "breadcrumbClickable": true,
-          "buttonSettings": {
-            "previous": true,
-            "cancel": false,
-            "next": true
-          },
           "collapsible": false,
           "key": "panel7WhenDidTheDiscriminationHappen",
           "type": "panel",
@@ -3984,32 +3992,52 @@
             {
               "label": "HTML",
               "tag": "h1",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h1 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">When did the discrimination happen?</h1>",
+              "content": "<h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">When did the discrimination happen?</h2>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html23",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -4023,7 +4051,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -4033,25 +4060,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "e1999lw"
+              "id": "e6c07mi"
             },
             {
               "label": "HTML",
@@ -4345,35 +4359,60 @@
               "label": "Back to submit page",
               "action": "custom",
               "showValidations": false,
+              "theme": "primary",
+              "size": "md",
+              "block": false,
+              "leftIcon": "",
+              "rightIcon": "",
+              "shortcut": "",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "disableOnInvalid": false,
+              "hidden": false,
+              "autofocus": false,
+              "disabled": false,
               "tableView": false,
+              "modalEdit": false,
               "key": "reviewPage9",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
               "customConditional": "show = !! data.hiddenEditButtonClicked;",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "button",
-              "custom": "instance.root.setPage(6);",
+              "custom": "instance.root.options.buttonSettings = {\n  showPrevious: true,\n  showNext: true,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(6);\ndata.hiddenEditButtonClicked = \"\";",
               "input": true,
               "hideOnChildrenHidden": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
-              "description": "",
               "errorLabel": "",
-              "tooltip": "",
               "hideLabel": false,
-              "tabindex": "",
-              "disabled": false,
-              "autofocus": false,
               "dbIndex": false,
               "customDefaultValue": "",
               "calculateValue": "",
@@ -4381,7 +4420,6 @@
               "widget": {
                 "type": "input"
               },
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -4391,32 +4429,13 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "size": "md",
-              "leftIcon": "",
-              "rightIcon": "",
-              "block": false,
-              "disableOnInvalid": false,
-              "theme": "primary",
               "dataGridLabel": true,
-              "id": "ego1axf"
+              "id": "epkgenh"
             }
           ],
           "hideOnChildrenHidden": false,
@@ -4483,11 +4502,6 @@
         {
           "title": "WHAT",
           "breadcrumbClickable": true,
-          "buttonSettings": {
-            "previous": true,
-            "cancel": false,
-            "next": true
-          },
           "collapsible": false,
           "key": "panel8WhatHappened",
           "type": "panel",
@@ -4498,32 +4512,52 @@
             {
               "label": "HTML",
               "tag": "h1",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h1 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">What happened?</h1>",
+              "content": "<h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">What happened?</h2>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html24",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -4537,7 +4571,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -4547,25 +4580,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "e0edaon"
+              "id": "eyq3qzo"
             },
             {
               "label": "HTML",
@@ -4818,17 +4838,48 @@
               "label": "Back to submit page",
               "action": "custom",
               "showValidations": false,
+              "theme": "primary",
+              "size": "md",
+              "block": false,
+              "leftIcon": "",
+              "rightIcon": "",
+              "shortcut": "",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "disableOnInvalid": false,
               "hidden": true,
+              "autofocus": false,
+              "disabled": false,
               "tableView": false,
+              "modalEdit": false,
               "key": "reviewPage10",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
               "customConditional": "show = !! data.hiddenEditButtonClicked;",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "button",
-              "custom": "instance.root.setPage(6);",
+              "custom": "instance.root.options.buttonSettings = {\n  showPrevious: true,\n  showNext: true,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(6);\ndata.hiddenEditButtonClicked = \"\";",
               "input": true,
               "hideOnChildrenHidden": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
@@ -4838,15 +4889,9 @@
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
-              "description": "",
               "errorLabel": "",
-              "tooltip": "",
               "hideLabel": false,
-              "tabindex": "",
-              "disabled": false,
-              "autofocus": false,
               "dbIndex": false,
               "customDefaultValue": "",
               "calculateValue": "",
@@ -4854,7 +4899,6 @@
               "widget": {
                 "type": "input"
               },
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -4864,32 +4908,13 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "size": "md",
-              "leftIcon": "",
-              "rightIcon": "",
-              "block": false,
-              "disableOnInvalid": false,
-              "theme": "primary",
               "dataGridLabel": true,
-              "id": "e87nkcp"
+              "id": "etpfixh"
             }
           ],
           "placeholder": "",
@@ -4955,11 +4980,6 @@
         {
           "title": "CONTACT INFORMATION",
           "breadcrumbClickable": false,
-          "buttonSettings": {
-            "previous": true,
-            "cancel": false,
-            "next": true
-          },
           "collapsible": false,
           "key": "panel2YourContactInformation",
           "attributes": {
@@ -4973,32 +4993,52 @@
             {
               "label": "HTML",
               "tag": "h1",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h1 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">How can we contact you?</h1>",
+              "content": "<h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">How can we contact you?</h2>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html12",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -5012,7 +5052,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -5022,25 +5061,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "eahtgdv"
+              "id": "ec5jdso"
             },
             {
               "label": "HTML",
@@ -8063,17 +8089,48 @@
               "label": "Back to submit page",
               "action": "custom",
               "showValidations": false,
+              "theme": "primary",
+              "size": "md",
+              "block": false,
+              "leftIcon": "",
+              "rightIcon": "",
+              "shortcut": "",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "disableOnInvalid": false,
               "hidden": true,
+              "autofocus": false,
+              "disabled": false,
               "tableView": false,
+              "modalEdit": false,
               "key": "reviewPage5",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
               "customConditional": "show = !! data.hiddenEditButtonClicked;",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "button",
-              "custom": "instance.root.setPage(6);",
+              "custom": "instance.root.options.buttonSettings = {\n  showPrevious: true,\n  showNext: true,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(6);\ndata.hiddenEditButtonClicked = \"\";",
               "input": true,
               "hideOnChildrenHidden": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
@@ -8083,15 +8140,9 @@
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
-              "description": "",
               "errorLabel": "",
-              "tooltip": "",
               "hideLabel": false,
-              "tabindex": "",
-              "disabled": false,
-              "autofocus": false,
               "dbIndex": false,
               "customDefaultValue": "",
               "calculateValue": "",
@@ -8099,7 +8150,6 @@
               "widget": {
                 "type": "input"
               },
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -8109,32 +8159,13 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "size": "md",
-              "leftIcon": "",
-              "rightIcon": "",
-              "block": false,
-              "disableOnInvalid": false,
-              "theme": "primary",
               "dataGridLabel": true,
-              "id": "ee6k1ai"
+              "id": "e4s9n27"
             }
           ],
           "allowPrevious": false,
@@ -8200,11 +8231,6 @@
         {
           "title": "REVIEW AND SUBMIT",
           "breadcrumbClickable": true,
-          "buttonSettings": {
-            "previous": false,
-            "cancel": false,
-            "next": false
-          },
           "collapsible": false,
           "key": "page9",
           "type": "panel",
@@ -8215,32 +8241,52 @@
             {
               "label": "HTML",
               "tag": "h1",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h1 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Review and submit your complaint</h1>",
+              "content": "<h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Review and submit your complaint</h2>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html25",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -8254,7 +8300,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -8264,25 +8309,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "edo4xqr"
+              "id": "e06cgb"
             },
             {
               "label": "HTML",
@@ -8724,7 +8756,7 @@
                         "height": ""
                       },
                       "type": "button",
-                      "custom": "instance.root.setPage(0);\ndata.hiddenEditButtonClicked = true;",
+                      "custom": "instance.root.options.buttonSettings = {\n  showPrevious: false,\n  showNext: false,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(0);\ndata.hiddenEditButtonClicked = true;",
                       "input": true,
                       "hideOnChildrenHidden": false,
                       "placeholder": "",
@@ -8763,7 +8795,7 @@
                       "showWordCount": false,
                       "allowMultipleMasks": false,
                       "dataGridLabel": true,
-                      "id": "e05zgxf"
+                      "id": "ebb6dz"
                     }
                   ],
                   "width": 3,
@@ -9106,7 +9138,7 @@
                         "height": ""
                       },
                       "type": "button",
-                      "custom": "instance.root.setPage(1);\ndata.hiddenEditButtonClicked = true;",
+                      "custom": "instance.root.options.buttonSettings = {\n  showPrevious: false,\n  showNext: false,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(1);\ndata.hiddenEditButtonClicked = true;",
                       "input": true,
                       "hideOnChildrenHidden": false,
                       "placeholder": "",
@@ -9145,7 +9177,7 @@
                       "showWordCount": false,
                       "allowMultipleMasks": false,
                       "dataGridLabel": true,
-                      "id": "e01hwl"
+                      "id": "esvwiof"
                     }
                   ],
                   "width": 3,
@@ -9496,7 +9528,7 @@
                         "height": ""
                       },
                       "type": "button",
-                      "custom": "instance.root.setPage(2);\ndata.hiddenEditButtonClicked = true;",
+                      "custom": "instance.root.options.buttonSettings = {\n  showPrevious: false,\n  showNext: false,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(2);\ndata.hiddenEditButtonClicked = true;",
                       "input": true,
                       "hideOnChildrenHidden": false,
                       "placeholder": "",
@@ -9535,7 +9567,7 @@
                       "showWordCount": false,
                       "allowMultipleMasks": false,
                       "dataGridLabel": true,
-                      "id": "ek4qkj"
+                      "id": "ehkm05m"
                     }
                   ],
                   "width": 3,
@@ -9960,7 +9992,7 @@
                         "height": ""
                       },
                       "type": "button",
-                      "custom": "instance.root.setPage(3);\ndata.hiddenEditButtonClicked = true;",
+                      "custom": "instance.root.options.buttonSettings = {\n  showPrevious: false,\n  showNext: false,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(3);\ndata.hiddenEditButtonClicked = true;",
                       "input": true,
                       "hideOnChildrenHidden": false,
                       "placeholder": "",
@@ -9999,7 +10031,7 @@
                       "showWordCount": false,
                       "allowMultipleMasks": false,
                       "dataGridLabel": true,
-                      "id": "es9axrm"
+                      "id": "eqlzsj"
                     }
                   ],
                   "width": 3,
@@ -10300,12 +10332,44 @@
                       "label": "Edit this section",
                       "action": "custom",
                       "showValidations": false,
+                      "theme": "primary",
+                      "size": "md",
+                      "block": false,
                       "leftIcon": "fa fa-pencil",
+                      "rightIcon": "",
+                      "shortcut": "",
+                      "description": "",
+                      "tooltip": "",
                       "customClass": "usa-button--outline",
+                      "tabindex": "",
+                      "disableOnInvalid": false,
+                      "hidden": false,
+                      "autofocus": false,
+                      "disabled": false,
                       "tableView": false,
+                      "modalEdit": false,
                       "key": "edit5",
+                      "tags": [],
+                      "properties": {},
+                      "conditional": {
+                        "show": null,
+                        "when": null,
+                        "eq": "",
+                        "json": ""
+                      },
+                      "customConditional": "",
+                      "logic": [],
+                      "attributes": {},
+                      "overlay": {
+                        "style": "",
+                        "page": "",
+                        "left": "",
+                        "top": "",
+                        "width": "",
+                        "height": ""
+                      },
                       "type": "button",
-                      "custom": "instance.root.setPage(4);\ndata.hiddenEditButtonClicked = true;",
+                      "custom": "instance.root.options.buttonSettings = {\n  showPrevious: false,\n  showNext: false,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(4);\ndata.hiddenEditButtonClicked = true;",
                       "input": true,
                       "hideOnChildrenHidden": false,
                       "placeholder": "",
@@ -10316,19 +10380,12 @@
                       "protected": false,
                       "unique": false,
                       "persistent": false,
-                      "hidden": false,
                       "clearOnHide": true,
                       "refreshOn": "",
                       "redrawOn": "",
-                      "modalEdit": false,
                       "labelPosition": "top",
-                      "description": "",
                       "errorLabel": "",
-                      "tooltip": "",
                       "hideLabel": false,
-                      "tabindex": "",
-                      "disabled": false,
-                      "autofocus": false,
                       "dbIndex": false,
                       "customDefaultValue": "",
                       "calculateValue": "",
@@ -10336,7 +10393,6 @@
                       "widget": {
                         "type": "input"
                       },
-                      "attributes": {},
                       "validateOn": "change",
                       "validate": {
                         "required": false,
@@ -10346,31 +10402,13 @@
                         "multiple": false,
                         "unique": false
                       },
-                      "conditional": {
-                        "show": null,
-                        "when": null,
-                        "eq": ""
-                      },
-                      "overlay": {
-                        "style": "",
-                        "left": "",
-                        "top": "",
-                        "width": "",
-                        "height": ""
-                      },
                       "allowCalculateOverride": false,
                       "encrypted": false,
                       "showCharCount": false,
                       "showWordCount": false,
-                      "properties": {},
                       "allowMultipleMasks": false,
-                      "size": "md",
-                      "rightIcon": "",
-                      "block": false,
-                      "disableOnInvalid": false,
-                      "theme": "primary",
                       "dataGridLabel": true,
-                      "id": "ez9rizw"
+                      "id": "elcihe"
                     }
                   ],
                   "width": 3,
@@ -11457,7 +11495,7 @@
                         "height": ""
                       },
                       "type": "button",
-                      "custom": "instance.root.setPage(5);\ndata.hiddenEditButtonClicked = true;",
+                      "custom": "instance.root.options.buttonSettings = {\n  showPrevious: false,\n  showNext: false,\n  showCancel: false,\n  showSubmit: true\n};\ninstance.root.setPage(5);\ndata.hiddenEditButtonClicked = true;",
                       "input": true,
                       "hideOnChildrenHidden": false,
                       "placeholder": "",
@@ -11496,7 +11534,7 @@
                       "showWordCount": false,
                       "allowMultipleMasks": false,
                       "dataGridLabel": true,
-                      "id": "ehd9lvr"
+                      "id": "etph8a4a"
                     }
                   ],
                   "width": 3,
@@ -11649,76 +11687,85 @@
             },
             {
               "label": "Hidden Edit Button Clicked",
-              "hidden": true,
-              "tableView": true,
-              "key": "hiddenEditButtonClicked",
-              "type": "textfield",
-              "input": true,
-              "placeholder": "",
-              "prefix": "",
-              "customClass": "",
-              "suffix": "",
-              "multiple": false,
-              "defaultValue": null,
-              "protected": false,
-              "unique": false,
-              "persistent": true,
-              "clearOnHide": true,
-              "refreshOn": "",
-              "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
+              "placeholder": "",
               "description": "",
-              "errorLabel": "",
               "tooltip": "",
-              "hideLabel": false,
-              "tabindex": "",
-              "disabled": false,
-              "autofocus": false,
-              "dbIndex": false,
-              "customDefaultValue": "",
-              "calculateValue": "",
-              "calculateServer": false,
+              "prefix": "",
+              "suffix": "",
               "widget": {
                 "type": "input"
               },
-              "attributes": {},
+              "inputMask": "",
+              "allowMultipleMasks": false,
+              "customClass": "",
+              "tabindex": "",
+              "autocomplete": "",
+              "hidden": true,
+              "hideLabel": false,
+              "showWordCount": false,
+              "showCharCount": false,
+              "mask": false,
+              "autofocus": false,
+              "spellcheck": true,
+              "disabled": false,
+              "tableView": true,
+              "modalEdit": false,
+              "multiple": false,
+              "persistent": true,
+              "inputFormat": "plain",
+              "protected": false,
+              "dbIndex": false,
+              "case": "",
+              "encrypted": false,
+              "redrawOn": "",
+              "clearOnHide": true,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "allowCalculateOverride": false,
               "validateOn": "change",
               "validate": {
                 "required": false,
+                "pattern": "",
+                "customMessage": "",
                 "custom": "",
                 "customPrivate": false,
-                "strictDateValidation": false,
-                "multiple": false,
-                "unique": false,
+                "json": "",
                 "minLength": "",
                 "maxLength": "",
-                "pattern": ""
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
               },
+              "unique": false,
+              "errorLabel": "",
+              "key": "hiddenEditButtonClicked",
+              "tags": [],
+              "properties": {},
               "conditional": {
                 "show": null,
                 "when": null,
-                "eq": ""
+                "eq": "",
+                "json": ""
               },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
               "overlay": {
                 "style": "",
+                "page": "",
                 "left": "",
                 "top": "",
                 "width": "",
                 "height": ""
               },
-              "allowCalculateOverride": false,
-              "encrypted": false,
-              "showCharCount": false,
-              "showWordCount": false,
-              "properties": {},
-              "allowMultipleMasks": false,
-              "mask": false,
+              "type": "textfield",
+              "input": true,
+              "refreshOn": "",
               "inputType": "text",
-              "inputFormat": "plain",
-              "inputMask": "",
-              "spellcheck": true,
-              "id": "ekb9rac"
+              "id": "evtljgh",
+              "defaultValue": ""
             }
           ],
           "placeholder": "",
