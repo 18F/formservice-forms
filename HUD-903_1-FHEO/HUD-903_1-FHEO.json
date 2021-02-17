@@ -3252,8 +3252,21 @@
                   "components": [
                     {
                       "label": "State",
+                      "labelPosition": "top",
                       "widget": "html5",
+                      "placeholder": "",
+                      "description": "",
+                      "tooltip": "",
+                      "customClass": "",
+                      "tabindex": "",
+                      "hidden": false,
+                      "hideLabel": false,
+                      "uniqueOptions": false,
+                      "autofocus": false,
+                      "disabled": false,
                       "tableView": true,
+                      "modalEdit": false,
+                      "multiple": false,
                       "dataSrc": "json",
                       "data": {
                         "values": [
@@ -3262,6 +3275,7 @@
                             "value": ""
                           }
                         ],
+                        "resource": "",
                         "json": [
                           {
                             "name": "Alabama",
@@ -3300,7 +3314,7 @@
                             "abbreviation": "DE"
                           },
                           {
-                            "name": "District Of Columbia",
+                            "name": "Washington, DC",
                             "abbreviation": "DC"
                           },
                           {
@@ -3501,98 +3515,91 @@
                           }
                         ],
                         "url": "",
-                        "resource": "",
                         "custom": ""
                       },
                       "valueProperty": "abbreviation",
+                      "dataType": "",
+                      "idPath": "id",
                       "template": "<span>{{ item.name }}</span>",
+                      "refreshOn": "",
+                      "refreshOnBlur": "",
+                      "clearOnRefresh": false,
+                      "searchEnabled": true,
                       "selectThreshold": 0.3,
+                      "readOnlyValue": false,
+                      "customOptions": {},
+                      "useExactSearch": false,
+                      "persistent": true,
+                      "protected": false,
+                      "dbIndex": false,
+                      "encrypted": false,
+                      "clearOnHide": true,
+                      "customDefaultValue": "",
+                      "calculateValue": "",
+                      "calculateServer": false,
+                      "allowCalculateOverride": false,
+                      "validateOn": "change",
                       "validate": {
                         "required": true,
                         "customMessage": "Please enter the state where the discrimination happened",
                         "custom": "",
                         "customPrivate": false,
+                        "json": "",
                         "strictDateValidation": false,
                         "multiple": false,
                         "unique": false
                       },
+                      "unique": false,
+                      "errorLabel": "",
                       "key": "discriminationState",
+                      "tags": [],
+                      "properties": {},
+                      "conditional": {
+                        "show": null,
+                        "when": null,
+                        "eq": "",
+                        "json": ""
+                      },
+                      "customConditional": "",
+                      "logic": [],
+                      "attributes": {},
                       "overlay": {
+                        "style": "",
                         "page": 1,
                         "left": 272.6476666666667,
                         "top": "578.6338571428571",
                         "width": 100,
-                        "height": "16",
-                        "style": ""
+                        "height": "16"
                       },
                       "type": "select",
                       "indexeddb": {
                         "filter": {}
                       },
+                      "selectFields": "",
+                      "searchField": "",
+                      "minSearch": 0,
+                      "filter": "",
+                      "limit": 100,
+                      "redrawOn": "",
                       "input": true,
                       "lockKey": true,
                       "source": "5e8c93f9de9d912859fc4c3d",
                       "isNew": true,
                       "hideOnChildrenHidden": false,
-                      "placeholder": "",
                       "prefix": "",
-                      "customClass": "",
                       "suffix": "",
-                      "multiple": false,
-                      "defaultValue": null,
-                      "protected": false,
-                      "unique": false,
-                      "persistent": true,
-                      "hidden": false,
-                      "clearOnHide": true,
-                      "refreshOn": "",
-                      "redrawOn": "",
-                      "modalEdit": false,
-                      "labelPosition": "top",
-                      "description": "",
-                      "errorLabel": "",
-                      "tooltip": "",
-                      "hideLabel": false,
-                      "tabindex": "",
-                      "disabled": false,
-                      "autofocus": false,
-                      "dbIndex": false,
-                      "customDefaultValue": "",
-                      "calculateValue": "",
-                      "calculateServer": false,
-                      "attributes": {},
-                      "validateOn": "change",
-                      "conditional": {
-                        "show": null,
-                        "when": null,
-                        "eq": ""
-                      },
-                      "allowCalculateOverride": false,
-                      "encrypted": false,
                       "showCharCount": false,
                       "showWordCount": false,
-                      "properties": {},
                       "allowMultipleMasks": false,
-                      "idPath": "id",
-                      "clearOnRefresh": false,
-                      "limit": 100,
                       "lazyLoad": true,
-                      "filter": "",
-                      "searchEnabled": true,
-                      "searchField": "",
-                      "minSearch": 0,
-                      "readOnlyValue": false,
                       "authenticate": false,
-                      "selectFields": "",
                       "searchThreshold": 0.3,
-                      "uniqueOptions": false,
                       "fuseOptions": {
                         "include": "score",
                         "threshold": 0.3
                       },
-                      "customOptions": {},
-                      "useExactSearch": false,
-                      "id": "efwol0f"
+                      "id": "e7abous",
+                      "defaultValue": ""
                     }
                   ],
                   "offset": 0,
@@ -5215,32 +5222,52 @@
             {
               "label": "HTML",
               "tag": "h3",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h3 style=\"font-weight:bold; margin-top:12px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Basic information</h3>",
+              "content": "<h3 style=\"font-weight:bold; margin-top:12px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Basic information</h3>\n<p></p>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html13",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -5254,7 +5281,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -5264,25 +5290,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "ee008k"
+              "id": "exu7qvh"
             },
             {
               "label": "Columns",
@@ -6008,32 +6021,52 @@
             {
               "label": "HTML",
               "tag": "h3",
+              "className": "",
               "attrs": [
                 {
                   "attr": "",
                   "value": ""
                 }
               ],
-              "content": "<h3 style=\"font-weight:bold; margin-top:12px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Your mailing address</h3>",
+              "content": "<h3 style=\"font-weight:bold; margin-top:12px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\">Your mailing address</h3>\n<p></p>",
               "refreshOnChange": false,
+              "customClass": "",
+              "hidden": false,
+              "modalEdit": false,
               "key": "html26",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
               "type": "htmlelement",
               "input": false,
               "tableView": false,
               "placeholder": "",
               "prefix": "",
-              "customClass": "",
               "suffix": "",
               "multiple": false,
               "defaultValue": null,
               "protected": false,
               "unique": false,
               "persistent": false,
-              "hidden": false,
               "clearOnHide": true,
               "refreshOn": "",
               "redrawOn": "",
-              "modalEdit": false,
               "labelPosition": "top",
               "description": "",
               "errorLabel": "",
@@ -6047,7 +6080,6 @@
               "calculateValue": "",
               "calculateServer": false,
               "widget": null,
-              "attributes": {},
               "validateOn": "change",
               "validate": {
                 "required": false,
@@ -6057,25 +6089,12 @@
                 "multiple": false,
                 "unique": false
               },
-              "conditional": {
-                "show": null,
-                "when": null,
-                "eq": ""
-              },
-              "overlay": {
-                "style": "",
-                "left": "",
-                "top": "",
-                "width": "",
-                "height": ""
-              },
               "allowCalculateOverride": false,
               "encrypted": false,
               "showCharCount": false,
               "showWordCount": false,
-              "properties": {},
               "allowMultipleMasks": false,
-              "id": "er3afa"
+              "id": "eh4gjjg"
             },
             {
               "label": "Columns",
@@ -6565,7 +6584,7 @@
                             "abbreviation": "DE"
                           },
                           {
-                            "name": "District Of Columbia",
+                            "name": "Washington, DC",
                             "abbreviation": "DC"
                           },
                           {
@@ -6849,7 +6868,7 @@
                         "include": "score",
                         "threshold": 0.3
                       },
-                      "id": "emkqe78",
+                      "id": "er3ynqd",
                       "defaultValue": ""
                     }
                   ],
