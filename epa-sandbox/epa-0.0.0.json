@@ -1,0 +1,811 @@
+{
+  "title": "epa-sandbox",
+  "version": "2.0.0",
+  "name": "epa",
+  "roles": {
+    "anonymous": {
+      "title": "Anonymous",
+      "description": "A role for Anonymous Users.",
+      "admin": false,
+      "default": true
+    },
+    "authenticated": {
+      "title": "Authenticated",
+      "description": "A role for Authenticated Users.",
+      "admin": false,
+      "default": false
+    },
+    "administrator": {
+      "title": "Administrator",
+      "description": "A role for Administrative Users.",
+      "admin": true,
+      "default": false
+    }
+  },
+  "forms": {
+    "adminLogin": {
+      "title": "Admin Login",
+      "type": "form",
+      "name": "adminLogin",
+      "path": "admin/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    },
+    "epapdftest": {
+      "title": "EPA PDF Test",
+      "type": "form",
+      "name": "epapdftest",
+      "path": "epapdftest",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "settings": {
+        "pdf": {
+          "id": "8ef012d7-8165-5254-a497-90c9e6c4f005",
+          "src": "https://dev-portal.fs.gsa.gov/pdf/pdf/5fe36cbad3061743028b0961/file/8ef012d7-8165-5254-a497-90c9e6c4f005"
+        }
+      },
+      "components": [
+        {
+          "label": "Printed Name",
+          "tableView": true,
+          "key": "printedName",
+          "overlay": {
+            "page": 1,
+            "left": 37,
+            "top": 177,
+            "height": 28.3571,
+            "width": 466.804
+          },
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "label": "Date / Time",
+          "tableView": false,
+          "enableMinDateInput": false,
+          "datePicker": {
+            "disableWeekends": false,
+            "disableWeekdays": false
+          },
+          "enableMaxDateInput": false,
+          "key": "dateTime",
+          "overlay": {
+            "page": 1,
+            "left": 515.1428571428571,
+            "top": 177.71428571428578,
+            "height": 29.8036,
+            "width": 209.643
+          },
+          "type": "datetime",
+          "input": true,
+          "widget": {
+            "type": "calendar",
+            "displayInTimezone": "viewer",
+            "locale": "en",
+            "useLocaleSettings": false,
+            "allowInput": true,
+            "mode": "single",
+            "enableTime": true,
+            "noCalendar": false,
+            "format": "yyyy-MM-dd hh:mm a",
+            "hourIncrement": 1,
+            "minuteIncrement": 1,
+            "time_24hr": false,
+            "minDate": null,
+            "disableWeekends": false,
+            "disableWeekdays": false,
+            "maxDate": null
+          }
+        },
+        {
+          "label": "Number",
+          "tableView": false,
+          "delimiter": false,
+          "requireDecimal": false,
+          "inputFormat": "plain",
+          "key": "number",
+          "overlay": {
+            "page": 1,
+            "left": 737.7139999999999,
+            "top": 173.99971428571428,
+            "height": 34.0179,
+            "width": 320.929
+          },
+          "type": "number",
+          "input": true
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ]
+    },
+    "npdes1permitapplication": {
+      "title": "NPDES 1 Permit Application",
+      "type": "form",
+      "name": "npdes1permitapplication",
+      "path": "npdes1permitapplication",
+      "display": "wizard",
+      "tags": [
+        "common"
+      ],
+      "settings": {
+        "pdf": {
+          "id": "8530300e-5759-514e-8a71-aef7098cf419",
+          "src": "https://dev-portal.fs.gsa.gov/pdf/pdf/5fe36cbad3061743028b0961/file/8530300e-5759-514e-8a71-aef7098cf419"
+        }
+      },
+      "components": [
+        {
+          "title": "Section 1. Activities Requiring an NPDES Permit",
+          "label": "Page 1",
+          "type": "panel",
+          "key": "page1",
+          "components": [
+            {
+              "label": "1.1.1 Is the facility a new or existing publicly owned treatment works?",
+              "tooltip": "Item 1.1. Review the questions in Item 1.1 to determine if you are required to submit Form 1. Be sure to check the Form 1— Glossary for the legal definitions of any key terms.\r\nIf you answer “Yes” to a question in Item 1.1, then you do not need to complete Form 1, but you must comply with the application requirements specified.",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "isTheFacilityANewOrExistingPubliclyOwnedTreatmentWorks",
+              "overlay": {
+                "page": 19,
+                "left": 477,
+                "top": 328,
+                "width": 20,
+                "height": 20
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "1.1.2 Is the facility a new or existing treatment works treating domestic sewage?",
+              "tooltip": "Respond to the questions in Items 1.2.1 to 1.2.5. If you answer “Yes” to any question, you must complete Form 1 and the Form 2 application specified. See Exhibit 1–2 for filing deadlines.\r\nIf you answer “No” to every question in Items 1.1 and 1.2, then you do not need an NPDES permit, and you do not need to complete and return any of the NPDES application forms.",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "IsTheFacilityANewOrExistingTreatmentWorksTreatingDomesticSewage",
+              "overlay": {
+                "page": 19,
+                "left": 874,
+                "top": 328,
+                "width": 20,
+                "height": 20
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "1.2.1 Is the facility a concentrated animal feeding operation or a concentrated aquatic animal production facility?",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "IsTheFacilityAConcentratedAnimalFeedingOperationOrAConcentratedAquaticAnimalProductionFacility",
+              "overlay": {
+                "page": 19,
+                "left": 225,
+                "top": 484,
+                "width": 20,
+                "height": 20
+              },
+              "type": "checkbox",
+              "input": true
+            }
+          ],
+          "input": false,
+          "tableView": false,
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "collapsible": false
+        },
+        {
+          "title": "Section 2. Name, Mailing Address, and Location",
+          "label": "Page 2",
+          "type": "panel",
+          "key": "page2",
+          "input": false,
+          "tableView": false,
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "collapsible": false,
+          "components": [
+            {
+              "title": "Section 2: Instructions",
+              "breadcrumbClickable": true,
+              "buttonSettings": {
+                "previous": true,
+                "cancel": true,
+                "next": true
+              },
+              "collapsible": true,
+              "tableView": false,
+              "key": "section2Instructions",
+              "type": "panel",
+              "label": "Section 2: Instructions",
+              "input": false,
+              "components": [
+                {
+                  "html": "<p>Section 2. Name, Mailing Address, and Location Item 2.1. Enter the facility’s official or legal name. Do not use a colloquial name.</p><p><strong>Item 2.2. </strong>Provide your EPA Identification Number from the Facility Registry Service if you have an existing facility. If you do not know your EPA Identification Number, contact your NPDES permitting authority. If your facility is new (i.e., not yet constructed), write or type “New Facility.”</p><p><strong>Item 2.3.</strong> Give the name (first and last), title, work telephone number, and email address of the person who is thoroughly familiar with the operation of the facility and with the facts reported in this application. The NPDES permitting authority will contact the person listed if they have questions on the material submitted.</p><p><strong>Item 2.4.</strong> Give the complete mailing address of the office to which the NPDES permitting authority should send correspondence. This often is not the address used to designate the location of the facility or activity.</p><p><strong>Item 2.5. </strong>Give the address or location of the facility identified under Item 2.1. If the facility lacks a street name or route number, give the most accurate, alternative geographic information (e.g., section number or quarter section number from county records or “at intersection of Routes 425 and 22\"). Also provide the county name, county code (if known), city or town, state, and zip code.</p><p>For concentrated aquatic animal production facilities, provide the address or location of the production area (i.e., the location where the animals are contained, grown, or held).</p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "label": "2.1 Facility Name",
+              "tooltip": "Item 2.1. Enter the facility’s official or legal name. Do not use a colloquial name.",
+              "tableView": true,
+              "key": "FacilityName",
+              "overlay": {
+                "page": 19,
+                "left": 221,
+                "top": 925,
+                "width": 546,
+                "height": 25
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "2.1 EPA Identification Number",
+              "tooltip": "Item 2.2. Provide your EPA Identification Number from the Facility Registry Service if you have an existing facility. If you do not know your EPA Identification Number, contact your NPDES permitting authority. If your facility is new (i.e., not yet constructed), write or type “New Facility.”",
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "EpaIdentificationNumber",
+              "overlay": {
+                "page": 19,
+                "left": 223,
+                "top": 1000,
+                "width": 542,
+                "height": 25
+              },
+              "type": "number",
+              "input": true
+            }
+          ]
+        },
+        {
+          "title": "Page 3",
+          "label": "Page 3",
+          "type": "panel",
+          "key": "page3",
+          "input": false,
+          "tableView": false,
+          "components": []
+        }
+      ]
+    },
+    "solysfirstform": {
+      "title": "First Form Test",
+      "type": "form",
+      "name": "solysfirstform",
+      "path": "solysfirstform",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "settings": {},
+      "components": [
+        {
+          "label": "First Name",
+          "tooltip": "Enter legal first name",
+          "tableView": true,
+          "key": "firstName",
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "label": "Amount",
+          "tableView": false,
+          "delimiter": false,
+          "requireDecimal": false,
+          "inputFormat": "plain",
+          "key": "amount",
+          "type": "number",
+          "input": true
+        },
+        {
+          "label": "Need accommodations",
+          "tableView": false,
+          "key": "needAccommodations",
+          "type": "checkbox",
+          "input": true,
+          "defaultValue": false
+        },
+        {
+          "label": "Translator",
+          "tableView": false,
+          "values": [
+            {
+              "label": "English",
+              "value": "english"
+            },
+            {
+              "label": "Spanish",
+              "value": "spanish"
+            },
+            {
+              "label": "French",
+              "value": "french"
+            }
+          ],
+          "key": "translator",
+          "type": "selectboxes",
+          "input": true,
+          "inputType": "checkbox",
+          "defaultValue": {
+            "": false
+          }
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ]
+    },
+    "userLogin": {
+      "title": "User Login",
+      "type": "form",
+      "name": "userLogin",
+      "path": "user/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    },
+    "userRegister": {
+      "title": "User Register",
+      "type": "form",
+      "name": "userRegister",
+      "path": "user/register",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "label": "Submit",
+          "input": true,
+          "type": "button"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "user:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "user",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "authenticated"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "user:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "user",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "admin:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "admin",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "admin:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "admin",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "administrator"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "userLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userLogin",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "adminLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "adminLogin",
+      "settings": {
+        "resources": [
+          "admin"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userRegister",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password"
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "userRegister",
+      "settings": {
+        "resource": "user",
+        "fields": {
+          "email": "email",
+          "password": "password"
+        }
+      },
+      "priority": 11,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "solysfirstform:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "solysfirstform",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "epapdftest:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "epapdftest",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "npdes1permitapplication:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "npdes1permitapplication",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {
+    "admin": {
+      "title": "Admin",
+      "type": "resource",
+      "name": "admin",
+      "path": "admin",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    },
+    "user": {
+      "title": "User",
+      "type": "resource",
+      "name": "user",
+      "path": "user",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    }
+  },
+  "excludeAccess": true
+}
