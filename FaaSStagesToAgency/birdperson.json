@@ -1,0 +1,341 @@
+{
+  "title": "ssa-sandbox",
+  "version": "2.0.0",
+  "name": "ssa",
+  "roles": {},
+  "forms": {
+    "test": {
+      "title": "Birdperson History",
+      "type": "form",
+      "name": "test",
+      "path": "test",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/9b6192ed-0614-5715-b968-29a9628d106a",
+          "id": "9b6192ed-0614-5715-b968-29a9628d106a"
+        }
+      },
+      "components": [
+        {
+          "label": "Name of Birdperson",
+          "tableView": true,
+          "key": "textField1",
+          "overlay": {
+            "page": 1,
+            "left": 47,
+            "top": 340,
+            "width": 339,
+            "height": 30
+          },
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "label": "History of Birdperson",
+          "description": "Provide birth, childhood, young birdadult, and birdadult history",
+          "tableView": true,
+          "key": "explanationOfExtraLimb",
+          "type": "textarea",
+          "input": true
+        },
+        {
+          "label": "Birdperson's Email",
+          "tableView": true,
+          "key": "birdpersonsEmail",
+          "type": "email",
+          "input": true
+        },
+        {
+          "label": "Birdperson Siblings",
+          "bordered": true,
+          "tableView": false,
+          "key": "birdpersonSiblings",
+          "type": "table",
+          "input": false,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "label": "Sibling Name",
+                    "tableView": true,
+                    "key": "siblingName",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "label": "Profession",
+                    "tableView": true,
+                    "key": "profession",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "label": "Migration Path",
+                    "tableView": true,
+                    "key": "migrationPath",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "label": "Sibling Name",
+                    "tableView": true,
+                    "key": "siblingName1",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "label": "Profession",
+                    "tableView": true,
+                    "key": "profession1",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "label": "Migration Path",
+                    "tableView": true,
+                    "key": "migrationPath1",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "label": "Sibling Name",
+                    "tableView": true,
+                    "key": "siblingName2",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "label": "Profession",
+                    "tableView": true,
+                    "key": "profession2",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "label": "Migration Path",
+                    "tableView": true,
+                    "key": "migrationPath2",
+                    "type": "textfield",
+                    "input": true
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "create_all"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [
+            "authenticated",
+            "everyone",
+            "anonymous"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [
+            "authenticated"
+          ],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "everyone",
+            "anonymous"
+          ],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "create_all"
+        },
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "test:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "test",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "access": [
+    {
+      "type": "create_own",
+      "roles": []
+    },
+    {
+      "type": "create_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "read_all",
+      "roles": [
+        "administrator",
+        "authenticated",
+        "anonymous"
+      ]
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "update_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    },
+    {
+      "type": "delete_all",
+      "roles": [
+        "administrator"
+      ]
+    }
+  ]
+}

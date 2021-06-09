@@ -1,0 +1,150 @@
+{
+  "title": "Dev",
+  "version": "2.0.0",
+  "name": "agency",
+  "roles": {},
+  "forms": {
+    "test": {
+      "title": "Birdperson History",
+      "type": "form",
+      "name": "test",
+      "path": "test",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/9b6192ed-0614-5715-b968-29a9628d106a",
+          "id": "9b6192ed-0614-5715-b968-29a9628d106a"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "authenticated",
+            "anonymous",
+            "administrator"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "wirelessdevicerequestssa95": {
+      "title": "Wireless Device Request (SSA-95)",
+      "type": "form",
+      "name": "wirelessdevicerequestssa95",
+      "path": "wirelessdevicerequestssa95",
+      "display": "form",
+      "tags": [],
+      "settings": {},
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "authenticated",
+            "anonymous",
+            "administrator"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "test:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "test",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "wirelessdevicerequestssa95:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "wirelessdevicerequestssa95",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "access": [
+    {
+      "type": "create_own",
+      "roles": []
+    },
+    {
+      "type": "create_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "read_all",
+      "roles": [
+        "administrator",
+        "authenticated",
+        "anonymous"
+      ]
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "update_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    },
+    {
+      "type": "delete_all",
+      "roles": [
+        "administrator"
+      ]
+    }
+  ]
+}

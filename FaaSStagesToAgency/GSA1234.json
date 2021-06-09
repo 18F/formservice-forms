@@ -1,0 +1,224 @@
+{
+  "title": "partner-sandbox",
+  "version": "2.0.0",
+  "name": "partner",
+  "roles": {},
+  "forms": {
+    "testgsaformtest": {
+      "title": "GSA Form Test (GSA 1234) (REV. 12/2020)",
+      "type": "form",
+      "name": "testgsaformtest",
+      "path": "testgsaformtest",
+      "display": "wizard",
+      "tags": [
+        "common"
+      ],
+      "settings": {},
+      "components": [
+        {
+          "title": "Page 1",
+          "label": "Page 1",
+          "type": "panel",
+          "key": "page1",
+          "components": [
+            {
+              "label": "Name",
+              "tooltip": "Enter the employee's Name (First, Middle Initial, Last)",
+              "tableView": true,
+              "case": "mixed",
+              "key": "name",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Phone Number",
+              "tooltip": "Enter the employee's office phone number.  ",
+              "tableView": true,
+              "key": "phoneNumber",
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "E-Mail",
+              "tooltip": "Enter the employee's E-Mail Address.",
+              "tableView": true,
+              "key": "eMail",
+              "type": "email",
+              "input": true
+            },
+            {
+              "label": "Day",
+              "useLocaleSettings": false,
+              "tooltip": "Enter the Month, Day, and Year for this form.  ",
+              "tableView": false,
+              "defaultValue": "00/00/0000",
+              "key": "day",
+              "type": "day",
+              "input": true
+            },
+            {
+              "label": "Date",
+              "format": "M/d/yyyy",
+              "tooltip": "Enter the date for the test form.  ",
+              "tableView": false,
+              "enableMinDateInput": false,
+              "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+              },
+              "enableMaxDateInput": false,
+              "key": "date",
+              "type": "datetime",
+              "input": true,
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "locale": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": true,
+                "noCalendar": false,
+                "format": "M/d/yyyy",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": false,
+                "minDate": null,
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "maxDate": null
+              }
+            },
+            {
+              "label": "Description",
+              "tooltip": "Enter a description of the form being built.  ",
+              "tableView": true,
+              "key": "description",
+              "type": "textarea",
+              "input": true
+            },
+            {
+              "label": "GSA",
+              "tooltip": "Click here to select GSA as the form type.  ",
+              "tableView": false,
+              "key": "gsa",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "SF",
+              "tooltip": "Click here to select SF as the form type.  ",
+              "tableView": false,
+              "key": "sf",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "OF",
+              "tooltip": "Click here to select OF as the form type.  ",
+              "tableView": false,
+              "key": "of",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Form is required?",
+              "tooltip": "Click here to indicate if the form is required.  ",
+              "tableView": false,
+              "values": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ],
+              "key": "formIsRequired",
+              "type": "radio",
+              "input": true
+            },
+            {
+              "label": "Signature",
+              "tableView": false,
+              "key": "signature",
+              "type": "signature",
+              "input": true
+            }
+          ],
+          "input": false,
+          "tableView": false
+        },
+        {
+          "title": "Page 2",
+          "label": "Page 2",
+          "type": "panel",
+          "key": "page2",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "Form Row 1",
+              "tooltip": "Enter the first form number.  ",
+              "tableView": false,
+              "templates": {
+                "header": "<div class=\"row\">\n    <div class=\"col-sm-2\">\n      Users\n    </div>\n  </div>",
+                "row": "<div class=\"list-group-item\">\n    <div class=\"list-group-subheader\">\n      <div class=\"row\">\n        <div class=\"col-sm-2\">\n          User {{ rowIndex + 1 }}\n        </div>\n        {% if (!ctx.self.options.readOnly) { %}\n        <div class=\"col-sm-2\">\n          <div class=\"btn-group pull-right\">\n            <button class=\"btn btn-default btn-light btn-sm editCard\"><i class=\"{{ ctx.iconClass('edit') }}\"></i></button>\n            <button class=\"btn btn-danger btn-sm removeCard\"><i class=\"{{ ctx.iconClass('trash') }}\"></i></button>\n          </div>\n        </div>\n        {% } %}\n      </div>\n    </div>\n    {% ctx.util.eachComponent(ctx.components, function(component) { %}\n    {% if (!component.hasOwnProperty('tableView') || component.tableView) { %}\n    <div class=\"row\">\n      <div class=\"col-sm-2\">\n        {{ component.key }}\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-sm-2\">\n        {{ ctx.getView(component, ctx.row[component.key]) }}\n      </div>\n    </div>\n    {% } %}\n    {% }) %}\n  </div>"
+              },
+              "rowDrafts": false,
+              "key": "formRow1",
+              "type": "dynamicWizard",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "https://www.gsa.gov/forms",
+              "tooltip": "Click here to visit the GSA Forms Library. ",
+              "tableView": true,
+              "key": "httpsWwwGsaGovForms",
+              "type": "url",
+              "input": true
+            },
+            {
+              "label": "Upload",
+              "tableView": false,
+              "webcam": false,
+              "fileTypes": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "key": "file",
+              "type": "file",
+              "input": true
+            }
+          ]
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "testgsaformtest:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "testgsaformtest",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

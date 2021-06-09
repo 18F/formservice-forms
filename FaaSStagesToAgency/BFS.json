@@ -1,0 +1,133 @@
+{
+  "title": "partner-sandbox",
+  "version": "2.0.0",
+  "name": "partner",
+  "roles": {},
+  "forms": {
+    "bfsformfs13": {
+      "title": "BFS Form FS-13",
+      "type": "form",
+      "name": "bfsformfs13",
+      "path": "bfsformfs13",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/3c533167-0c05-5635-aa5a-2cc88bd666a3",
+          "id": "3c533167-0c05-5635-aa5a-2cc88bd666a3"
+        }
+      },
+      "components": [
+        {
+          "html": "<h3>Department of the Treasury</h3><h3>Bureau of the Fiscal Service</h3><h3><strong>Authorization for Release of Information</strong></h3>",
+          "label": "Content",
+          "refreshOnChange": false,
+          "key": "content",
+          "type": "content",
+          "input": false,
+          "tableView": false
+        },
+        {
+          "label": "Name",
+          "tableView": true,
+          "key": "name",
+          "overlay": {
+            "page": 1,
+            "left": 99,
+            "top": 316,
+            "height": 33,
+            "width": 414
+          },
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "label": "Mailing Address",
+          "tableView": true,
+          "key": "mailingAddress",
+          "overlay": {
+            "page": 1,
+            "left": 546.6666666666666,
+            "top": 319.22222222222223,
+            "height": 37.6806,
+            "width": 436.264
+          },
+          "type": "textarea",
+          "input": true
+        },
+        {
+          "label": "SSN Number",
+          "tableView": false,
+          "delimiter": false,
+          "requireDecimal": false,
+          "inputFormat": "plain",
+          "key": "ssnNumber",
+          "overlay": {
+            "page": 1,
+            "left": 103.33333333333333,
+            "top": 407,
+            "height": 32.0556,
+            "width": 407.319
+          },
+          "type": "number",
+          "input": true
+        },
+        {
+          "label": "Phone Number",
+          "tableView": true,
+          "key": "phoneNumber",
+          "overlay": {
+            "page": 1,
+            "left": 547.7777777777777,
+            "top": 409.22222222222223,
+            "height": 28.8056,
+            "width": 192.944
+          },
+          "type": "phoneNumber",
+          "input": true
+        },
+        {
+          "label": "Fax Number",
+          "tableView": true,
+          "key": "phoneNumber1",
+          "overlay": {
+            "page": 1,
+            "left": 758.8888888888889,
+            "top": 408.1111111111111,
+            "height": 30.9306,
+            "width": 231.75
+          },
+          "type": "phoneNumber",
+          "input": true
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ]
+    }
+  },
+  "actions": {
+    "bfsformfs13:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "bfsformfs13",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

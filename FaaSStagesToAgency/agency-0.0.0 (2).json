@@ -1,0 +1,180 @@
+{
+  "title": "Dev",
+  "version": "2.0.0",
+  "name": "agency",
+  "roles": {},
+  "forms": {
+    "wirelessdevicerequestssa95": {
+      "title": "Wireless Device Request (SSA-95)",
+      "type": "form",
+      "name": "wirelessdevicerequestssa95",
+      "path": "wirelessdevicerequestssa95",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/0cd3d8bf-160e-58f6-aa1d-47a8637b0eda",
+          "id": "0cd3d8bf-160e-58f6-aa1d-47a8637b0eda"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "create_all"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [
+            "authenticated",
+            "anonymous",
+            "administrator"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "create_all"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "wirelessdevicerequestssa95:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "wirelessdevicerequestssa95",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "access": [
+    {
+      "type": "create_own",
+      "roles": []
+    },
+    {
+      "type": "create_all",
+      "roles": []
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "read_all",
+      "roles": []
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "update_all",
+      "roles": []
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    },
+    {
+      "type": "delete_all",
+      "roles": []
+    }
+  ]
+}

@@ -1,0 +1,3362 @@
+{
+  "title": "DEV",
+  "version": "2.0.0",
+  "name": "dev",
+  "roles": {},
+  "forms": {
+    "uSDepartmentOfAgricultureAd2047": {
+      "title": "U.S. DEPARTMENT OF AGRICULTURE - AD-2047",
+      "type": "form",
+      "name": "uSDepartmentOfAgricultureAd2047",
+      "path": "usdepartmentofagriculturead2047",
+      "display": "wizard",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/5418b65f-4eaf-5596-8d2d-d8eb1319dcac",
+          "id": "5418b65f-4eaf-5596-8d2d-d8eb1319dcac"
+        }
+      },
+      "components": [
+        {
+          "title": "INTRODUCTION",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "scrollToTop": false,
+          "collapsible": false,
+          "key": "page1",
+          "type": "panel",
+          "label": "Page 1",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Customer Data Worksheet",
+              "refreshOnChange": false,
+              "key": "html35",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "title": "Learn more about the authority for requesting information",
+                      "breadcrumbClickable": true,
+                      "buttonSettings": {
+                        "previous": true,
+                        "cancel": true,
+                        "next": true
+                      },
+                      "scrollToTop": false,
+                      "collapsible": true,
+                      "key": "learnMoreAboutThePrivacyAct",
+                      "type": "panel",
+                      "label": "Learn more about the Privacy Act",
+                      "input": false,
+                      "tableView": false,
+                      "components": [
+                        {
+                          "html": "<p>The following statement is made in accordance with the Privacy Act of 1974 (5 USC 552a - as amended). The authority for requesting the information identified on this form is the Computer Security Act of 1987 (Pub. L. 100-235), OMB Circular A-123, Federal Managers’ Financial Integrity Act of 1982, and Privacy Act of 1974 (5 USC 552a - as amended). The information will be used to document a request by the producer for updating the business partner record. The information collected on this form may be disclosed to other Federal, State, Local government agencies, Tribal agencies, and nongovernmental entities that have been authorized access to the information by statute or regulation and/or as described in applicable Routine Uses identified in the System of Records Notices for AMS-3, Perishable Agricultural Commodities Act (PACA), USDA/FSA-2, Farm Records File (Automated), USDA/NRCS-1, Landowner, Operator, Producer, Cooperator, or Participant Files, and USDA/RD-1, Applicant, Borrower, Grantee, or Tenant File. Providing the requested information is voluntary. However, failure to furnish the requested information will result in a determination of ineligibility to request changes within the business partner record.&nbsp;</p>",
+                          "label": "Content",
+                          "refreshOnChange": false,
+                          "key": "content1",
+                          "type": "content",
+                          "input": false,
+                          "tableView": false,
+                          "hideOnChildrenHidden": false
+                        }
+                      ],
+                      "collapsed": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "title": "Learn more about regulations and policies",
+                      "breadcrumbClickable": true,
+                      "buttonSettings": {
+                        "previous": true,
+                        "cancel": true,
+                        "next": true
+                      },
+                      "scrollToTop": false,
+                      "collapsible": true,
+                      "key": "learnMoreAboutUsdaRegulationsAndPolicies",
+                      "type": "panel",
+                      "label": "Learn more about USDA regulations and policies",
+                      "input": false,
+                      "tableView": false,
+                      "components": [
+                        {
+                          "html": "<p><strong>Federal Civil Rights law and USDA Civil Rights Regulations and Policies</strong><br>In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, religion, sex, gender identity (including gender expression), sexual orientation, disability, age, marital status, family/parental status, income derived from a public assistance program, political beliefs, or reprisal or retaliation for prior civil rights activity, in any program or activity conducted or funded by USDA (not all bases apply to all programs). Remedies and complaint filing deadlines vary by program or incident.&nbsp;</p><p><span style=\"background-color:rgb(255,255,255);color:rgb(27,27,27);\"><strong>Alternative Means of Communication&nbsp;</strong></span><br>Persons with disabilities who require alternative means of communication for program information (e.g., Braille, large print, audiotape, American Sign Language, etc.) should contact the responsible Agency or USDA’s TARGET Center at (202) 720-2600 (voice and TTY) or contact USDA through the Federal Relay Service at (800) 877-8339. Additionally, program information may be made available in languages other than English.&nbsp;</p><p><strong>USDA Program Discrimination Complaint Form</strong><br>To file a program discrimination complaint, complete the USDA Program Discrimination Complaint Form, AD-3027, found online at <a href=\"https://www.usda.gov/oascr\">http://www.ascr.usda.gov/complaint_filing_cust.html</a> and at any USDA office or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by: (1) mail: U.S. Department of Agriculture Office of the Assistant Secretary for Civil Rights 1400 Independence Avenue, SW Washington, D.C. 20250-9410; (2) fax: (202) 690-7442; or (3) email: <a href=\"mailto:program.intake@usda.gov\">program.intake@usda.gov</a>. USDA is an equal opportunity provider, employer, and lender</p>",
+                          "label": "Content",
+                          "refreshOnChange": false,
+                          "key": "content3",
+                          "type": "content",
+                          "input": false,
+                          "tableView": false
+                        }
+                      ],
+                      "collapsed": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "html": "<p><strong>Public Burden Statement (Paperwork Reduction Act Statement)</strong><br>According to the Paperwork Reduction Act of 1995, an agency may not conduct or sponsor, and a person is not required to respond to, a collection of information unless it displays a valid OMB control number. The valid OMB control number for this information collection is 0560- 0265. The time required to complete this information collection is estimated to average 3 minutes (.05 hours) per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, and completing and reviewing the collection of information.</p><p>The provisions of criminal and civil fraud, privacy and other statutes may be applicable to the information provided.</p>",
+                      "label": "Content",
+                      "refreshOnChange": false,
+                      "key": "content2",
+                      "type": "content",
+                      "input": false,
+                      "tableView": false,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 9
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 2
+                }
+              ],
+              "key": "columns29",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            }
+          ]
+        },
+        {
+          "title": "CUSTOMER INFORMATION",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "scrollToTop": false,
+          "collapsible": false,
+          "key": "page2",
+          "type": "panel",
+          "label": "PART A: CUSTOMER INFORMATION",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Customer Information",
+              "refreshOnChange": false,
+              "key": "html1",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:300; margin-top:15px; margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Please enter your contact information below.",
+              "refreshOnChange": false,
+              "key": "html2",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "p style=\"margin-top:12px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Required fields are marked with an asterisk (<font color=\"red\">*</font>).",
+              "refreshOnChange": false,
+              "key": "html",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:bold; margin-top:15px;  margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Personal information",
+              "refreshOnChange": false,
+              "key": "html3",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "First name",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "firstName",
+                      "overlay": {
+                        "page": 1,
+                        "left": 79,
+                        "top": 555,
+                        "height": "20",
+                        "width": 146.366
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Last name",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "lastName",
+                      "overlay": {
+                        "page": 1,
+                        "left": 79,
+                        "top": 578,
+                        "width": "146.366",
+                        "height": 19.9769
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns1",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Email address",
+                      "tableView": true,
+                      "validateOn": "blur",
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "emailAddress1",
+                      "overlay": {
+                        "page": 1,
+                        "left": 112,
+                        "top": 873,
+                        "width": 416.47,
+                        "height": "20"
+                      },
+                      "type": "email",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns2",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Home phone number",
+                      "tableView": true,
+                      "validateOn": "blur",
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "homePhoneNumber",
+                      "overlay": {
+                        "page": 1,
+                        "left": 112,
+                        "top": 642,
+                        "height": "20",
+                        "width": "150"
+                      },
+                      "type": "phoneNumber",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns3",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Mobile phone number",
+                      "tableView": true,
+                      "validateOn": "blur",
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "mobilePhoneNumber",
+                      "overlay": {
+                        "page": 1,
+                        "left": 736,
+                        "top": 640,
+                        "height": "20",
+                        "width": "150"
+                      },
+                      "type": "phoneNumber",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns4",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:bold; margin-top:15px;  margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Contact information",
+              "refreshOnChange": false,
+              "key": "html7",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Street address",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "streetAddress",
+                      "overlay": {
+                        "page": 1,
+                        "left": 238,
+                        "top": 556,
+                        "height": 20.9144,
+                        "width": 180.88
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns5",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Unit type (optional)",
+                      "tableView": true,
+                      "key": "unitTypeOptional",
+                      "overlay": {
+                        "page": 1,
+                        "left": "422",
+                        "top": 556,
+                        "width": 115.648,
+                        "height": 20.9144
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns6",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "City",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "city",
+                      "overlay": {
+                        "page": 1,
+                        "left": "238",
+                        "top": 579,
+                        "width": 130.752,
+                        "height": 19.9769
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns7",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "State",
+                      "tableView": true,
+                      "dataSrc": "json",
+                      "data": {
+                        "values": [
+                          {
+                            "label": "",
+                            "value": ""
+                          }
+                        ],
+                        "json": {
+                          "AL": "Alabama",
+                          "AK": "Alaska",
+                          "AS": "American Samoa",
+                          "AZ": "Arizona",
+                          "AR": "Arkansas",
+                          "CA": "California",
+                          "CO": "Colorado",
+                          "CT": "Connecticut",
+                          "DE": "Delaware",
+                          "DC": "District Of Columbia",
+                          "FL": "Florida",
+                          "GA": "Georgia",
+                          "GU": "Guam",
+                          "HI": "Hawaii",
+                          "ID": "Idaho",
+                          "IL": "Illinois",
+                          "IN": "Indiana",
+                          "IA": "Iowa",
+                          "KS": "Kansas",
+                          "KY": "Kentucky",
+                          "LA": "Louisiana",
+                          "ME": "Maine",
+                          "MD": "Maryland",
+                          "MA": "Massachusetts",
+                          "MI": "Michigan",
+                          "MN": "Minnesota",
+                          "MS": "Mississippi",
+                          "MO": "Missouri",
+                          "MT": "Montana",
+                          "NE": "Nebraska",
+                          "NV": "Nevada",
+                          "NH": "New Hampshire",
+                          "NJ": "New Jersey",
+                          "NM": "New Mexico",
+                          "NY": "New York",
+                          "NC": "North Carolina",
+                          "ND": "North Dakota",
+                          "MP": "Northern Mariana Islands",
+                          "OH": "Ohio",
+                          "OK": "Oklahoma",
+                          "OR": "Oregon",
+                          "PA": "Pennsylvania",
+                          "PR": "Puerto Rico",
+                          "RI": "Rhode Island",
+                          "SC": "South Carolina",
+                          "SD": "South Dakota",
+                          "TN": "Tennessee",
+                          "TX": "Texas",
+                          "UT": "Utah",
+                          "VT": "Vermont",
+                          "VI": "Virgin Islands",
+                          "VA": "Virginia",
+                          "WA": "Washington",
+                          "WV": "West Virginia",
+                          "WI": "Wisconsin",
+                          "WY": "Wyoming"
+                        }
+                      },
+                      "selectThreshold": 0.3,
+                      "validate": {
+                        "required": true,
+                        "onlyAvailableItems": false
+                      },
+                      "key": "state1",
+                      "overlay": {
+                        "page": 1,
+                        "left": 370,
+                        "top": 579,
+                        "height": 20.9491,
+                        "width": 158.623
+                      },
+                      "type": "select",
+                      "indexeddb": {
+                        "filter": {}
+                      },
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns8",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "ZIP",
+                      "inputMask": "99999",
+                      "tableView": true,
+                      "validateOn": "blur",
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "zip",
+                      "overlay": {
+                        "page": 1,
+                        "left": "238",
+                        "top": 600,
+                        "width": 86.7593,
+                        "height": 19.9769
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 2
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 9
+                }
+              ],
+              "key": "columns9",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            }
+          ]
+        },
+        {
+          "title": "ADDITIONAL CUSTOMER INFORMATION",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "scrollToTop": false,
+          "collapsible": false,
+          "key": "page4",
+          "type": "panel",
+          "label": "Page 4",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Additional Customer Information",
+              "refreshOnChange": false,
+              "key": "html13",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "p style=\"margin-top:12px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Required fields are marked with an asterisk (<font color=\"red\">*</font>).",
+              "refreshOnChange": false,
+              "key": "html14",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:35px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html16",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "<strong>Residency status (for individuals only):</strong>",
+                      "hideLabel": false,
+                      "tableView": false,
+                      "persistent": false,
+                      "customDefaultValue": "value =\"custom value\"",
+                      "validate": {
+                        "custom": "const numChecked = _.reduce(data.residencystatus, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.residencystatus, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one status must be selected.';\n} else if ( numChecked > 1 ) {\n  valid = 'Please select only one status.';\n} else {\n  valid = true;\n}"
+                      },
+                      "key": "residencystatusContainer",
+                      "type": "container",
+                      "input": true,
+                      "hideOnChildrenHidden": false,
+                      "components": []
+                    },
+                    {
+                      "label": "U.S. Resident",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "residencystatus.us",
+                      "overlay": {
+                        "page": 1,
+                        "left": 82,
+                        "top": 765,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "Resident alien (I-551 required)",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "residencystatus.alien",
+                      "overlay": {
+                        "page": 1,
+                        "left": 269,
+                        "top": 767,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "Not a U.S. citizen or resident alien",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "residencystatus.none",
+                      "overlay": {
+                        "page": 1,
+                        "left": 83,
+                        "top": 787,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "Columns",
+                      "columns": [
+                        {
+                          "components": [
+                            {
+                              "label": "Citizenship country if not U.S.",
+                              "tableView": true,
+                              "validate": {
+                                "required": true
+                              },
+                              "key": "citizenshipCountryIfNotUS1",
+                              "conditional": {
+                                "show": true,
+                                "when": "residencystatus.none",
+                                "eq": "true"
+                              },
+                              "overlay": {
+                                "page": 1,
+                                "left": 265,
+                                "top": 808,
+                                "width": 265.602,
+                                "height": "20"
+                              },
+                              "type": "textfield",
+                              "input": true,
+                              "hideOnChildrenHidden": false
+                            }
+                          ],
+                          "offset": 0,
+                          "push": 0,
+                          "pull": 0,
+                          "size": "md",
+                          "width": 10
+                        },
+                        {
+                          "components": [],
+                          "offset": 0,
+                          "push": 0,
+                          "pull": 0,
+                          "size": "md",
+                          "width": 2
+                        }
+                      ],
+                      "key": "columns15",
+                      "conditional": {
+                        "show": true,
+                        "when": "residencystatus.none",
+                        "eq": "true"
+                      },
+                      "type": "columns",
+                      "input": false,
+                      "tableView": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns28",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Originating country (for foreign entities only)",
+                      "tableView": true,
+                      "key": "originatingCountryForForeignEntitiesOnly1",
+                      "overlay": {
+                        "page": 1,
+                        "left": 570,
+                        "top": 760,
+                        "height": 19.6991,
+                        "width": 293.634
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns16",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "<strong>Does the customer want to receive sensitive (but non-PII) producer or farm specific related emails?</strong>",
+                      "hideLabel": false,
+                      "tableView": false,
+                      "customDefaultValue": "value =\"custom value\"",
+                      "validate": {
+                        "required": true,
+                        "custom": "const numChecked = _.reduce(data.receiveemails, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.receiveemails, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one option must be selected.';\n} else if ( numChecked > 1 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+                      },
+                      "key": "receiveemailsContainer",
+                      "type": "container",
+                      "input": true,
+                      "hideOnChildrenHidden": false,
+                      "components": []
+                    },
+                    {
+                      "label": "Yes",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "receiveemails.yes",
+                      "overlay": {
+                        "page": 1,
+                        "left": 713,
+                        "top": 901,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "No",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "receiveemails.no",
+                      "overlay": {
+                        "page": 1,
+                        "left": 806,
+                        "top": 900,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns14",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "<strong>Producer is customer of one or more of the following agencies. (check appropriate agency(ies) below:</strong>",
+                      "hideLabel": false,
+                      "tableView": false,
+                      "customDefaultValue": "value=\"custom value\"",
+                      "validate": {
+                        "required": true,
+                        "custom": "const numChecked = _.reduce(data.customeragency, function(sum, value) {return sum + value; }, 1);\nconst selected =   _.reduce(data.customeragency, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one option must be selected.';\n} else if ( numChecked < 1 ) {\n  valid = 'Please check all that apply.';\n} else {\n  valid = true;\n}"
+                      },
+                      "key": "customeragencyContainer",
+                      "type": "container",
+                      "input": true,
+                      "hideOnChildrenHidden": false,
+                      "components": []
+                    },
+                    {
+                      "label": "AMS",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "customeragency.ams",
+                      "overlay": {
+                        "page": 1,
+                        "left": 102,
+                        "top": 1289,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "FSA",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "customeragency.fsa",
+                      "overlay": {
+                        "page": 1,
+                        "left": 227,
+                        "top": 1289,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "NRCS",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "customeragency.nrcs",
+                      "overlay": {
+                        "page": 1,
+                        "left": 368,
+                        "top": 1288,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "RMA",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "customeragency.rma",
+                      "overlay": {
+                        "page": 1,
+                        "left": 503,
+                        "top": 1289,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "RD",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "customeragency.rd",
+                      "overlay": {
+                        "page": 1,
+                        "left": 629,
+                        "top": 1289,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "Not participating",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "customeragency.none",
+                      "overlay": {
+                        "page": 1,
+                        "left": 743,
+                        "top": 1288,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns17",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "<strong>Is the Customer a Multi-County Producer?</strong>",
+                      "hideLabel": false,
+                      "tableView": false,
+                      "customDefaultValue": "value=\"custom value\"",
+                      "validate": {
+                        "required": true,
+                        "custom": "const numChecked = _.reduce(data.multicountyproducer, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.multicountyproducer, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one option must be selected.';\n} else if ( numChecked > 1 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+                      },
+                      "key": "multicountyproducerContainer",
+                      "type": "container",
+                      "input": true,
+                      "hideOnChildrenHidden": false,
+                      "components": []
+                    },
+                    {
+                      "label": "Yes",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "multicountyproducer.yes",
+                      "overlay": {
+                        "page": 2,
+                        "left": 422,
+                        "top": 72,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "If “Yes,” list states and/or counties below:",
+                      "autoExpand": false,
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "ifYesListStatesAndOrCountiesBelow",
+                      "conditional": {
+                        "show": true,
+                        "when": "multicountyproducer.yes",
+                        "eq": "true"
+                      },
+                      "overlay": {
+                        "page": 2,
+                        "left": 449,
+                        "top": 102,
+                        "width": 354.607,
+                        "height": 72.6042
+                      },
+                      "type": "textarea",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "No",
+                      "tableView": false,
+                      "defaultValue": false,
+                      "key": "multicountyproducer.no",
+                      "overlay": {
+                        "page": 2,
+                        "left": 807,
+                        "top": 72,
+                        "height": "20",
+                        "width": "20"
+                      },
+                      "type": "checkbox",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns13",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "HTML",
+                      "attrs": [
+                        {
+                          "attr": "",
+                          "value": ""
+                        }
+                      ],
+                      "content": "<strong>Taxpayer information:</strong><font color=\"red\">*</font>",
+                      "refreshOnChange": false,
+                      "key": "html10",
+                      "type": "htmlelement",
+                      "input": false,
+                      "tableView": false,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "Is the customer a minor?",
+                      "optionsLabelPosition": "right",
+                      "inline": false,
+                      "tableView": false,
+                      "values": [
+                        {
+                          "label": "Yes",
+                          "value": "yes",
+                          "shortcut": ""
+                        },
+                        {
+                          "label": "No",
+                          "value": "no",
+                          "shortcut": ""
+                        }
+                      ],
+                      "validate": {
+                        "required": true,
+                        "onlyAvailableItems": false
+                      },
+                      "key": "customerMinor",
+                      "type": "radio",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "Columns",
+                      "columns": [
+                        {
+                          "components": [
+                            {
+                              "label": "Date of birth",
+                              "format": "MM-dd-yyyy",
+                              "tableView": false,
+                              "enableMinDateInput": false,
+                              "datePicker": {
+                                "disableWeekends": false,
+                                "disableWeekdays": false
+                              },
+                              "enableMaxDateInput": false,
+                              "enableTime": false,
+                              "validate": {
+                                "required": true
+                              },
+                              "key": "customerDateOfBirth",
+                              "conditional": {
+                                "show": true,
+                                "when": "customerMinor",
+                                "eq": "yes"
+                              },
+                              "overlay": {
+                                "page": 1,
+                                "left": 560,
+                                "top": 698,
+                                "height": "20",
+                                "width": "100"
+                              },
+                              "type": "datetime",
+                              "input": true,
+                              "widget": {
+                                "type": "calendar",
+                                "displayInTimezone": "viewer",
+                                "locale": "en",
+                                "useLocaleSettings": false,
+                                "allowInput": true,
+                                "mode": "single",
+                                "enableTime": false,
+                                "noCalendar": false,
+                                "format": "MM-dd-yyyy",
+                                "hourIncrement": 1,
+                                "minuteIncrement": 1,
+                                "time_24hr": false,
+                                "minDate": null,
+                                "disableWeekends": false,
+                                "disableWeekdays": false,
+                                "maxDate": null
+                              },
+                              "hideOnChildrenHidden": false
+                            }
+                          ],
+                          "offset": 0,
+                          "push": 0,
+                          "pull": 0,
+                          "size": "md",
+                          "width": 7
+                        },
+                        {
+                          "components": [],
+                          "offset": 0,
+                          "push": 0,
+                          "pull": 0,
+                          "size": "md",
+                          "width": 5
+                        }
+                      ],
+                      "key": "columns30",
+                      "type": "columns",
+                      "input": false,
+                      "tableView": false
+                    },
+                    {
+                      "label": "Taxpayer identification type",
+                      "tooltip": "SSN, EIN, etc.",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "customerTaxpayerIdentificationType",
+                      "overlay": {
+                        "page": "1",
+                        "left": "100",
+                        "top": "699",
+                        "width": 193.762,
+                        "height": "20"
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    },
+                    {
+                      "label": "Taxpayer number (9 digits)",
+                      "inputMask": "999999999",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "customerTaxpayerNumber",
+                      "overlay": {
+                        "page": 1,
+                        "left": 319,
+                        "top": 698,
+                        "height": "20",
+                        "width": "192.662"
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns20",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            }
+          ],
+          "hideOnChildrenHidden": false
+        },
+        {
+          "title": "BUSINESS INFORMATION",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "scrollToTop": false,
+          "collapsible": false,
+          "key": "page3",
+          "type": "panel",
+          "label": "Page 3",
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Business Information",
+              "refreshOnChange": false,
+              "key": "html4",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:300; margin-top:15px; margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Please enter your business information below.",
+              "refreshOnChange": false,
+              "key": "html6",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "p style=\"margin-top:12px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Required fields are marked with an asterisk (<font color=\"red\">*</font>).",
+              "refreshOnChange": false,
+              "key": "html9",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Business name",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "businessName",
+                      "overlay": {
+                        "page": 1,
+                        "left": 239,
+                        "top": 531,
+                        "height": "20",
+                        "width": 292.593
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns11",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Business type",
+                      "tooltip": "Example: Individual, Corporation, LLC, Estate, Trust, etc.",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "businessType",
+                      "overlay": {
+                        "page": 1,
+                        "left": 573,
+                        "top": 559,
+                        "width": 361.586,
+                        "height": "20"
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns12",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Phone number",
+                      "tableView": true,
+                      "validateOn": "blur",
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "businessphoneNumber",
+                      "overlay": {
+                        "page": 1,
+                        "left": 417,
+                        "top": 638,
+                        "height": "20",
+                        "width": "150"
+                      },
+                      "type": "phoneNumber",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 8
+                }
+              ],
+              "key": "columns10",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            }
+          ],
+          "input": false,
+          "tableView": false
+        },
+        {
+          "title": "DEMOGRAPHIC INFORMATION",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "scrollToTop": false,
+          "collapsible": false,
+          "key": "page6",
+          "type": "panel",
+          "label": "Page 6",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Demographic Information",
+              "refreshOnChange": false,
+              "key": "html21",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:300; margin-top:15px; margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Please select your demographic information below.",
+              "refreshOnChange": false,
+              "key": "html22",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "p style=\"margin-top:12px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Required fields are marked with an asterisk (<font color=\"red\">*</font>).",
+              "refreshOnChange": false,
+              "key": "html23",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:35px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html17",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "input": false,
+              "key": "consent",
+              "tableView": false,
+              "label": "Consent",
+              "hideLabel": true,
+              "type": "well",
+              "components": [
+                {
+                  "input": false,
+                  "key": "content",
+                  "tableView": false,
+                  "label": "Content",
+                  "type": "content",
+                  "html": "<p><strong>Note:</strong> Departmental Regulation 4370-001 provides USDA’s policies for collecting demographic data, including race, ethnicity and gender. Providing demographic information is voluntary and at the discretion of the customer. Demographic information is used by USDA for statistical purposes only and will not be used to determine an applicant’s eligibility for programs or services for which they apply. You may disregard providing information in items 6A, 6B and 6C if the information has previously been provided to USDA. Customers identified in Item 1A that are a legal entity should base responses to the race, ethnicity and gender of the owners holding majority ownership interest in the legal entity.&nbsp;</p>",
+                  "refreshOnChange": false
+                },
+                {
+                  "label": "I do not want to provide demographic information at this time.",
+                  "tableView": false,
+                  "defaultValue": false,
+                  "key": "notProvideDemographicInformation",
+                  "overlay": {
+                    "page": 1,
+                    "left": 340,
+                    "top": 1060,
+                    "height": "20",
+                    "width": "20"
+                  },
+                  "type": "checkbox",
+                  "input": true
+                }
+              ]
+            },
+            {
+              "label": "HTML",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "<strong>Race (check all that apply):</strong>",
+              "refreshOnChange": false,
+              "key": "html29",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "American Indian / Alaskan Native",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "race.americanIndianAlaskanNative",
+              "overlay": {
+                "page": 1,
+                "left": 83,
+                "top": 1115,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Native Hawaiian/Other Pacific Islander",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "race.nativeHawaiianOtherPacificIslander",
+              "overlay": {
+                "page": 1,
+                "left": 82,
+                "top": 1136,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Asian",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "race.asian",
+              "overlay": {
+                "page": 1,
+                "left": 83,
+                "top": 1176,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "White",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "race.white",
+              "overlay": {
+                "page": 1,
+                "left": 83,
+                "top": 1198,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Black/African American",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "race.blackAfricanAmerican",
+              "overlay": {
+                "page": 1,
+                "left": 83,
+                "top": 1222,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:40px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html5",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "<strong>Ethnicity:</strong>",
+              "hideLabel": false,
+              "tableView": false,
+              "validate": {
+                "custom": "const numChecked = _.reduce(data.ethnicity, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.ethnicity, function(result, value) { return result || value; }, false);\n  if ( numChecked == 2 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+              },
+              "key": "ethnicityContainer",
+              "type": "container",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "Hispanic or Latino",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "ethnicity.hispanicOrLatino",
+              "overlay": {
+                "page": 1,
+                "left": 386,
+                "top": 1115,
+                "width": "20",
+                "height": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Not Hispanic or Latino",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "ethnicity.notHispanicOrLatino",
+              "overlay": {
+                "page": 1,
+                "left": 388,
+                "top": 1172,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:40px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html8",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "<strong>Gender (individual):</strong>",
+              "hideLabel": false,
+              "tableView": false,
+              "validate": {
+                "custom": "const numChecked = _.reduce(data.gender, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.gender, function(result, value) { return result || value; }, false);\n  if ( numChecked == 2 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+              },
+              "key": "genderContainer",
+              "type": "container",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "Male",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "gender.male",
+              "overlay": {
+                "page": 1,
+                "left": 548,
+                "top": 1114,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Female",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "gender.female",
+              "overlay": {
+                "page": 1,
+                "left": 548,
+                "top": 1154,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:40px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html15",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "<strong>Gender (legal entity)</strong>",
+              "hideLabel": false,
+              "tableView": false,
+              "customDefaultValue": "value=\"custom value\"",
+              "validate": {
+                "custom": "const numChecked = _.reduce(data.genderlegalentity, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.genderlegalentity, function(result, value) { return result || value; }, false);\n  if ( numChecked == 2 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+              },
+              "key": "genderlegalentityContainer",
+              "type": "container",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "Not applicable/unknown",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "genderlegalentity.notApplicableUnknown",
+              "overlay": {
+                "page": 1,
+                "left": 771,
+                "top": 1115,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Organization/Female Owned",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "genderlegalentity.organizationFemaleOwned",
+              "overlay": {
+                "page": 1,
+                "left": 772,
+                "top": 1138,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Organization/Male Owned",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "genderlegalentity.organizationMaleOwned",
+              "overlay": {
+                "page": 1,
+                "left": 770,
+                "top": 1160,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Organization/Other (no clear male/female ownership)",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "genderlegalentity.organizationOther",
+              "overlay": {
+                "page": 1,
+                "left": 770,
+                "top": 1182,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            }
+          ]
+        },
+        {
+          "title": "REQUEST INFORMATION",
+          "collapsible": false,
+          "key": "page5",
+          "type": "panel",
+          "label": "Request Information",
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "breadcrumbClickable": true,
+          "scrollToTop": false,
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Request Information",
+              "refreshOnChange": false,
+              "key": "html11",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:300; margin-top:15px; margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Please enter your request information below.",
+              "refreshOnChange": false,
+              "key": "html12",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "p style=\"margin-top:12px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Required fields are marked with an asterisk (<font color=\"red\">*</font>).",
+              "refreshOnChange": false,
+              "key": "html18",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:35px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html19",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "<strong>Reason for request (check appropriate box(es) below):</strong>",
+              "hideLabel": false,
+              "tableView": false,
+              "customDefaultValue": "value=\"custom value\"",
+              "validate": {
+                "required": true,
+                "custom": "const numChecked = _.reduce(data.requestraeson, function(sum, value) {return sum + value; }, 1);\nconst selected =   _.reduce(data.requestreason, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one option must be selected.';\n} else if ( numChecked < 1 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+              },
+              "key": "requestreasonContainer",
+              "type": "container",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "New producer",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreason.newProducer",
+              "overlay": {
+                "page": 2,
+                "left": 101,
+                "top": 205,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Address change",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreason.addressChange",
+              "type": "checkbox",
+              "input": true,
+              "overlay": {
+                "page": 2,
+                "left": 252,
+                "top": 203,
+                "height": "20",
+                "width": "20"
+              }
+            },
+            {
+              "label": "Telephone change",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreason.telephoneChange",
+              "type": "checkbox",
+              "input": true,
+              "overlay": {
+                "page": 2,
+                "left": 421,
+                "top": 202,
+                "height": "20",
+                "width": "20"
+              }
+            },
+            {
+              "label": "Sale/purchase",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreason.salePurchase",
+              "type": "checkbox",
+              "input": true,
+              "overlay": {
+                "page": 2,
+                "left": 611,
+                "top": 204,
+                "height": "20",
+                "width": "20"
+              }
+            },
+            {
+              "label": "Life event",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreason.lifeEvent",
+              "type": "checkbox",
+              "input": true,
+              "overlay": {
+                "page": 2,
+                "left": 766,
+                "top": 203,
+                "height": "20",
+                "width": "20"
+              }
+            },
+            {
+              "label": "Other",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreason.other",
+              "type": "checkbox",
+              "input": true,
+              "overlay": {
+                "page": 2,
+                "left": 102,
+                "top": 242,
+                "height": "20",
+                "width": "20"
+              }
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Please specify.",
+                      "tableView": true,
+                      "key": "reasonOtherPleaseSpecify",
+                      "conditional": {
+                        "show": true,
+                        "when": "requestreason.other",
+                        "eq": "true"
+                      },
+                      "overlay": {
+                        "page": 2,
+                        "left": 233,
+                        "top": 246,
+                        "width": 446.632,
+                        "height": 24.7454
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns18",
+              "conditional": {
+                "show": true,
+                "when": "reasonOtherPleaseSpecify",
+                "eq": "true"
+              },
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:bold; margin-top:15px;  margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Signature",
+              "refreshOnChange": false,
+              "key": "html37",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Name of customer requesting change",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "requestReasonCustomerName",
+                      "overlay": {
+                        "page": 2,
+                        "left": 118,
+                        "top": 386,
+                        "height": 21.7824,
+                        "width": 303.623
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [
+                    {
+                      "label": "Date",
+                      "format": "MM-dd-yyyy",
+                      "tableView": false,
+                      "enableMinDateInput": false,
+                      "datePicker": {
+                        "disableWeekends": false,
+                        "disableWeekdays": false
+                      },
+                      "enableMaxDateInput": false,
+                      "enableTime": false,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "requestReasonDate",
+                      "overlay": {
+                        "page": 2,
+                        "left": 864,
+                        "top": 380,
+                        "height": "20",
+                        "width": "150"
+                      },
+                      "type": "datetime",
+                      "input": true,
+                      "widget": {
+                        "type": "calendar",
+                        "displayInTimezone": "viewer",
+                        "locale": "en",
+                        "useLocaleSettings": false,
+                        "allowInput": true,
+                        "mode": "single",
+                        "enableTime": false,
+                        "noCalendar": false,
+                        "format": "MM-dd-yyyy",
+                        "hourIncrement": 1,
+                        "minuteIncrement": 1,
+                        "time_24hr": false,
+                        "minDate": null,
+                        "disableWeekends": false,
+                        "disableWeekdays": false,
+                        "maxDate": null
+                      },
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                }
+              ],
+              "key": "columns19",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "html": "<p><strong>Note:</strong> The only time the customer is required to sign is when they are physically at a Service Center and providing FSA with applicable information.</p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content4",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Signature (optional)",
+              "tableView": false,
+              "key": "requestReasonSignature",
+              "type": "signature",
+              "input": true,
+              "overlay": {
+                "page": 2,
+                "left": 444,
+                "top": 376,
+                "height": 26.4005,
+                "width": 355.417
+              }
+            }
+          ]
+        },
+        {
+          "title": "SERVICE CENTER ACTION",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "scrollToTop": false,
+          "collapsible": false,
+          "key": "page7",
+          "type": "panel",
+          "label": "Page 7",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Service Center Action",
+              "refreshOnChange": false,
+              "key": "html25",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:300; margin-top:15px; margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Please enter your information below.",
+              "refreshOnChange": false,
+              "key": "html26",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "p style=\"margin-top:12px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Required fields are marked with an asterisk (<font color=\"red\">*</font>).",
+              "refreshOnChange": false,
+              "key": "html27",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:35px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html24",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "<strong>Agency who received request:</strong>",
+              "hideLabel": false,
+              "tableView": false,
+              "customDefaultValue": "value=\"custom value\"",
+              "validate": {
+                "required": true,
+                "custom": "const numChecked = _.reduce(data.agencyreceivedrequest, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.agencyreceivedrequest, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one option must be selected.';\n} else if ( numChecked > 1 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+              },
+              "key": "agencyreceivedrequestContainer",
+              "type": "container",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "FSA",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "agencyreceivedrequest.fsa",
+              "overlay": {
+                "page": 2,
+                "left": 108,
+                "top": 483,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "NRCS",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "agencyreceivedrequest.nrcs",
+              "overlay": {
+                "page": 2,
+                "left": 197,
+                "top": 483,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "RD",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "agencyreceivedrequest.rd",
+              "overlay": {
+                "page": 2,
+                "left": 294,
+                "top": 486,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Initials of employee receiving request",
+              "tableView": true,
+              "validate": {
+                "required": true
+              },
+              "key": "initialsOfEmployeeReceivingRequest",
+              "attributes": {
+                "style": "width:30%"
+              },
+              "overlay": {
+                "page": 2,
+                "left": 468,
+                "top": 483,
+                "height": "20",
+                "width": "150"
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": " Date service center employee received the request",
+                      "format": "MM-dd-yyyy",
+                      "tableView": false,
+                      "enableMinDateInput": false,
+                      "datePicker": {
+                        "disableWeekends": false,
+                        "disableWeekdays": false
+                      },
+                      "enableMaxDateInput": false,
+                      "enableTime": false,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "dateServiceCenterEmployeeReceivedTheRequest",
+                      "overlay": {
+                        "page": 2,
+                        "left": 764,
+                        "top": 479,
+                        "height": 22.8472,
+                        "width": 162.72
+                      },
+                      "type": "datetime",
+                      "input": true,
+                      "widget": {
+                        "type": "calendar",
+                        "displayInTimezone": "viewer",
+                        "locale": "en",
+                        "useLocaleSettings": false,
+                        "allowInput": true,
+                        "mode": "single",
+                        "enableTime": false,
+                        "noCalendar": false,
+                        "format": "MM-dd-yyyy",
+                        "hourIncrement": 1,
+                        "minuteIncrement": 1,
+                        "time_24hr": false,
+                        "minDate": null,
+                        "disableWeekends": false,
+                        "disableWeekdays": false,
+                        "maxDate": null
+                      },
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 8
+                }
+              ],
+              "key": "columns21",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:35px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html28",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "<strong>How the request for change was received:</strong>",
+              "hideLabel": false,
+              "tableView": false,
+              "customDefaultValue": "value=\"custom value\"",
+              "validate": {
+                "required": true,
+                "custom": "const numChecked = _.reduce(data.requestreceived, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.requestreceived, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one option must be selected.';\n} else if ( numChecked > 1 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+              },
+              "key": "requestreceivedContainer",
+              "type": "container",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "Office visit",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreceived.officeVisit",
+              "overlay": {
+                "page": 2,
+                "left": 104,
+                "top": 539,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Telephone ",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreceived.telephone",
+              "overlay": {
+                "page": 2,
+                "left": 208,
+                "top": 539,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "FAX",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreceived.fax",
+              "overlay": {
+                "page": 2,
+                "left": 314,
+                "top": 539,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "USPS",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreceived.usps",
+              "overlay": {
+                "page": 2,
+                "left": 388,
+                "top": 537,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Other",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "requestreceived.other",
+              "overlay": {
+                "page": 2,
+                "left": 468,
+                "top": 538,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Please specify.",
+                      "tableView": true,
+                      "validate": {
+                        "required": true,
+                        "customMessage": "Please provide a specification for \"Other.\""
+                      },
+                      "key": "requestReceivedSpecification",
+                      "conditional": {
+                        "show": true,
+                        "when": "requestreceived.other",
+                        "eq": "true"
+                      },
+                      "overlay": {
+                        "page": 2,
+                        "left": 607,
+                        "top": 541,
+                        "width": "200",
+                        "height": "20"
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns22",
+              "conditional": {
+                "show": true,
+                "when": "requestreceived.other",
+                "eq": "true"
+              },
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "COC LAA",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "cocLaa",
+                      "overlay": {
+                        "page": 2,
+                        "left": 105,
+                        "top": 590,
+                        "height": 20.7986,
+                        "width": 449.676
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "width": 5,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns23",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "<strong>Remarks, if applicable (optional):</strong>",
+                      "autoExpand": false,
+                      "tableView": true,
+                      "key": "remarksIfApplicable",
+                      "overlay": {
+                        "page": 2,
+                        "left": 107,
+                        "top": 669,
+                        "height": 70.2546,
+                        "width": 838.16
+                      },
+                      "type": "textarea",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns24",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:bold; margin-top:15px;  margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Signature",
+              "refreshOnChange": false,
+              "key": "html30",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Date",
+                      "format": "MM-dd-yyyy",
+                      "tableView": false,
+                      "enableMinDateInput": false,
+                      "datePicker": {
+                        "disableWeekends": false,
+                        "disableWeekdays": false
+                      },
+                      "enableMaxDateInput": false,
+                      "enableTime": false,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "serviceCenterActionDate",
+                      "overlay": {
+                        "page": 2,
+                        "left": 622,
+                        "top": 791,
+                        "height": 18.9005,
+                        "width": 148.866
+                      },
+                      "type": "datetime",
+                      "input": true,
+                      "widget": {
+                        "type": "calendar",
+                        "displayInTimezone": "viewer",
+                        "locale": "en",
+                        "useLocaleSettings": false,
+                        "allowInput": true,
+                        "mode": "single",
+                        "enableTime": false,
+                        "noCalendar": false,
+                        "format": "MM-dd-yyyy",
+                        "hourIncrement": 1,
+                        "minuteIncrement": 1,
+                        "time_24hr": false,
+                        "minDate": null,
+                        "disableWeekends": false,
+                        "disableWeekdays": false,
+                        "maxDate": null
+                      },
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                },
+                {
+                  "components": [],
+                  "width": 6,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                }
+              ],
+              "key": "columns25",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Signature",
+              "tableView": false,
+              "validate": {
+                "required": true
+              },
+              "key": "serviceCenterActionSignature",
+              "overlay": {
+                "page": 2,
+                "left": 192,
+                "top": 761,
+                "height": 29.7801,
+                "width": 330.706
+              },
+              "type": "signature",
+              "input": true
+            }
+          ]
+        },
+        {
+          "title": "DISTRICT DIRECTOR/AREA CONSERVATIONIST (OPTIONAL)",
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "scrollToTop": false,
+          "collapsible": false,
+          "key": "page8",
+          "type": "panel",
+          "label": "DISTRICT DIRECTOR/AREA CONSERVATIONIST",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "h2 style=\"font-weight:bold; margin-top:0px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "District Director/Area Conservationist (Optional)",
+              "refreshOnChange": false,
+              "key": "html31",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:300; margin-top:15px; margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Please enter your contact information below.",
+              "refreshOnChange": false,
+              "key": "html32",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "p style=\"margin-top:12px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Required fields are marked with an asterisk (<font color=\"red\">*</font>).",
+              "refreshOnChange": false,
+              "key": "html33",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "div style=\"margin-top:35px\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "refreshOnChange": false,
+              "key": "html20",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "<strong>I concur/do not concur the above items have been properly updated:</strong>",
+              "hideLabel": false,
+              "tableView": false,
+              "customDefaultValue": "value=\"custom value\"",
+              "validate": {
+                "required": true,
+                "custom": "const numChecked = _.reduce(data.decision, function(sum, value) {return sum + value; }, 0);\nconst selected =   _.reduce(data.decision, function(result, value) { return result || value; }, false);\nif( !selected ) {\n  valid = 'At least one option must be selected.';\n} else if ( numChecked > 1 ) {\n  valid = 'Please select only one option.';\n} else {\n  valid = true;\n}"
+              },
+              "key": "decisionContainer",
+              "type": "container",
+              "input": true,
+              "components": []
+            },
+            {
+              "label": "Concur",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "decision.concur",
+              "overlay": {
+                "page": 2,
+                "left": 692,
+                "top": 854,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Do not concur",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "decision.doNotConcur",
+              "overlay": {
+                "page": 2,
+                "left": 846,
+                "top": 853,
+                "height": "20",
+                "width": "20"
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Name of District Director/Area Conservationist for spot check",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "nameOfDistrictDirectorAreaConservationistForSpotCheck",
+                      "overlay": {
+                        "page": 2,
+                        "left": 114,
+                        "top": 908,
+                        "height": 19.8843,
+                        "width": 380.683
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 5
+                },
+                {
+                  "components": [],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 7
+                }
+              ],
+              "key": "columns26",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "HTML",
+              "tag": "h3 style=\"font-weight:bold; margin-top:15px;  margin-bottom:15px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\"",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "Signature",
+              "refreshOnChange": false,
+              "key": "html34",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Columns",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "Title",
+                      "tableView": true,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "titlefDistrictDirectorAreaConservationist",
+                      "overlay": {
+                        "page": 2,
+                        "left": 113,
+                        "top": 973,
+                        "height": 19.8843,
+                        "width": 384.236
+                      },
+                      "type": "textfield",
+                      "input": true,
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "width": 5,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md"
+                },
+                {
+                  "components": [
+                    {
+                      "label": "Date",
+                      "format": "MM-dd-yyyy",
+                      "tableView": false,
+                      "enableMinDateInput": false,
+                      "datePicker": {
+                        "disableWeekends": false,
+                        "disableWeekdays": false
+                      },
+                      "enableMaxDateInput": false,
+                      "enableTime": false,
+                      "validate": {
+                        "required": true
+                      },
+                      "key": "datefDistrictDirectorAreaConservationist",
+                      "overlay": {
+                        "page": 2,
+                        "left": 598,
+                        "top": 972,
+                        "height": 19.9074,
+                        "width": 159.815
+                      },
+                      "type": "datetime",
+                      "input": true,
+                      "widget": {
+                        "type": "calendar",
+                        "displayInTimezone": "viewer",
+                        "locale": "en",
+                        "useLocaleSettings": false,
+                        "allowInput": true,
+                        "mode": "single",
+                        "enableTime": false,
+                        "noCalendar": false,
+                        "format": "MM-dd-yyyy",
+                        "hourIncrement": 1,
+                        "minuteIncrement": 1,
+                        "time_24hr": false,
+                        "minDate": null,
+                        "disableWeekends": false,
+                        "disableWeekdays": false,
+                        "maxDate": null
+                      },
+                      "hideOnChildrenHidden": false
+                    }
+                  ],
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "width": 4
+                }
+              ],
+              "key": "columns27",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Signature",
+              "tableView": false,
+              "validate": {
+                "required": true
+              },
+              "key": "signaturefDistrictDirectorAreaConservationist",
+              "overlay": {
+                "page": 2,
+                "left": 599,
+                "top": 895,
+                "height": 22.5579,
+                "width": 348.299
+              },
+              "type": "signature",
+              "input": true
+            }
+          ]
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "uSDepartmentOfAgricultureAd2047:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "uSDepartmentOfAgricultureAd2047",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}
