@@ -1,0 +1,355 @@
+{
+    "_id": ObjectId("611a796b4da5dbee2e83a7b7"),
+    "type": "project",
+    "tag": "0.0.0",
+    "owner": ObjectId("6113e5d7e8c4063e8ccc66a1"),
+    "plan": "commercial",
+    "steps": [],
+    "framework": "custom",
+    "protect": true,
+    "primary": false,
+    "deleted": null,
+    "formDefaults": null,
+    "title": "FaaS Submission",
+    "description": "Connecting to FaaS through Submission Servers",
+    "stageTitle": "Live Sub",
+    "settings_encrypted": BinData(0,
+    "SLDGz4WQnaKAH9fa7+HoOzzEhOm8HmaLtPegAkvRrpNvbkdMNLI/Yj+ZN+id6tL9I7cXAW9wqgQAKvUYUkQlxQ=="),
+    "name": "faassub-livesub",
+    "access": [
+        {
+            "roles": [],
+            "type": "create_own"
+        },
+        {
+            "roles": [ ObjectId("611a796b4da5db27ec83a7be")
+            ],
+            "type": "create_all"
+        },
+        {
+            "roles": [],
+            "type": "read_own"
+        },
+        {
+            "roles": [ ObjectId("611a796b4da5db27ec83a7be")
+            ],
+            "type": "read_all"
+        },
+        {
+            "roles": [],
+            "type": "update_own"
+        },
+        {
+            "roles": [ ObjectId("611a796b4da5db27ec83a7be")
+            ],
+            "type": "update_all"
+        },
+        {
+            "roles": [],
+            "type": "delete_own"
+        },
+        {
+            "roles": [ ObjectId("611a796b4da5db27ec83a7be")
+            ],
+            "type": "delete_all"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        }
+    ],
+    "trial": ISODate("2021-08-16T14:42:51.288Z"),
+    "created": ISODate("2021-08-16T14:42:51.288Z"),
+    "modified": ISODate("2021-08-19T19:57:04.942Z"),
+    "machineName": "faassub-livesub",
+    "__v": 26,
+    "remote": {
+        "type": "Subdirectories",
+        "url": "https://submission.forms.gov",
+        "project": {
+            "name": "faas-live",
+            "title": "FaaS",
+            "_id": "6113e4d4f719e4ff90829e7f"
+        }
+    }
+}
+
+{
+    "_id": ObjectId("611be844192fb3b9087dfd19"),
+    "type": "stage",
+    "tag": "0.0.0",
+    "owner": ObjectId("6113e5d7e8c4063e8ccc66a1"),
+    "plan": "commercial",
+    "steps": [],
+    "framework": "angular",
+    "protect": false,
+    "primary": false,
+    "deleted": null,
+    "formDefaults": null,
+    "title": "TempProd Sub",
+    "project": ObjectId("611a796b4da5dbee2e83a7b7"),
+    "name": "faassub-tempprodsub",
+    "stageTitle": "TempProd Sub",
+    "settings_encrypted": BinData(0,
+    "Gr+lSXSmi4vvE2HHvBYU9YkpBck4XYn4iypQGn24kpoIs5gk4FN7a+PGwndb8fVorN9b741xlc3IbGBh9BAYbJWkBlfpN05HgfL0oCtzQQxDKG/1aJc+s7BkW5cbvo1fxqb027zpP3f8tUEOE6Fjq9XBMT/WbJ3VcMEW7m5B4UL/gnxHJ/Kzo2k8N/L0/mDsHnnMGvnjwKBeUFAW6rBFng=="),
+    "access": [
+        {
+            "roles": [],
+            "type": "create_own"
+        },
+        {
+            "roles": [ ObjectId("611be844192fb35ca77dfd20")
+            ],
+            "type": "create_all"
+        },
+        {
+            "roles": [],
+            "type": "read_own"
+        },
+        {
+            "roles": [ ObjectId("611be844192fb35ca77dfd20"), ObjectId("611be844192fb378687dfd25"), ObjectId("611be844192fb361557dfd2a")
+            ],
+            "type": "read_all"
+        },
+        {
+            "roles": [],
+            "type": "update_own"
+        },
+        {
+            "roles": [ ObjectId("611be844192fb35ca77dfd20")
+            ],
+            "type": "update_all"
+        },
+        {
+            "roles": [],
+            "type": "delete_own"
+        },
+        {
+            "roles": [ ObjectId("611be844192fb35ca77dfd20")
+            ],
+            "type": "delete_all"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        },
+        {
+            "roles": [ ObjectId("611a8b6b4da5db42c283aeb8")
+            ],
+            "type": "team_read"
+        },
+        {
+            "roles": [ ObjectId("611a8b61430a2c272908be5c")
+            ],
+            "type": "team_write"
+        },
+        {
+            "roles": [ ObjectId("6113e438f719e4544e829def"), ObjectId("611a8b524da5db0f4f83ae8a")
+            ],
+            "type": "team_admin"
+        }
+    ],
+    "trial": ISODate("2021-08-17T16:48:04.492Z"),
+    "created": ISODate("2021-08-17T16:48:04.493Z"),
+    "modified": ISODate("2021-08-19T19:57:04.922Z"),
+    "machineName": "faassub-tempprodsub",
+    "__v": 36,
+    "remote": {
+        "type": "Subdirectories",
+        "url": "https://submission.forms.gov",
+        "project": {}
+    }
+}
+
+
+"remote": {
+    "type": "Subdirectories",
+    "url": "https://submission.forms.gov",
+    "project": {
+        "name": "faas-tempprod",
+        "title": "FaaS",
+        "_id": "611bb8845ab096438c126822"
+    }
+}
+
+db.projects.find(
+{
+    "name": "faassub-tempprodsub"
+});
+
+db.projects.update(
+{"name": "faassub-tempprodsub"},
+{
+    $set: {
+        "remote.project.title": "FaaS"
+    }
+}
+);
+
+db.projects.find(
+{
+    "name": "faassub-tempprodsub"
+});
+
+db.projects.update(
+{"name": "faassub-tempprodsub"},
+{
+    $set: {
+        "remote.project.name": "faas-tempprod",
+        "remote.project._id": "611bb8845ab096438c126822"
+    }
+}
+);
+
+
+"remote": {
+    "type": "Subdirectories",
+    "url": "https://submission.forms.gov",
+    "project": {
+        "name": "faas-live",
+        "title": "FaaS",
+        "_id": "6113e4d4f719e4ff90829e7f"
+    }
+}

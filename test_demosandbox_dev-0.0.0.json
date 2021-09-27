@@ -1,0 +1,1386 @@
+{
+  "title": "Development",
+  "version": "2.0.0",
+  "name": "dev-demosandbox",
+  "roles": {
+    "authenticated": {
+      "title": "Authenticated",
+      "description": "A role for Authenticated Users.",
+      "admin": false,
+      "default": false
+    },
+    "anonymous": {
+      "title": "Anonymous",
+      "description": "A role for Anonymous Users.",
+      "admin": false,
+      "default": true
+    },
+    "administrator": {
+      "title": "Administrator",
+      "description": "A role for Administrative Users.",
+      "admin": true,
+      "default": false
+    }
+  },
+  "forms": {
+    "adminLogin": {
+      "title": "Admin Login",
+      "type": "form",
+      "name": "adminLogin",
+      "path": "admin/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_own"
+        }
+      ]
+    },
+    "alextestform": {
+      "title": "Alex - TEST FORM",
+      "type": "form",
+      "name": "alextestform",
+      "path": "alextestform",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "components": [
+        {
+          "label": "First Name ",
+          "spellcheck": false,
+          "tableView": true,
+          "key": "firstName",
+          "type": "textfield",
+          "input": true,
+          "placeholder": "",
+          "prefix": "",
+          "customClass": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": null,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "refreshOn": "",
+          "redrawOn": "",
+          "modalEdit": false,
+          "dataGridLabel": false,
+          "labelPosition": "top",
+          "description": "",
+          "errorLabel": "",
+          "tooltip": "",
+          "hideLabel": false,
+          "tabindex": "",
+          "disabled": false,
+          "autofocus": false,
+          "dbIndex": false,
+          "customDefaultValue": "",
+          "calculateValue": "",
+          "calculateServer": false,
+          "widget": {
+            "type": "input"
+          },
+          "attributes": {},
+          "validateOn": "change",
+          "validate": {
+            "required": false,
+            "custom": "",
+            "customPrivate": false,
+            "strictDateValidation": false,
+            "multiple": false,
+            "unique": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": ""
+          },
+          "conditional": {
+            "show": null,
+            "when": null,
+            "eq": ""
+          },
+          "overlay": {
+            "style": "",
+            "left": "",
+            "top": "",
+            "width": "",
+            "height": ""
+          },
+          "allowCalculateOverride": false,
+          "encrypted": false,
+          "showCharCount": false,
+          "showWordCount": false,
+          "properties": {},
+          "allowMultipleMasks": false,
+          "mask": false,
+          "inputType": "text",
+          "inputFormat": "plain",
+          "inputMask": "",
+          "id": "eakcc8r"
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false,
+          "placeholder": "",
+          "prefix": "",
+          "customClass": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": null,
+          "protected": false,
+          "unique": false,
+          "persistent": false,
+          "hidden": false,
+          "clearOnHide": true,
+          "refreshOn": "",
+          "redrawOn": "",
+          "modalEdit": false,
+          "dataGridLabel": true,
+          "labelPosition": "top",
+          "description": "",
+          "errorLabel": "",
+          "tooltip": "",
+          "hideLabel": false,
+          "tabindex": "",
+          "disabled": false,
+          "autofocus": false,
+          "dbIndex": false,
+          "customDefaultValue": "",
+          "calculateValue": "",
+          "calculateServer": false,
+          "widget": {
+            "type": "input"
+          },
+          "attributes": {},
+          "validateOn": "change",
+          "validate": {
+            "required": false,
+            "custom": "",
+            "customPrivate": false,
+            "strictDateValidation": false,
+            "multiple": false,
+            "unique": false
+          },
+          "conditional": {
+            "show": null,
+            "when": null,
+            "eq": ""
+          },
+          "overlay": {
+            "style": "",
+            "left": "",
+            "top": "",
+            "width": "",
+            "height": ""
+          },
+          "allowCalculateOverride": false,
+          "encrypted": false,
+          "showCharCount": false,
+          "showWordCount": false,
+          "properties": {},
+          "allowMultipleMasks": false,
+          "size": "md",
+          "leftIcon": "",
+          "rightIcon": "",
+          "block": false,
+          "action": "submit",
+          "theme": "primary",
+          "id": "exilk9b"
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "authenticated",
+            "everyone"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [
+            "authenticated"
+          ],
+          "type": "update_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "create_own"
+        },
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "read_own"
+        },
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        }
+      ]
+    },
+    "andreatestform": {
+      "title": "Andrea Test Form",
+      "type": "form",
+      "name": "andreatestform",
+      "path": "andreatestform",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "components": [
+        {
+          "label": "First Name",
+          "tableView": true,
+          "key": "firstName",
+          "type": "textfield",
+          "input": true,
+          "placeholder": "",
+          "prefix": "",
+          "customClass": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": null,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "refreshOn": "",
+          "redrawOn": "",
+          "modalEdit": false,
+          "dataGridLabel": false,
+          "labelPosition": "top",
+          "description": "",
+          "errorLabel": "",
+          "tooltip": "",
+          "hideLabel": false,
+          "tabindex": "",
+          "disabled": false,
+          "autofocus": false,
+          "dbIndex": false,
+          "customDefaultValue": "",
+          "calculateValue": "",
+          "calculateServer": false,
+          "widget": {
+            "type": "input"
+          },
+          "attributes": {},
+          "validateOn": "change",
+          "validate": {
+            "required": false,
+            "custom": "",
+            "customPrivate": false,
+            "strictDateValidation": false,
+            "multiple": false,
+            "unique": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": ""
+          },
+          "conditional": {
+            "show": null,
+            "when": null,
+            "eq": ""
+          },
+          "overlay": {
+            "style": "",
+            "left": "",
+            "top": "",
+            "width": "",
+            "height": ""
+          },
+          "allowCalculateOverride": false,
+          "encrypted": false,
+          "showCharCount": false,
+          "showWordCount": false,
+          "properties": {},
+          "allowMultipleMasks": false,
+          "mask": false,
+          "inputType": "text",
+          "inputFormat": "plain",
+          "inputMask": "",
+          "spellcheck": true,
+          "id": "exocm1h"
+        },
+        {
+          "label": "Last Name",
+          "tableView": true,
+          "key": "lastName",
+          "type": "textfield",
+          "input": true,
+          "placeholder": "",
+          "prefix": "",
+          "customClass": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": null,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "refreshOn": "",
+          "redrawOn": "",
+          "modalEdit": false,
+          "dataGridLabel": false,
+          "labelPosition": "top",
+          "description": "",
+          "errorLabel": "",
+          "tooltip": "",
+          "hideLabel": false,
+          "tabindex": "",
+          "disabled": false,
+          "autofocus": false,
+          "dbIndex": false,
+          "customDefaultValue": "",
+          "calculateValue": "",
+          "calculateServer": false,
+          "widget": {
+            "type": "input"
+          },
+          "attributes": {},
+          "validateOn": "change",
+          "validate": {
+            "required": false,
+            "custom": "",
+            "customPrivate": false,
+            "strictDateValidation": false,
+            "multiple": false,
+            "unique": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": ""
+          },
+          "conditional": {
+            "show": null,
+            "when": null,
+            "eq": ""
+          },
+          "overlay": {
+            "style": "",
+            "left": "",
+            "top": "",
+            "width": "",
+            "height": ""
+          },
+          "allowCalculateOverride": false,
+          "encrypted": false,
+          "showCharCount": false,
+          "showWordCount": false,
+          "properties": {},
+          "allowMultipleMasks": false,
+          "mask": false,
+          "inputType": "text",
+          "inputFormat": "plain",
+          "inputMask": "",
+          "spellcheck": true,
+          "id": "eebw6i6"
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false,
+          "placeholder": "",
+          "prefix": "",
+          "customClass": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": null,
+          "protected": false,
+          "unique": false,
+          "persistent": false,
+          "hidden": false,
+          "clearOnHide": true,
+          "refreshOn": "",
+          "redrawOn": "",
+          "modalEdit": false,
+          "dataGridLabel": true,
+          "labelPosition": "top",
+          "description": "",
+          "errorLabel": "",
+          "tooltip": "",
+          "hideLabel": false,
+          "tabindex": "",
+          "disabled": false,
+          "autofocus": false,
+          "dbIndex": false,
+          "customDefaultValue": "",
+          "calculateValue": "",
+          "calculateServer": false,
+          "widget": {
+            "type": "input"
+          },
+          "attributes": {},
+          "validateOn": "change",
+          "validate": {
+            "required": false,
+            "custom": "",
+            "customPrivate": false,
+            "strictDateValidation": false,
+            "multiple": false,
+            "unique": false
+          },
+          "conditional": {
+            "show": null,
+            "when": null,
+            "eq": ""
+          },
+          "overlay": {
+            "style": "",
+            "left": "",
+            "top": "",
+            "width": "",
+            "height": ""
+          },
+          "allowCalculateOverride": false,
+          "encrypted": false,
+          "showCharCount": false,
+          "showWordCount": false,
+          "properties": {},
+          "allowMultipleMasks": false,
+          "size": "md",
+          "leftIcon": "",
+          "rightIcon": "",
+          "block": false,
+          "action": "submit",
+          "theme": "primary",
+          "id": "ecppwoc"
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "authenticated",
+            "everyone"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [
+            "authenticated"
+          ],
+          "type": "update_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "create_own"
+        },
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "read_own"
+        },
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        }
+      ]
+    },
+    "sampleform": {
+      "title": "Sample Form",
+      "type": "form",
+      "name": "sampleform",
+      "path": "sampleform",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "settings": {},
+      "components": [
+        {
+          "title": "Page 1",
+          "label": "Page 1",
+          "type": "panel",
+          "key": "page1",
+          "components": [
+            {
+              "label": "First Name",
+              "tableView": true,
+              "key": "firstName",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Last Name",
+              "tableView": true,
+              "key": "lastName",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Select Boxes",
+              "optionsLabelPosition": "right",
+              "hideLabel": true,
+              "tableView": false,
+              "values": [
+                {
+                  "label": "Choice 1",
+                  "value": "choice1",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Choice 2",
+                  "value": "choice2",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Choice 3",
+                  "value": "choice3",
+                  "shortcut": ""
+                }
+              ],
+              "key": "selectBoxes1",
+              "type": "selectboxes",
+              "input": true,
+              "inputType": "checkbox"
+            }
+          ],
+          "input": false,
+          "tableView": false
+        },
+        {
+          "title": "Page 2",
+          "label": "Page 2",
+          "type": "panel",
+          "key": "page2",
+          "components": [
+            {
+              "label": "Phone Number",
+              "tableView": true,
+              "key": "phoneNumber",
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Description",
+              "autoExpand": false,
+              "tableView": true,
+              "key": "description",
+              "type": "textarea",
+              "input": true
+            }
+          ],
+          "input": false,
+          "tableView": false
+        },
+        {
+          "label": "Submit",
+          "showValidations": false,
+          "tableView": false,
+          "key": "submit",
+          "type": "button",
+          "input": true,
+          "saveOnEnter": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "create_all"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [
+            "everyone"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [
+            "authenticated",
+            "everyone"
+          ],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_own"
+        },
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_all"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ]
+    },
+    "territest": {
+      "title": "Terri Test",
+      "type": "form",
+      "name": "territest",
+      "path": "territest",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "authenticated"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [
+            "authenticated"
+          ],
+          "type": "update_all"
+        }
+      ],
+      "submissionAccess": []
+    },
+    "userLogin": {
+      "title": "User Login",
+      "type": "form",
+      "name": "userLogin",
+      "path": "user/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_own"
+        }
+      ]
+    },
+    "userRegister": {
+      "title": "User Register",
+      "type": "form",
+      "name": "userRegister",
+      "path": "user/register",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "label": "Submit",
+          "input": true,
+          "type": "button"
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_own"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "user:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "user",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "authenticated"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "user:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "user",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userLogin",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "admin:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "admin",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "administrator"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "admin:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "admin",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userRegister",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password"
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "userRegister",
+      "settings": {
+        "resource": "user",
+        "fields": {
+          "email": "email",
+          "password": "password"
+        }
+      },
+      "priority": 11,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "adminLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "adminLogin",
+      "settings": {
+        "resources": [
+          "admin"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "sampleform:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "sampleform",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "territest:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "territest",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "andreatestform:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "andreatestform",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "alextestform:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "alextestform",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {
+    "admin": {
+      "title": "Admin",
+      "type": "resource",
+      "name": "admin",
+      "path": "admin",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "authenticated",
+            "administrator"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "create_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "update_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        }
+      ]
+    },
+    "user": {
+      "title": "User",
+      "type": "resource",
+      "name": "user",
+      "path": "user",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "authenticated",
+            "administrator"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "create_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "update_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        }
+      ]
+    }
+  },
+  "access": [
+    {
+      "type": "create_own",
+      "roles": []
+    },
+    {
+      "type": "create_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "read_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "update_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    },
+    {
+      "type": "delete_all",
+      "roles": [
+        "administrator"
+      ]
+    }
+  ]
+}
