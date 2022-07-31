@@ -1,0 +1,146 @@
+{
+  "title": "partner-sandbox",
+  "version": "2.0.0",
+  "name": "partner",
+  "roles": {},
+  "forms": {
+    "oestestversionb": {
+      "title": "OES test version B",
+      "type": "form",
+      "name": "oestestversionb",
+      "path": "oestestversionb",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "components": [
+        {
+          "label": "Email",
+          "tableView": true,
+          "key": "email",
+          "type": "email",
+          "input": true
+        },
+        {
+          "label": "Phone Number",
+          "tableView": true,
+          "key": "phoneNumber",
+          "type": "phoneNumber",
+          "input": true
+        },
+        {
+          "label": "What happened?",
+          "tableView": false,
+          "defaultValue": {
+            "": false,
+            "Age_o": false,
+            "Age_y": false,
+            "Gend": false,
+            "Fam": false
+          },
+          "values": [
+            {
+              "label": "Someone told me I was too old to rent there",
+              "value": "Age_o"
+            },
+            {
+              "label": "Someone told me I was too young to rent there",
+              "value": "Age_y"
+            },
+            {
+              "label": "Someone said I couldn't rent there because of my gender",
+              "value": "Gend"
+            },
+            {
+              "label": "Someone said I couldn't rent there because of my kids",
+              "value": "Fam"
+            }
+          ],
+          "key": "selectBoxes",
+          "type": "selectboxes",
+          "input": true,
+          "inputType": "checkbox"
+        },
+        {
+          "label": "Date / Time",
+          "description": "When did this happen?",
+          "tableView": false,
+          "enableMinDateInput": false,
+          "datePicker": {
+            "disableWeekends": false,
+            "disableWeekdays": false
+          },
+          "enableMaxDateInput": false,
+          "key": "dateTime",
+          "type": "datetime",
+          "input": true,
+          "widget": {
+            "type": "calendar",
+            "displayInTimezone": "viewer",
+            "locale": "en",
+            "useLocaleSettings": false,
+            "allowInput": true,
+            "mode": "single",
+            "enableTime": true,
+            "noCalendar": false,
+            "format": "yyyy-MM-dd hh:mm a",
+            "hourIncrement": 1,
+            "minuteIncrement": 1,
+            "time_24hr": false,
+            "minDate": null,
+            "disableWeekends": false,
+            "disableWeekdays": false,
+            "maxDate": null
+          }
+        },
+        {
+          "label": "First name",
+          "tableView": true,
+          "key": "firstName",
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "label": "Last name",
+          "tableView": true,
+          "key": "lastName",
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "label": "I certify that the information I've provided is true.",
+          "tableView": false,
+          "key": "iCertifyThatTheInformationIveProvidedIsTrue",
+          "type": "checkbox",
+          "input": true,
+          "defaultValue": false
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ]
+    }
+  },
+  "actions": {
+    "oestestversionb:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "oestestversionb",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

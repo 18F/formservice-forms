@@ -1,0 +1,948 @@
+{
+  "title": "partner-sandbox",
+  "version": "2.0.0",
+  "name": "partner",
+  "roles": {},
+  "forms": {
+    "W4": {
+      "title": "Form W4: Employee’s Withholding Certificate",
+      "type": "form",
+      "name": "W4",
+      "path": "w4",
+      "display": "wizard",
+      "tags": [
+        "common"
+      ],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/645ee2a5-2294-58cc-a7aa-4a894dedbd69",
+          "id": "645ee2a5-2294-58cc-a7aa-4a894dedbd69"
+        }
+      },
+      "components": [
+        {
+          "title": "Welcome",
+          "collapsible": false,
+          "tableView": false,
+          "key": "welcome",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "components": [
+            {
+              "html": "<p>OMB No. 1545-0074</p>\n\n<ul>\n\t<li>Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay.</li>\n\t<li>Give Form W-4 to your employer.</li>\n\t<li>Your withholding is subject to review by the IRS.</li>\n</ul>\n",
+              "label": "Content",
+              "refreshOnChange": false,
+              "tableView": false,
+              "key": "content5",
+              "tags": [
+                "viewer: hide"
+              ],
+              "type": "content",
+              "input": false
+            }
+          ]
+        },
+        {
+          "title": "Personal Information",
+          "collapsible": false,
+          "tableView": false,
+          "key": "page1",
+          "type": "panel",
+          "label": "Step 1) Personal Information",
+          "components": [
+            {
+              "html": "<h3>Let's get started with the basics<br>&nbsp;</h3>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "tableView": false,
+              "key": "content4",
+              "tags": [
+                "viewer: hide"
+              ],
+              "type": "content",
+              "input": false
+            },
+            {
+              "label": "First Name, Middle Initial",
+              "tableView": true,
+              "key": "firstNameMiddleInitial",
+              "overlay": {
+                "left": 174.457,
+                "top": 163.572,
+                "height": "25",
+                "width": "300",
+                "page": 1
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "input": true,
+              "tableView": true,
+              "label": "Last Name",
+              "key": "lastName",
+              "type": "textfield",
+              "overlay": {
+                "left": 489.55266666666665,
+                "top": "163.572",
+                "height": 25,
+                "width": "300",
+                "page": 1
+              }
+            },
+            {
+              "label": "Social Security Number",
+              "inputMask": "999-99-9999",
+              "tableView": true,
+              "encrypted": true,
+              "key": "SSN",
+              "overlay": {
+                "left": 849.368,
+                "top": 164.854,
+                "height": "25",
+                "width": "180",
+                "page": 1
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "html": "<h3>What&#39;s your address?<br />\n&nbsp;</h3>\n",
+              "label": "Content",
+              "refreshOnChange": false,
+              "tableView": false,
+              "key": "content3",
+              "tags": [
+                "viewer: hide"
+              ],
+              "type": "content",
+              "input": false
+            },
+            {
+              "label": "Address",
+              "tableView": true,
+              "key": "address",
+              "overlay": {
+                "page": 1,
+                "left": "174.457",
+                "top": 206.133,
+                "width": "625",
+                "height": 25
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "City",
+              "tableView": true,
+              "key": "city",
+              "overlay": {
+                "left": "174.457",
+                "top": 248.6346666666666,
+                "height": "25",
+                "width": "300",
+                "page": 1
+              },
+              "type": "textfield",
+              "input": true,
+              "lockKey": true,
+              "source": "5e8c93f9de9d912859fc4c3d"
+            },
+            {
+              "label": "State",
+              "widget": "html5",
+              "tableView": true,
+              "dataSrc": "json",
+              "data": {
+                "values": [
+                  {
+                    "label": "",
+                    "value": ""
+                  }
+                ],
+                "json": [
+                  {
+                    "name": "Alabama",
+                    "abbreviation": "AL"
+                  },
+                  {
+                    "name": "Alaska",
+                    "abbreviation": "AK"
+                  },
+                  {
+                    "name": "American Samoa",
+                    "abbreviation": "AS"
+                  },
+                  {
+                    "name": "Arizona",
+                    "abbreviation": "AZ"
+                  },
+                  {
+                    "name": "Arkansas",
+                    "abbreviation": "AR"
+                  },
+                  {
+                    "name": "California",
+                    "abbreviation": "CA"
+                  },
+                  {
+                    "name": "Colorado",
+                    "abbreviation": "CO"
+                  },
+                  {
+                    "name": "Connecticut",
+                    "abbreviation": "CT"
+                  },
+                  {
+                    "name": "Delaware",
+                    "abbreviation": "DE"
+                  },
+                  {
+                    "name": "District Of Columbia",
+                    "abbreviation": "DC"
+                  },
+                  {
+                    "name": "Federated States Of Micronesia",
+                    "abbreviation": "FM"
+                  },
+                  {
+                    "name": "Florida",
+                    "abbreviation": "FL"
+                  },
+                  {
+                    "name": "Georgia",
+                    "abbreviation": "GA"
+                  },
+                  {
+                    "name": "Guam",
+                    "abbreviation": "GU"
+                  },
+                  {
+                    "name": "Hawaii",
+                    "abbreviation": "HI"
+                  },
+                  {
+                    "name": "Idaho",
+                    "abbreviation": "ID"
+                  },
+                  {
+                    "name": "Illinois",
+                    "abbreviation": "IL"
+                  },
+                  {
+                    "name": "Indiana",
+                    "abbreviation": "IN"
+                  },
+                  {
+                    "name": "Iowa",
+                    "abbreviation": "IA"
+                  },
+                  {
+                    "name": "Kansas",
+                    "abbreviation": "KS"
+                  },
+                  {
+                    "name": "Kentucky",
+                    "abbreviation": "KY"
+                  },
+                  {
+                    "name": "Louisiana",
+                    "abbreviation": "LA"
+                  },
+                  {
+                    "name": "Maine",
+                    "abbreviation": "ME"
+                  },
+                  {
+                    "name": "Marshall Islands",
+                    "abbreviation": "MH"
+                  },
+                  {
+                    "name": "Maryland",
+                    "abbreviation": "MD"
+                  },
+                  {
+                    "name": "Massachusetts",
+                    "abbreviation": "MA"
+                  },
+                  {
+                    "name": "Michigan",
+                    "abbreviation": "MI"
+                  },
+                  {
+                    "name": "Minnesota",
+                    "abbreviation": "MN"
+                  },
+                  {
+                    "name": "Mississippi",
+                    "abbreviation": "MS"
+                  },
+                  {
+                    "name": "Missouri",
+                    "abbreviation": "MO"
+                  },
+                  {
+                    "name": "Montana",
+                    "abbreviation": "MT"
+                  },
+                  {
+                    "name": "Nebraska",
+                    "abbreviation": "NE"
+                  },
+                  {
+                    "name": "Nevada",
+                    "abbreviation": "NV"
+                  },
+                  {
+                    "name": "New Hampshire",
+                    "abbreviation": "NH"
+                  },
+                  {
+                    "name": "New Jersey",
+                    "abbreviation": "NJ"
+                  },
+                  {
+                    "name": "New Mexico",
+                    "abbreviation": "NM"
+                  },
+                  {
+                    "name": "New York",
+                    "abbreviation": "NY"
+                  },
+                  {
+                    "name": "North Carolina",
+                    "abbreviation": "NC"
+                  },
+                  {
+                    "name": "North Dakota",
+                    "abbreviation": "ND"
+                  },
+                  {
+                    "name": "Northern Mariana Islands",
+                    "abbreviation": "MP"
+                  },
+                  {
+                    "name": "Ohio",
+                    "abbreviation": "OH"
+                  },
+                  {
+                    "name": "Oklahoma",
+                    "abbreviation": "OK"
+                  },
+                  {
+                    "name": "Oregon",
+                    "abbreviation": "OR"
+                  },
+                  {
+                    "name": "Palau",
+                    "abbreviation": "PW"
+                  },
+                  {
+                    "name": "Pennsylvania",
+                    "abbreviation": "PA"
+                  },
+                  {
+                    "name": "Puerto Rico",
+                    "abbreviation": "PR"
+                  },
+                  {
+                    "name": "Rhode Island",
+                    "abbreviation": "RI"
+                  },
+                  {
+                    "name": "South Carolina",
+                    "abbreviation": "SC"
+                  },
+                  {
+                    "name": "South Dakota",
+                    "abbreviation": "SD"
+                  },
+                  {
+                    "name": "Tennessee",
+                    "abbreviation": "TN"
+                  },
+                  {
+                    "name": "Texas",
+                    "abbreviation": "TX"
+                  },
+                  {
+                    "name": "Utah",
+                    "abbreviation": "UT"
+                  },
+                  {
+                    "name": "Vermont",
+                    "abbreviation": "VT"
+                  },
+                  {
+                    "name": "Virgin Islands",
+                    "abbreviation": "VI"
+                  },
+                  {
+                    "name": "Virginia",
+                    "abbreviation": "VA"
+                  },
+                  {
+                    "name": "Washington",
+                    "abbreviation": "WA"
+                  },
+                  {
+                    "name": "West Virginia",
+                    "abbreviation": "WV"
+                  },
+                  {
+                    "name": "Wisconsin",
+                    "abbreviation": "WI"
+                  },
+                  {
+                    "name": "Wyoming",
+                    "abbreviation": "WY"
+                  }
+                ]
+              },
+              "valueProperty": "abbreviation",
+              "template": "<span>{{ item.name }}</span>",
+              "selectThreshold": 0.3,
+              "key": "state",
+              "overlay": {
+                "page": 1,
+                "left": "500",
+                "top": "248.6346666666666",
+                "height": "25",
+                "width": "200"
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "lockKey": true,
+              "source": "5e8c93f9de9d912859fc4c3d"
+            },
+            {
+              "label": "Zip",
+              "inputMask": "99999",
+              "tableView": true,
+              "key": "zip",
+              "overlay": {
+                "left": "725",
+                "top": "248.6346666666666",
+                "height": "25",
+                "width": "75",
+                "page": 1
+              },
+              "type": "textfield",
+              "input": true,
+              "lockKey": true,
+              "source": "5e8c93f9de9d912859fc4c3d"
+            },
+            {
+              "html": "<h3>What&#39;s your filling status?<br />\n&nbsp;</h3>\n",
+              "label": "Content",
+              "refreshOnChange": false,
+              "tableView": false,
+              "key": "content1",
+              "tags": [
+                "viewer: hide"
+              ],
+              "type": "content",
+              "input": false
+            },
+            {
+              "input": true,
+              "tableView": true,
+              "label": "Single or married filing separately",
+              "dataGridLabel": false,
+              "key": "singleOrMarried",
+              "defaultValue": false,
+              "type": "checkbox",
+              "overlay": {
+                "top": 281.664,
+                "left": 205.359,
+                "height": "12",
+                "width": "12",
+                "page": 1
+              },
+              "lockKey": true
+            },
+            {
+              "input": true,
+              "tableView": true,
+              "label": "Married filing jointly",
+              "dataGridLabel": false,
+              "key": "marriedfilingjointly",
+              "defaultValue": false,
+              "type": "checkbox",
+              "overlay": {
+                "top": 303.09257142857143,
+                "left": "205.359",
+                "height": "12",
+                "width": "12",
+                "page": 1
+              }
+            },
+            {
+              "input": true,
+              "tableView": true,
+              "label": "Head of household",
+              "dataGridLabel": false,
+              "key": "headofhousehold",
+              "defaultValue": false,
+              "type": "checkbox",
+              "overlay": {
+                "top": 323.6712857142857,
+                "left": 205.359,
+                "height": "12",
+                "width": "12",
+                "page": 1
+              }
+            },
+            {
+              "input": true,
+              "tableView": true,
+              "label": "Multiple jobs or spouse works",
+              "dataGridLabel": false,
+              "key": "twoJobs",
+              "defaultValue": false,
+              "type": "checkbox",
+              "overlay": {
+                "page": 1,
+                "left": 998.66,
+                "top": 567.443,
+                "height": 0,
+                "width": 0
+              },
+              "lockKey": true
+            }
+          ],
+          "input": false,
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          }
+        },
+        {
+          "title": "Multiple Jobs or Spouse Works",
+          "collapsible": false,
+          "tableView": false,
+          "key": "page2",
+          "type": "panel",
+          "label": "Step 2: Multiple Jobs or Spouse Works",
+          "input": false,
+          "components": [
+            {
+              "html": "<h3>Do you hold more than one job at a time, or, if you are married filing jointly and does your spouse also work?<br />\n&nbsp;</h3>\n",
+              "label": "Content",
+              "refreshOnChange": false,
+              "tableView": false,
+              "key": "content7",
+              "tags": [
+                "viewer: hide"
+              ],
+              "type": "content",
+              "input": false
+            },
+            {
+              "label": "Select Boxes",
+              "optionsLabelPosition": "right",
+              "hideLabel": true,
+              "tableView": false,
+              "defaultValue": {
+                "": false,
+                "yes": false,
+                "no": false
+              },
+              "values": [
+                {
+                  "label": "Yes",
+                  "value": "yes",
+                  "shortcut": ""
+                },
+                {
+                  "label": "No",
+                  "value": "no",
+                  "shortcut": ""
+                }
+              ],
+              "key": "step2selectBoxes",
+              "type": "selectboxes",
+              "input": true,
+              "inputType": "checkbox"
+            },
+            {
+              "label": "step2Well",
+              "tableView": false,
+              "key": "well1",
+              "conditional": {
+                "show": true,
+                "when": "step2selectBoxes",
+                "eq": "yes"
+              },
+              "type": "well",
+              "input": false,
+              "components": [
+                {
+                  "html": "<p>Do only one of the following.</p>\n",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "tableView": false,
+                  "key": "content2",
+                  "type": "content",
+                  "input": false
+                },
+                {
+                  "html": "<p><strong>a)</strong> Use the estimator at <a href=\"https://irs.gov/W4App\">irs.gov/W4App</a> for most accurate withholding for this step (and Steps 3–4); <strong>or</strong></p><p><strong>b)</strong> Use the <a href=\"#\">Multiple Jobs Worksheet </a>on and enter the result in Step 4(c) below for roughly accurate withholding; <strong>or</strong><br>&nbsp;</p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "tableView": false,
+                  "key": "content",
+                  "type": "content",
+                  "input": false
+                },
+                {
+                  "label": "<b>c)</b> If there are only two jobs total, check this box. (Do the same on Form W-4 for the other job.)",
+                  "description": "This option is accurate for jobs with similar pay; otherwise, more tax than necessary may be withheld.",
+                  "tableView": false,
+                  "defaultValue": false,
+                  "key": "step2cCheckbox",
+                  "overlay": {
+                    "left": 1008,
+                    "top": 560.444111111111,
+                    "width": "12",
+                    "height": "12",
+                    "page": 1
+                  },
+                  "type": "checkbox",
+                  "input": true,
+                  "dataGridLabel": false
+                }
+              ],
+              "clearOnHide": false,
+              "hideLabel": true
+            }
+          ]
+        },
+        {
+          "title": "Claim Dependents",
+          "collapsible": false,
+          "tableView": false,
+          "key": "page3",
+          "type": "panel",
+          "label": "Step 3: Claim Dependents",
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "input": false,
+          "components": [
+            {
+              "html": "<h3>Will your income be $200,000 or less ($400,000 or less if married filing jointly) ?<br />\n&nbsp;</h3>\n",
+              "label": "Content",
+              "refreshOnChange": false,
+              "tableView": false,
+              "key": "content8",
+              "tags": [
+                "viewer: hide"
+              ],
+              "type": "content",
+              "input": false
+            },
+            {
+              "label": "Select Boxes",
+              "optionsLabelPosition": "right",
+              "hideLabel": true,
+              "tableView": false,
+              "defaultValue": {
+                "": false,
+                "yes": false,
+                "no": false
+              },
+              "values": [
+                {
+                  "label": "Yes",
+                  "value": "yes",
+                  "shortcut": ""
+                },
+                {
+                  "label": "No",
+                  "value": "no",
+                  "shortcut": ""
+                }
+              ],
+              "key": "step3selectBoxes",
+              "type": "selectboxes",
+              "input": true,
+              "inputType": "checkbox"
+            },
+            {
+              "label": "step3Well",
+              "tableView": false,
+              "key": "step3Well",
+              "conditional": {
+                "show": true,
+                "when": "step3selectBoxes",
+                "eq": "yes"
+              },
+              "type": "well",
+              "input": false,
+              "components": [
+                {
+                  "label": "Number of qualifying children under age 17",
+                  "mask": false,
+                  "spellcheck": true,
+                  "tableView": false,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "clearOnHide": false,
+                  "validate": {
+                    "integer": "true"
+                  },
+                  "key": "numberOfChildrenUnder17",
+                  "type": "number",
+                  "input": true,
+                  "inputType": "number"
+                },
+                {
+                  "label": "Number of other dependents",
+                  "mask": false,
+                  "spellcheck": true,
+                  "tableView": false,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "clearOnHide": false,
+                  "validate": {
+                    "integer": "true"
+                  },
+                  "key": "numberOfOtherDependents",
+                  "type": "number",
+                  "input": true,
+                  "inputType": "number"
+                },
+                {
+                  "label": "Multiply the number of qualifying children under age 17 by $2,000",
+                  "hidden": true,
+                  "mask": false,
+                  "spellcheck": true,
+                  "tableView": true,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "clearOnHide": false,
+                  "calculateValue": "value = data.numberOfChildrenUnder17*2000;",
+                  "allowCalculateOverride": true,
+                  "key": "calculatedChildrenUnder17",
+                  "overlay": {
+                    "page": 1,
+                    "left": "739.965",
+                    "top": 739.542,
+                    "width": 100,
+                    "height": "25"
+                  },
+                  "type": "number",
+                  "input": true,
+                  "inputType": "number",
+                  "lockKey": true
+                },
+                {
+                  "label": "Multiply the number of other dependents by $500",
+                  "hidden": true,
+                  "mask": false,
+                  "spellcheck": true,
+                  "tableView": true,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "clearOnHide": false,
+                  "calculateValue": "value = data.numberOfOtherDependents*500;",
+                  "allowCalculateOverride": true,
+                  "key": "calculatedOtherDependents",
+                  "overlay": {
+                    "page": 1,
+                    "left": 739.965,
+                    "top": 782.871,
+                    "width": 100,
+                    "height": "25"
+                  },
+                  "type": "number",
+                  "input": true,
+                  "inputType": "number"
+                },
+                {
+                  "label": "Add the amounts above and enter the total here",
+                  "hidden": true,
+                  "mask": false,
+                  "spellcheck": true,
+                  "tableView": true,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "clearOnHide": false,
+                  "calculateValue": "value = data.calculatedChildrenUnder17 + data.calculatedOtherDependents;",
+                  "allowCalculateOverride": true,
+                  "key": "addtheamountsaboveandenterthetotalhere",
+                  "overlay": {
+                    "page": 1,
+                    "left": 924.08,
+                    "top": "825",
+                    "width": 100,
+                    "height": "25"
+                  },
+                  "type": "number",
+                  "input": true,
+                  "inputType": "number"
+                }
+              ]
+            }
+          ],
+          "breadcrumbClickable": true
+        },
+        {
+          "type": "panel",
+          "title": "Other Adjustments",
+          "input": false,
+          "key": "page4",
+          "tableView": false,
+          "label": "Panel",
+          "components": [
+            {
+              "label": "<b>(a)</b> Other income (not from jobs)",
+              "prefix": "$",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": true,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "step4aOtherIncomeNotFromJobs",
+              "overlay": {
+                "left": 924.08,
+                "top": 888.111,
+                "width": "100",
+                "height": "25",
+                "page": 1
+              },
+              "type": "number",
+              "input": true,
+              "inputType": "number"
+            },
+            {
+              "label": "<b>(b)</b> Deductions",
+              "prefix": "$",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": true,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "step4bDeductions",
+              "overlay": {
+                "left": 922.08,
+                "top": 972.445,
+                "width": "100",
+                "height": "25",
+                "page": 1
+              },
+              "type": "number",
+              "input": true,
+              "inputType": "number"
+            },
+            {
+              "label": "<b>(c)</b> Extra withholdings",
+              "prefix": "$",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": true,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "step4cExtraWithholdings",
+              "overlay": {
+                "left": 922.08,
+                "top": 1016.22,
+                "width": "100",
+                "height": "25",
+                "page": 1
+              },
+              "type": "number",
+              "input": true,
+              "inputType": "number"
+            }
+          ]
+        },
+        {
+          "label": "Text Field",
+          "hidden": true,
+          "hideLabel": true,
+          "tableView": true,
+          "defaultValue": "[[s|0                                        ]]",
+          "key": "textField",
+          "attributes": {
+            "style": "color: white;"
+          },
+          "overlay": {
+            "page": 1,
+            "left": 192.029,
+            "top": 1116.875,
+            "width": "600",
+            "height": "45"
+          },
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "label": "Text Field",
+          "hidden": true,
+          "hideLabel": true,
+          "tableView": true,
+          "defaultValue": "[[d|0         ]]",
+          "key": "textField1",
+          "attributes": {
+            "style": "color: white;"
+          },
+          "overlay": {
+            "page": 1,
+            "left": 830.668,
+            "top": 1130.11,
+            "width": "175",
+            "height": "30"
+          },
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "input": true,
+          "label": "Submit",
+          "tableView": false,
+          "key": "submit",
+          "type": "button"
+        }
+      ],
+      "properties": {
+        "": ""
+      },
+      "controller": ""
+    }
+  },
+  "actions": {
+    "W4:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "W4",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

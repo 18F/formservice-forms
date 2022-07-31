@@ -1,0 +1,547 @@
+{
+  "title": "Dev",
+  "version": "2.0.0",
+  "name": "dev",
+  "roles": {
+    "administrator": {
+      "title": "Administrator",
+      "description": "A role for Administrative Users.",
+      "admin": true,
+      "default": false
+    },
+    "anonymous": {
+      "title": "Anonymous",
+      "description": "A role for Anonymous Users.",
+      "admin": false,
+      "default": true
+    },
+    "authenticated": {
+      "title": "Authenticated",
+      "description": "A role for Authenticated Users.",
+      "admin": false,
+      "default": false
+    }
+  },
+  "forms": {
+    "1040TaxForm": {
+      "title": "1040 Tax Form",
+      "type": "form",
+      "name": "1040TaxForm",
+      "path": "1040taxform",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/b4b59b99-c815-53a8-807c-505d6776b691",
+          "id": "b4b59b99-c815-53a8-807c-505d6776b691"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "W4": {
+      "title": "Form W4: Employee’s Withholding Certificate",
+      "type": "form",
+      "name": "W4",
+      "path": "w4",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/683c22a8-e10b-591e-9c6d-3078731f990e",
+          "id": "683c22a8-e10b-591e-9c6d-3078731f990e"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "bfsformfs13": {
+      "title": "BFS Form FS-13",
+      "type": "form",
+      "name": "bfsformfs13",
+      "path": "bfsformfs13",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/a73977eb-55de-5bd4-ac6c-2ba1d7361da2",
+          "id": "a73977eb-55de-5bd4-ac6c-2ba1d7361da2"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "fedRampPackageAccessRequest": {
+      "title": "FedRAMP Package Access Request",
+      "type": "form",
+      "name": "fedRampPackageAccessRequest",
+      "path": "fedramp-package-access-request",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/bae9df29-8c82-558a-b58a-5be21db7649b",
+          "id": "bae9df29-8c82-558a-b58a-5be21db7649b"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "ss5": {
+      "title": "Application for a Social Security Card (SS5)",
+      "type": "form",
+      "name": "ss5",
+      "path": "ss5",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/eedc7d83-40cc-5136-b888-1ee990466519",
+          "id": "eedc7d83-40cc-5136-b888-1ee990466519"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "test": {
+      "title": "Birdperson History",
+      "type": "form",
+      "name": "test",
+      "path": "birdpersonhistory",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/15599f31-7cdc-5b8f-a1b6-3702eee6c696",
+          "id": "15599f31-7cdc-5b8f-a1b6-3702eee6c696"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "usdaAd2047": {
+      "title": "USDA AD-2047",
+      "type": "form",
+      "name": "usdaAd2047",
+      "path": "usdaad2047",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/d08cd2a4-c0e0-52be-8e2d-2af18b4ecb95",
+          "id": "d08cd2a4-c0e0-52be-8e2d-2af18b4ecb95"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "wirelessDeviceRequestDemo": {
+      "title": "Wireless Device Request (Demo)",
+      "type": "form",
+      "name": "wirelessDeviceRequestDemo",
+      "path": "wirelessdevicerequestdemo",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/3c5c8cb9-b366-564b-bb00-66c8ff080561",
+          "id": "3c5c8cb9-b366-564b-bb00-66c8ff080561"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "wirelessdevicerequestssa95": {
+      "title": "Wireless Device Request (SSA-95)",
+      "type": "form",
+      "name": "wirelessdevicerequestssa95",
+      "path": "wirelessdevicerequestssa95",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-test.forms.gov/pdf/pdf/60a528a7959e4627196c6b85/file/dc85fe1c-2a2d-5e48-8e58-238da14f8e2e",
+          "id": "dc85fe1c-2a2d-5e48-8e58-238da14f8e2e"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "user:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "user",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "authenticated"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "user:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "user",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "admin:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "admin",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "admin:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "admin",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "administrator"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "1040TaxForm:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "1040TaxForm",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "wirelessdevicerequestssa95:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "wirelessdevicerequestssa95",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "wirelessDeviceRequestDemo:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "wirelessDeviceRequestDemo",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "usdaAd2047:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "usdaAd2047",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "test:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "test",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "fedRampPackageAccessRequest:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "fedRampPackageAccessRequest",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "bfsformfs13:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "bfsformfs13",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "W4:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "W4",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "ss5:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "ss5",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {
+    "admin": {
+      "title": "Admin",
+      "type": "resource",
+      "name": "admin",
+      "path": "admin",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    },
+    "user": {
+      "title": "User",
+      "type": "resource",
+      "name": "user",
+      "path": "user",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    }
+  },
+  "excludeAccess": true
+}

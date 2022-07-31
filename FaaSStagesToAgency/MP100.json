@@ -1,0 +1,488 @@
+{
+  "title": "partner-sandbox",
+  "version": "2.0.0",
+  "name": "partner",
+  "roles": {},
+  "forms": {
+    "mp100test": {
+      "title": "MP-100 Test",
+      "type": "form",
+      "name": "mp100test",
+      "path": "mp100test",
+      "display": "wizard",
+      "tags": [
+        "common"
+      ],
+      "components": [
+        {
+          "title": "Part I - General Information",
+          "collapsible": false,
+          "key": "partIGeneralInformation",
+          "type": "panel",
+          "label": "Part I - General Information",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "html": "<p style=\"text-align:center;\"><strong>Part I - General Information</strong></p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Plan Name",
+              "tableView": true,
+              "key": "planInformation1",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Employer identification number/plan number",
+              "tableView": true,
+              "key": "employerIdentificationNumberPlanNumber",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "8-digit PBGC Case #",
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "DigitPbgcCase1",
+              "type": "number",
+              "input": true
+            },
+            {
+              "label": "Plan Contact Name",
+              "tableView": true,
+              "key": "DigitPbgcCase",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Plan Company Name",
+              "tableView": true,
+              "key": "planCompanyName",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Street Address",
+              "tableView": true,
+              "key": "address",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "State",
+              "tableView": true,
+              "key": "state",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "City",
+              "tableView": true,
+              "key": "city",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Zip Code",
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "zipCode",
+              "type": "number",
+              "input": true
+            },
+            {
+              "label": "Phone Number",
+              "tableView": true,
+              "key": "phoneNumber",
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Extension",
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "extension",
+              "type": "number",
+              "input": true
+            },
+            {
+              "label": "Email",
+              "tableView": true,
+              "key": "email",
+              "type": "email",
+              "input": true
+            },
+            {
+              "label": "Number of missing distributees",
+              "key": "Panel6",
+              "type": "well",
+              "input": false,
+              "tableView": false,
+              "components": [
+                {
+                  "label": "2(a)(3) Number of Missing Distributees: <b>Annuity Purchases</b> Total",
+                  "tableView": false,
+                  "defaultValue": 0,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "key": "numberOfMissingDistributees2a3",
+                  "type": "number",
+                  "input": true
+                },
+                {
+                  "label": "2(b)(1) Number of Missing Distributees: <b>Benefits being transferred to PBGC</b>",
+                  "description": "Benefit transfer more than amounts $250",
+                  "tableView": false,
+                  "defaultValue": 0,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "key": "numberOfMissingDistributees2b1",
+                  "type": "number",
+                  "input": true
+                },
+                {
+                  "label": "2(b)(2) Number of Missing Distributees: <b>Benefits being transferred to PBGC</b>",
+                  "description": "Benefit transfer $250 or less",
+                  "tableView": false,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "key": "numberOfMissingDistributees2b2",
+                  "type": "number",
+                  "input": true
+                },
+                {
+                  "label": "2(b)(3) Number of Missing Distributees: <b>Benefits being transferred to PBGC</b> Total",
+                  "disabled": true,
+                  "tableView": false,
+                  "defaultValue": 0,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "calculateValue": "value = data.numberOfMissingDistributees2b1 + data.numberOfMissingDistributees2b2;",
+                  "key": "numberOfMissingDistributees2b3",
+                  "type": "number",
+                  "input": true
+                },
+                {
+                  "label": "2(c)(3) Number of missing distributees: Total",
+                  "description": "Benefit transfer amounts more than $250",
+                  "disabled": true,
+                  "tableView": false,
+                  "delimiter": false,
+                  "requireDecimal": false,
+                  "inputFormat": "plain",
+                  "calculateValue": "value = data.numberOfMissingDistributees2a3 + data.numberOfMissingDistributees2b3;",
+                  "key": "numberOfMissingDistributees-2c3",
+                  "type": "number",
+                  "input": true,
+                  "defaultValue": 0
+                }
+              ]
+            },
+            {
+              "label": "3. Benefit determination date (BDD)",
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "benefitDeterminationDateBdd",
+              "type": "number",
+              "input": true
+            },
+            {
+              "label": "4. Commercial locator service(s) used (if any)",
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "commercialLocatorServiceSUsedIfAny1",
+              "type": "number",
+              "input": true
+            },
+            {
+              "label": "5. Amended filings only ",
+              "description": "- Did the original filing contain information on anyone who is not reported in this □Yes amended filing (i.e., has anyone been removed from Schedule A or B)? (attachment required if “Yes”)",
+              "tileView": false,
+              "tableView": false,
+              "defaultValue": false,
+              "key": "amendedFilingsOnly",
+              "type": "checkbox",
+              "input": true
+            }
+          ],
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "scrollToTop": true
+        },
+        {
+          "title": "Part II - Amount Due to PBGC",
+          "collapsible": false,
+          "key": "partIiAmountDueToPbgc",
+          "type": "panel",
+          "label": "Part II - Amount Due to PBGC",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "html": "<p style=\"text-align:center;\"><strong>Part II - Amount Due to PBGC</strong></p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content1",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Amounts owed to PBGC for missing distributees reported in this filing",
+              "key": "amountsOwedToPbgcForMissingDistributeesReportedInThisFiling",
+              "type": "well",
+              "input": false,
+              "tableView": false,
+              "components": [
+                {
+                  "label": "6(a) Amounts owed to PBGC for missing distributees reported in this filing",
+                  "description": "Aggregate benefit transfer amount as of BDD [sum of item 3 from all Schedules B]",
+                  "spellcheck": true,
+                  "tableView": false,
+                  "defaultValue": 0,
+                  "currency": "USD",
+                  "inputFormat": "plain",
+                  "key": "amountsowedtoPBGC6a",
+                  "type": "currency",
+                  "input": true,
+                  "delimiter": true
+                },
+                {
+                  "label": "6(b) Amounts owed to PBGC for missing distributees reported in this filing",
+                  "description": "Administrative fee [$35 x item 2b from column (1) or sum of item 4 from all Schedules B]",
+                  "spellcheck": true,
+                  "tableView": false,
+                  "defaultValue": 0,
+                  "currency": "USD",
+                  "inputFormat": "plain",
+                  "key": "amountsowedtoPBGC6b",
+                  "type": "currency",
+                  "input": true,
+                  "delimiter": true
+                },
+                {
+                  "label": "6(c) Amounts owed to PBGC for missing distributees reported in this filing",
+                  "description": "Aggregate late payment charge [sum of item 5b from all Schedules B]",
+                  "spellcheck": true,
+                  "tableView": false,
+                  "defaultValue": 0,
+                  "currency": "USD",
+                  "inputFormat": "plain",
+                  "key": "amountsowedtoPBGC6c",
+                  "type": "currency",
+                  "input": true,
+                  "delimiter": true
+                },
+                {
+                  "label": "6(d) Amounts owed to PBGC for missing distributees reported in this filing",
+                  "description": "Total [item 6a + item 6b + item 6c]",
+                  "spellcheck": true,
+                  "disabled": true,
+                  "tableView": false,
+                  "defaultValue": 0,
+                  "currency": "USD",
+                  "inputFormat": "plain",
+                  "calculateValue": "value = data.amountsowedtoPBGC6a + data.amountsowedtoPBGC6b + data.amountsowedtoPBGC6c;",
+                  "key": "amountsowedtoPBGC6d",
+                  "type": "currency",
+                  "input": true,
+                  "delimiter": true
+                },
+                {
+                  "label": "7(a) Reconciliation (amended filings only)",
+                  "description": "Amounts previously paid in conjunction with prior Forms MP-100 for this plan",
+                  "spellcheck": true,
+                  "tableView": false,
+                  "currency": "USD",
+                  "inputFormat": "plain",
+                  "key": "amountsOwedToPBGC7a",
+                  "type": "currency",
+                  "input": true,
+                  "delimiter": true
+                },
+                {
+                  "label": "7(b) Reconciliation (amended filings only)",
+                  "description": "Underpayment/(overpayment) [item 6d – item 7a]",
+                  "spellcheck": true,
+                  "disabled": true,
+                  "tableView": false,
+                  "currency": "USD",
+                  "inputFormat": "plain",
+                  "calculateValue": "value = data.amountsowedtoPBGC6d - data.amountsOwedToPBGC7a;",
+                  "key": "amountsOwedToPbgcForMissingDistributeesReportedInThisFiling6",
+                  "type": "currency",
+                  "input": true,
+                  "delimiter": true
+                },
+                {
+                  "html": "<p style=\"text-align:center;\">Payment Method</p>",
+                  "label": "Content",
+                  "refreshOnChange": false,
+                  "key": "content3",
+                  "type": "content",
+                  "input": false,
+                  "tableView": false
+                },
+                {
+                  "label": "Pay.gov",
+                  "tileView": false,
+                  "tableView": false,
+                  "defaultValue": false,
+                  "key": "checkbox",
+                  "type": "checkbox",
+                  "input": true
+                },
+                {
+                  "label": "Other electronic funds transfer",
+                  "tileView": false,
+                  "tableView": false,
+                  "key": "checkbox2",
+                  "type": "checkbox",
+                  "input": true,
+                  "defaultValue": false
+                },
+                {
+                  "label": "Paper check",
+                  "tileView": false,
+                  "tableView": false,
+                  "key": "checkbox1",
+                  "type": "checkbox",
+                  "input": true,
+                  "defaultValue": false
+                }
+              ]
+            }
+          ],
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "scrollToTop": true
+        },
+        {
+          "title": "Part III— Plan Administrator Certification",
+          "collapsible": false,
+          "key": "panel",
+          "type": "panel",
+          "label": "Part III— Plan Administrator Certification",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "html": "<p style=\"text-align:center;\"><strong>Part III— Plan Administrator Certification</strong></p>",
+              "label": "Content",
+              "refreshOnChange": false,
+              "key": "content2",
+              "type": "content",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "Day",
+              "useLocaleSettings": false,
+              "tableView": false,
+              "key": "day",
+              "type": "day",
+              "input": true,
+              "defaultValue": "00/00/0000"
+            },
+            {
+              "label": "First Name",
+              "tableView": true,
+              "key": "planInformation",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Last Name",
+              "tableView": true,
+              "key": "planInformation2",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Phone Number",
+              "tableView": true,
+              "key": "phoneNumber1",
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Email",
+              "tableView": true,
+              "key": "email1",
+              "type": "email",
+              "input": true
+            },
+            {
+              "label": "Signature",
+              "tableView": true,
+              "key": "signature",
+              "type": "textfield",
+              "input": true
+            }
+          ],
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": false,
+            "next": true
+          },
+          "scrollToTop": true
+        },
+        {
+          "label": "Submit",
+          "showValidations": false,
+          "tableView": false,
+          "key": "submit",
+          "type": "button",
+          "input": true
+        }
+      ]
+    }
+  },
+  "actions": {
+    "mp100test:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "mp100test",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

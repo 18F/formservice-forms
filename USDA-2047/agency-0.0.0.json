@@ -1,0 +1,51 @@
+{
+  "title": "Dev",
+  "version": "2.0.0",
+  "name": "agency",
+  "roles": {},
+  "forms": {
+    "uSDepartmentOfAgricultureAd2047": {
+      "title": "U.S. DEPARTMENT OF AGRICULTURE - AD-2047",
+      "type": "form",
+      "name": "uSDepartmentOfAgricultureAd2047",
+      "path": "usdepartmentofagriculturead2047",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/5418b65f-4eaf-5596-8d2d-d8eb1319dcac",
+          "id": "5418b65f-4eaf-5596-8d2d-d8eb1319dcac"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "uSDepartmentOfAgricultureAd2047:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "uSDepartmentOfAgricultureAd2047",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

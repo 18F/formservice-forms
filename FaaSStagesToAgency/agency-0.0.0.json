@@ -1,0 +1,90 @@
+{
+  "title": "Dev",
+  "version": "2.0.0",
+  "name": "agency",
+  "roles": {},
+  "forms": {
+    "W4": {
+      "title": "Form W4: Employee’s Withholding Certificate",
+      "type": "form",
+      "name": "W4",
+      "path": "w4",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/645ee2a5-2294-58cc-a7aa-4a894dedbd69",
+          "id": "645ee2a5-2294-58cc-a7aa-4a894dedbd69"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "bfsformfs13": {
+      "title": "BFS Form FS-13",
+      "type": "form",
+      "name": "bfsformfs13",
+      "path": "bfsformfs13",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/3c533167-0c05-5635-aa5a-2cc88bd666a3",
+          "id": "3c533167-0c05-5635-aa5a-2cc88bd666a3"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    }
+  },
+  "actions": {
+    "W4:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "W4",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "bfsformfs13:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "bfsformfs13",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

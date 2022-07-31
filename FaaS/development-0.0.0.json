@@ -1,0 +1,1315 @@
+{
+  "title": "Development",
+  "version": "2.0.0",
+  "name": "development",
+  "roles": {
+    "anonymous": {
+      "title": "Anonymous",
+      "description": "A role for Anonymous Users.",
+      "admin": false,
+      "default": true
+    },
+    "administrator": {
+      "title": "Administrator",
+      "description": "A role for Administrative Users.",
+      "admin": true,
+      "default": false
+    },
+    "authenticated": {
+      "title": "Authenticated",
+      "description": "A role for Authenticated Users.",
+      "admin": false,
+      "default": false
+    }
+  },
+  "forms": {
+    "IRS-8821": {
+      "title": "IRS 8821",
+      "type": "form",
+      "name": "IRS-8821",
+      "path": "irs8821",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/adb05a84-be6c-5beb-bbb9-a808aa2ba1ba",
+          "id": "adb05a84-be6c-5beb-bbb9-a808aa2ba1ba"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "administrator",
+            "authenticated",
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "OGE-450": {
+      "title": "Confidential Financial Disclosure",
+      "type": "form",
+      "name": "OGE-450",
+      "path": "oge450",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/84dc08b4-bf59-5bb5-a62d-4ff4c7cfe6f9",
+          "id": "84dc08b4-bf59-5bb5-a62d-4ff4c7cfe6f9"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "administrator",
+            "authenticated",
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "adminLogin": {
+      "title": "Admin Login",
+      "type": "form",
+      "name": "adminLogin",
+      "path": "admin/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_own"
+        }
+      ]
+    },
+    "applicationForImmediateRetirement": {
+      "title": "Application for Immediate Retirement",
+      "type": "form",
+      "name": "applicationForImmediateRetirement",
+      "path": "sf3107",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/d70f99bb-94a6-56f8-987b-dda16f0ac993",
+          "id": "d70f99bb-94a6-56f8-987b-dda16f0ac993"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "create_all"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "create_all"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "read_all"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "update_all"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "team_read"
+        },
+        {
+          "roles": [],
+          "type": "team_write"
+        },
+        {
+          "roles": [],
+          "type": "team_admin"
+        }
+      ],
+      "properties": {},
+      "controller": ""
+    },
+    "appraiser-register": {
+      "title": "Application for Fee or Roster Personnel Designation",
+      "type": "form",
+      "name": "appraiser-register",
+      "path": "appraiser-register",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/4c6be2bf-6c0e-5097-808c-09e83de7cdbd",
+          "id": "4c6be2bf-6c0e-5097-808c-09e83de7cdbd"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "contentHideUSWDS": {
+      "title": "VPAT 433 / FAAS 2008",
+      "type": "form",
+      "name": "contentHideUSWDS",
+      "path": "contenthideuswds",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/e34255b6-c160-5d01-927d-0e82b0ff6967",
+          "id": "e34255b6-c160-5d01-927d-0e82b0ff6967"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "directDepositSignUp": {
+      "title": "Direct Deposit Sign Up",
+      "type": "form",
+      "name": "directDepositSignUp",
+      "path": "sf1199a",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/7f313844-8c4d-5738-9864-8c961a2bc488",
+          "id": "7f313844-8c4d-5738-9864-8c961a2bc488"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "hud2880": {
+      "title": "HUD 2880",
+      "type": "form",
+      "name": "hud2880",
+      "path": "hud2880",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/c0aa3faa-52b6-5cf2-9b44-5cf3b21cc0f4",
+          "id": "c0aa3faa-52b6-5cf2-9b44-5cf3b21cc0f4"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "idisOnlineAccessRequest": {
+      "title": "IDIS Online Access Request",
+      "type": "form",
+      "name": "idisOnlineAccessRequest",
+      "path": "idisonlineaccessrequest",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/21910fd8-b56e-534a-94af-6395b504a346",
+          "id": "21910fd8-b56e-534a-94af-6395b504a346"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "isistestingpdfupload": {
+      "title": "IDIS Testing PDF Upload",
+      "type": "form",
+      "name": "isistestingpdfupload",
+      "path": "isistestingpdfupload",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/d2ac1ec7-b89e-5eed-8bb5-26fd8641aa7d",
+          "id": "d2ac1ec7-b89e-5eed-8bb5-26fd8641aa7d"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "new8821": {
+      "title": "new-8821",
+      "type": "form",
+      "name": "new8821",
+      "path": "new8821",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/6007bb1d-bf80-5509-8170-0a766327a94b",
+          "id": "6007bb1d-bf80-5509-8170-0a766327a94b"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "syedTestColumn": {
+      "title": "SyedTestColumn",
+      "type": "form",
+      "name": "syedTestColumn",
+      "path": "syedtestcolumn",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/f1ba6d63-cb92-5e87-95e1-1b801951e5a8",
+          "id": "f1ba6d63-cb92-5e87-95e1-1b801951e5a8"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "uSDepartmentOfAgricultureAd2047": {
+      "title": "U.S. DEPARTMENT OF AGRICULTURE - AD-2047",
+      "type": "form",
+      "name": "uSDepartmentOfAgricultureAd2047",
+      "path": "usdepartmentofagriculturead2047",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "http://pdf-server:4005/pdf/60a2b672e4035e3c8c66c58f/file/2f31a7ec-b1e7-58c8-867f-d487161c6a09",
+          "id": "2f31a7ec-b1e7-58c8-867f-d487161c6a09"
+        }
+      },
+      "components": [
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "administrator",
+            "authenticated"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [],
+      "properties": {},
+      "controller": ""
+    },
+    "userLogin": {
+      "title": "User Login",
+      "type": "form",
+      "name": "userLogin",
+      "path": "user/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_own"
+        }
+      ]
+    },
+    "userRegister": {
+      "title": "User Register",
+      "type": "form",
+      "name": "userRegister",
+      "path": "user/register",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "label": "Submit",
+          "input": true,
+          "type": "button"
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "anonymous"
+          ],
+          "type": "create_own"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "adminLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "adminLogin",
+      "settings": {
+        "resources": [
+          "admin"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "admin:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "admin",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "administrator"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "admin:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "admin",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userLogin",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userRegister",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password"
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "userRegister",
+      "settings": {
+        "resource": "user",
+        "fields": {
+          "email": "email",
+          "password": "password"
+        }
+      },
+      "priority": 11,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "user:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "user",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "authenticated"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "user:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "user",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "IRS-8821:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "IRS-8821",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "OGE-450:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "OGE-450",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "applicationForImmediateRetirement:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "applicationForImmediateRetirement",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "appraiser-register:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "appraiser-register",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "contentHideUSWDS:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "contentHideUSWDS",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "directDepositSignUp:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "directDepositSignUp",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "hud2880:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "hud2880",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "idisOnlineAccessRequest:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "idisOnlineAccessRequest",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "isistestingpdfupload:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "isistestingpdfupload",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "new8821:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "new8821",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "syedTestColumn:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "syedTestColumn",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "uSDepartmentOfAgricultureAd2047:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "uSDepartmentOfAgricultureAd2047",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {
+    "admin": {
+      "title": "Admin",
+      "type": "resource",
+      "name": "admin",
+      "path": "admin",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "authenticated",
+            "administrator"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "create_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "update_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        }
+      ]
+    },
+    "user": {
+      "title": "User",
+      "type": "resource",
+      "name": "user",
+      "path": "user",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": true,
+          "required": true,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ],
+      "access": [
+        {
+          "roles": [
+            "anonymous",
+            "authenticated",
+            "administrator"
+          ],
+          "type": "read_all"
+        }
+      ],
+      "submissionAccess": [
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "create_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "read_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "update_all"
+        },
+        {
+          "roles": [
+            "administrator"
+          ],
+          "type": "delete_all"
+        },
+        {
+          "roles": [],
+          "type": "create_own"
+        },
+        {
+          "roles": [],
+          "type": "read_own"
+        },
+        {
+          "roles": [],
+          "type": "update_own"
+        },
+        {
+          "roles": [],
+          "type": "delete_own"
+        }
+      ]
+    }
+  },
+  "access": [
+    {
+      "type": "create_own",
+      "roles": []
+    },
+    {
+      "type": "create_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "read_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "update_all",
+      "roles": [
+        "administrator"
+      ]
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    },
+    {
+      "type": "delete_all",
+      "roles": [
+        "administrator"
+      ]
+    }
+  ]
+}

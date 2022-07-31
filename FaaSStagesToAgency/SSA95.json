@@ -1,0 +1,615 @@
+{
+  "title": "partner-sandbox",
+  "version": "2.0.0",
+  "name": "partner",
+  "roles": {},
+  "forms": {
+    "wirelessdevicerequestssa95": {
+      "title": "Wireless Device Request (SSA-95)",
+      "type": "form",
+      "name": "wirelessdevicerequestssa95",
+      "path": "wirelessdevicerequestssa95",
+      "display": "wizard",
+      "tags": [
+        "common"
+      ],
+      "settings": {
+        "pdf": {
+          "src": "https://portal-dev.forms.gov/pdf/pdf/60832523e5703e446ca275ef/file/0cd3d8bf-160e-58f6-aa1d-47a8637b0eda",
+          "id": "0cd3d8bf-160e-58f6-aa1d-47a8637b0eda"
+        }
+      },
+      "components": [
+        {
+          "html": "<p><span class=\"text-small\">Form SSA-TEST (02-2021)&nbsp;</span><br><span class=\"text-small\">Discontinue Prior Editions</span><br><span class=\"text-small\">Social Security Administration</span></p>",
+          "label": "Content",
+          "refreshOnChange": false,
+          "key": "content1",
+          "type": "content",
+          "input": false,
+          "tableView": false
+        },
+        {
+          "html": "<h3>Wireless Device Request</h3>",
+          "label": "Content",
+          "refreshOnChange": false,
+          "key": "content",
+          "type": "content",
+          "input": false,
+          "tableView": false
+        },
+        {
+          "title": "Requester Information",
+          "label": "Page 1",
+          "type": "panel",
+          "key": "page1",
+          "components": [
+            {
+              "label": "Date of Order",
+              "format": "MM-dd-yyyy",
+              "tableView": false,
+              "enableMinDateInput": false,
+              "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+              },
+              "enableMaxDateInput": false,
+              "key": "dateTime",
+              "overlay": {
+                "page": 1,
+                "left": 155,
+                "top": 211,
+                "width": 300,
+                "height": 32
+              },
+              "type": "datetime",
+              "input": true,
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "locale": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": true,
+                "noCalendar": false,
+                "format": "MM-dd-yyyy",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": false,
+                "minDate": null,
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "maxDate": null
+              }
+            },
+            {
+              "label": "Yes",
+              "tableView": false,
+              "key": "yes",
+              "overlay": {
+                "page": 1,
+                "left": 668.1431428571428,
+                "top": 216.57142857142856,
+                "height": 20,
+                "width": 20
+              },
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "No",
+              "tableView": false,
+              "defaultValue": false,
+              "key": "no",
+              "overlay": {
+                "page": 1,
+                "left": 834.2855714285715,
+                "top": 214.71457142857145,
+                "width": 20,
+                "height": 20
+              },
+              "type": "checkbox",
+              "input": true
+            },
+            {
+              "label": "Point of Contact and Phone Number:",
+              "tableView": true,
+              "key": "pointOfContactAndPhoneNumber",
+              "overlay": {
+                "page": 1,
+                "left": 331,
+                "top": 249.8574285714285,
+                "height": 31.3214,
+                "width": 472.554
+              },
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Component",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Budget Finance and Management",
+                    "value": "DCBCM"
+                  },
+                  {
+                    "label": "Office of Inspector General",
+                    "value": "OIG"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "office",
+              "overlay": {
+                "page": 1,
+                "left": 266.1111111111111,
+                "top": 293.44444444444446,
+                "height": 26.5799,
+                "width": 229.566
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "widget": null,
+              "template": "<span>{{ item.label }}</span>"
+            },
+            {
+              "label": "Office",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Office of Commissioner",
+                    "value": "OC"
+                  },
+                  {
+                    "label": "Executive Operations",
+                    "value": "OEO"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "office1",
+              "overlay": {
+                "page": 1,
+                "left": 210.555,
+                "top": 333.44544444444443,
+                "height": 26.5799,
+                "width": 177.639
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "widget": null,
+              "template": "<span>{{ item.label }}</span>"
+            }
+          ],
+          "input": false,
+          "tableView": false,
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "collapsible": false
+        },
+        {
+          "title": "New Need Request (Only fill out for New Needs)",
+          "label": "Page 2",
+          "type": "panel",
+          "key": "page2",
+          "input": false,
+          "tableView": false,
+          "breadcrumbClickable": true,
+          "buttonSettings": {
+            "previous": true,
+            "cancel": true,
+            "next": true
+          },
+          "collapsible": false,
+          "components": [
+            {
+              "label": "Type of Device",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Basic Cellphone",
+                    "value": "basicCellphone"
+                  },
+                  {
+                    "label": "Broadband",
+                    "value": "broadband"
+                  },
+                  {
+                    "label": "Smartphone",
+                    "value": "smartphone"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "typeOfDevice",
+              "overlay": {
+                "page": 1,
+                "left": 287.9998888888889,
+                "top": 437.44444444444446,
+                "height": 29.9306,
+                "width": 278.542
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "widget": null,
+              "template": "<span>{{ item.label }}</span>"
+            },
+            {
+              "label": "Email",
+              "tableView": true,
+              "key": "email",
+              "overlay": {
+                "page": 1,
+                "left": 163.22222222222217,
+                "top": 476.55555555555554,
+                "height": 29.9306,
+                "width": 297.344
+              },
+              "type": "email",
+              "input": true
+            },
+            {
+              "label": "Phone Number",
+              "tableView": true,
+              "key": "phoneNumber",
+              "overlay": {
+                "page": 1,
+                "left": 160,
+                "top": 519.2222222222222,
+                "height": 29.9132,
+                "width": 294.115
+              },
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Intended User",
+              "tableView": true,
+              "key": "intendedUser",
+              "overlay": {
+                "page": 1,
+                "left": 161.11111111111111,
+                "top": 559.2222222222222,
+                "height": 32.066,
+                "width": 292.882
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Preferred Carrier",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Verizon Wireless",
+                    "value": "mobile1"
+                  },
+                  {
+                    "label": "AT&T",
+                    "value": "mobile2"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "preferredCarrier",
+              "overlay": {
+                "page": 1,
+                "left": 300,
+                "top": 599.2222290039062,
+                "height": 27.6389,
+                "width": 655.851
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "widget": null,
+              "template": "<span>{{ item.label }}</span>"
+            },
+            {
+              "label": "Justification",
+              "tableView": true,
+              "key": "textArea",
+              "overlay": {
+                "page": 1,
+                "left": 135.55555555555554,
+                "top": 643.6666734483507,
+                "width": 859.41,
+                "height": 97.4653
+              },
+              "type": "textarea",
+              "rows": 6,
+              "input": true
+            },
+            {
+              "label": "Approving Official Name",
+              "tableView": true,
+              "key": "approvingOfficialName",
+              "overlay": {
+                "page": 1,
+                "left": 238.88888888888889,
+                "top": 751.4444512261284,
+                "height": 28.6285,
+                "width": 752.882
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Approving Official Email",
+              "tableView": true,
+              "key": "email1",
+              "overlay": {
+                "page": 1,
+                "left": 238.88888888888889,
+                "top": 788.1111178927952,
+                "width": 750.625,
+                "height": 35.4167
+              },
+              "type": "email",
+              "input": true
+            },
+            {
+              "label": "Approving Official Phone Number",
+              "tableView": true,
+              "key": "approvingOfficialPhoneNumber",
+              "overlay": {
+                "page": 1,
+                "left": 304.1111111111111,
+                "top": 829.5555555555555,
+                "height": 32.0486,
+                "width": 467.5
+              },
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "User's Domain",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "BA",
+                    "value": "domain1"
+                  },
+                  {
+                    "label": "BI",
+                    "value": "domain2"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "usersDomain",
+              "overlay": {
+                "page": 1,
+                "left": 292.44444444444434,
+                "top": 870,
+                "height": 33.2292,
+                "width": 450.799
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "widget": null,
+              "template": "<span>{{ item.label }}</span>"
+            },
+            {
+              "label": "User's Pin",
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "usersPin",
+              "overlay": {
+                "page": 1,
+                "left": 127.77777777777777,
+                "top": 909.2222290039062,
+                "height": 29.8785,
+                "width": 321.91
+              },
+              "type": "number",
+              "input": true
+            },
+            {
+              "label": "Does user have VPN?",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Yes",
+                    "value": "yes"
+                  },
+                  {
+                    "label": "No",
+                    "value": "no"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "doesUserHaveVpn",
+              "overlay": {
+                "page": 1,
+                "left": 754.4444444444445,
+                "top": 950.3333435058594,
+                "height": 32.1007,
+                "width": 231.858
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "widget": null,
+              "template": "<span>{{ item.label }}</span>"
+            },
+            {
+              "label": "Shipping Address",
+              "tableView": true,
+              "key": "shippingAddress",
+              "overlay": {
+                "page": 1,
+                "left": 194.44444444444443,
+                "top": 990.3333435058594,
+                "height": 97.2049,
+                "width": 524.531
+              },
+              "type": "textarea",
+              "input": true
+            },
+            {
+              "label": "State and Area Code for New Device",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Maryland 301",
+                    "value": "maryland301"
+                  },
+                  {
+                    "label": "Virginia 703",
+                    "value": "virginia703"
+                  },
+                  {
+                    "label": "DC 202",
+                    "value": "dc202"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "stateAndAreaCodeForNewDevice",
+              "overlay": {
+                "page": 1,
+                "left": 473.3333333333333,
+                "top": 1102.5555657280815,
+                "height": 29.8611,
+                "width": 350.764
+              },
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true,
+              "widget": null,
+              "template": "<span>{{ item.label }}</span>"
+            },
+            {
+              "label": "Point of Contact and Phone Number",
+              "tableView": true,
+              "key": "pointOfContactAndPhoneNumber1",
+              "overlay": {
+                "page": 1,
+                "left": 333.3333333333333,
+                "top": 1268.1111212836372,
+                "height": 28.7153,
+                "width": 656.25
+              },
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Date",
+              "format": "MM-dd-yyyy",
+              "tableView": false,
+              "enableMinDateInput": false,
+              "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+              },
+              "enableMaxDateInput": false,
+              "key": "dateTime1",
+              "overlay": {
+                "page": 1,
+                "left": 77.66669999999999,
+                "top": 1311.7755555555555,
+                "width": 138.698,
+                "height": 30.9896
+              },
+              "type": "datetime",
+              "input": true,
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "locale": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": true,
+                "noCalendar": false,
+                "format": "MM-dd-yyyy",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": false,
+                "minDate": null,
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "maxDate": null
+              }
+            }
+          ]
+        },
+        {
+          "label": "HTML",
+          "attrs": [
+            {
+              "attr": "",
+              "value": ""
+            }
+          ],
+          "content": "[ s [0]]",
+          "refreshOnChange": false,
+          "key": "html",
+          "overlay": {
+            "page": 1,
+            "left": 334,
+            "top": 1308,
+            "height": 32,
+            "width": 429
+          },
+          "type": "htmlelement",
+          "input": false,
+          "tableView": false
+        }
+      ]
+    }
+  },
+  "actions": {
+    "wirelessdevicerequestssa95:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "wirelessdevicerequestssa95",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}

@@ -1,0 +1,84 @@
+{
+  "title": "partner-sandbox",
+  "version": "2.0.0",
+  "name": "partner",
+  "roles": {},
+  "forms": {
+    "simplewebpagefeedback": {
+      "title": "Simple web page feedback",
+      "type": "form",
+      "name": "simplewebpagefeedback",
+      "path": "simplewebpagefeedback",
+      "display": "form",
+      "tags": [
+        "common"
+      ],
+      "components": [
+        {
+          "label": "Message",
+          "description": "What did you like or dislike about this page?",
+          "tableView": true,
+          "validate": {
+            "maxLength": 1500
+          },
+          "key": "message",
+          "type": "textarea",
+          "input": true
+        },
+        {
+          "label": "Email address",
+          "description": "So that we can respond to your comment",
+          "tableView": true,
+          "key": "emailAddress1",
+          "type": "email",
+          "input": true
+        },
+        {
+          "label": "URL",
+          "description": "Ideally, this would be passed in or deteremined by page location",
+          "tableView": true,
+          "customDefaultValue": "value = window.location.toString();",
+          "key": "url",
+          "type": "url",
+          "input": true
+        },
+        {
+          "label": "bad email regex test",
+          "description": "What does a valid regex look like?",
+          "tableView": true,
+          "validate": {
+            "pattern": "\\w+@\\w+\\.\\w+"
+          },
+          "key": "badEmailRegexTest",
+          "type": "textfield",
+          "input": true
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "key": "submit",
+          "disableOnInvalid": true,
+          "input": true,
+          "tableView": false
+        }
+      ]
+    }
+  },
+  "actions": {
+    "simplewebpagefeedback:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "simplewebpagefeedback",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {},
+  "excludeAccess": true
+}
